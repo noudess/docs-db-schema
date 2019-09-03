@@ -1,7 +1,22 @@
 # Summary
 
-## Tables
 
+## Tasks
+
+* [tasks](tasks.md)
+* [tasksets](tasksets.md)
+* [task_activities](task_activities.md)
+* [task_replay_groups](task_replay_groups.md)
+
+## Guilds
+
+* [guilds](guilds.md)
+* [guild_bank](guild_bank.md)
+* [guild_ranks](guild_ranks.md)
+* [guild_members](guild_members.md)
+* [guild_relations](guild_relations.md)
+
+## Tables
 * [aa_ability](aa_ability.md)
 * [aa_actions](aa_actions.md)
 * [aa_effects](aa_effects.md)
@@ -90,11 +105,6 @@
 * [ground_spawns](ground_spawns.md)
 * [group_id](group_id.md)
 * [group_leaders](group_leaders.md)
-* [guilds](guilds.md)
-* [guild_bank](guild_bank.md)
-* [guild_members](guild_members.md)
-* [guild_ranks](guild_ranks.md)
-* [guild_relations](guild_relations.md)
 * [hackers](hackers.md)
 * [horses](horses.md)
 * [instance_list](instance_list.md)
@@ -205,10 +215,6 @@
 * [spell_globals](spell_globals.md)
 * [starting_items](starting_items.md)
 * [start_zones](start_zones.md)
-* [tasks](tasks.md)
-* [tasksets](tasksets.md)
-* [task_activities](task_activities.md)
-* [task_replay_groups](task_replay_groups.md)
 * [timers](timers.md)
 * [titles](titles.md)
 * [trader](trader.md)
@@ -225,3 +231,6 @@
 * [zone_flags](zone_flags.md)
 * [zone_points](zone_points.md)
 * [zone_server](zone_server.md)
+
+
+
