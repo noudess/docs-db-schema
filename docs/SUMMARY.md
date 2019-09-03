@@ -1,22 +1,21 @@
 # Summary
 
 
-## Tasks
+* [Tasks](placeholder.md)
+    * [tasks](tasks.md)
+    * [tasksets](tasksets.md)
+    * [task_activities](task_activities.md)
+    * [task_replay_groups](task_replay_groups.md)
 
-* [tasks](tasks.md)
-* [tasksets](tasksets.md)
-* [task_activities](task_activities.md)
-* [task_replay_groups](task_replay_groups.md)
-
-## Guilds
-
-* [guilds](guilds.md)
-* [guild_bank](guild_bank.md)
-* [guild_ranks](guild_ranks.md)
-* [guild_members](guild_members.md)
-* [guild_relations](guild_relations.md)
+* [Guilds](placeholder.md)
+    * [guilds](guilds.md)
+    * [guild_bank](guild_bank.md)
+    * [guild_ranks](guild_ranks.md)
+    * [guild_members](guild_members.md)
+    * [guild_relations](guild_relations.md)
 
 ## Tables
+
 * [aa_ability](aa_ability.md)
 * [aa_actions](aa_actions.md)
 * [aa_effects](aa_effects.md)
