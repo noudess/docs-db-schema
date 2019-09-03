@@ -1,0 +1,10611 @@
+aa_ability:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: text
+    nullable: NO
+    description: ''
+  category:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes:
+    dataType: int
+    nullable: NO
+    description: ''
+  races:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_heritage:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities:
+    dataType: int
+    nullable: NO
+    description: ''
+  status:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: int
+    nullable: NO
+    description: ''
+  grant_only:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  first_rank_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  enabled:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+aa_actions:
+  aaid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  rank:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  reuse_time:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  target:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  nonspell_action:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  nonspell_mana:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  nonspell_duration:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  redux_aa:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  redux_rate:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  redux_aa2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  redux_rate2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+aa_effects:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  aaid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  effectid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  base1:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  base2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+aa_ranks:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  upper_hotkey_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  lower_hotkey_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  title_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  desc_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  cost:
+    dataType: int
+    nullable: NO
+    description: ''
+  level_req:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  recast_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  expansion:
+    dataType: int
+    nullable: NO
+    description: ''
+  prev_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  next_id:
+    dataType: int
+    nullable: NO
+    description: ''
+aa_rank_effects:
+  rank_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  base1:
+    dataType: int
+    nullable: NO
+    description: ''
+  base2:
+    dataType: int
+    nullable: NO
+    description: ''
+aa_rank_prereqs:
+  rank_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  points:
+    dataType: int
+    nullable: NO
+    description: ''
+aa_required_level_cost:
+  skill_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  cost:
+    dataType: int
+    nullable: NO
+    description: ''
+  description:
+    dataType: varchar
+    nullable: YES
+    description: ''
+aa_timers:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  ability:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  begin:
+    dataType: int
+    nullable: NO
+    description: ''
+  end:
+    dataType: int
+    nullable: NO
+    description: ''
+account:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  charname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  sharedplat:
+    dataType: int
+    nullable: NO
+    description: ''
+  password:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  status:
+    dataType: int
+    nullable: NO
+    description: ''
+  ls_id:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  lsaccount_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  gmspeed:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  revoked:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  karma:
+    dataType: int
+    nullable: NO
+    description: ''
+  minilogin_ip:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  hideme:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  rulesflag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  suspendeduntil:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  time_creation:
+    dataType: int
+    nullable: NO
+    description: ''
+  expansion:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ban_reason:
+    dataType: text
+    nullable: YES
+    description: ''
+  suspend_reason:
+    dataType: text
+    nullable: YES
+    description: ''
+account_flags:
+  p_accid:
+    dataType: int
+    nullable: NO
+    description: ''
+  p_flag:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  p_value:
+    dataType: varchar
+    nullable: NO
+    description: ''
+account_ip:
+  accid:
+    dataType: int
+    nullable: NO
+    description: ''
+  ip:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  count:
+    dataType: int
+    nullable: NO
+    description: ''
+  lastused:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+account_rewards:
+  account_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  reward_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  amount:
+    dataType: int
+    nullable: NO
+    description: ''
+adventure_details:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  adventure_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  instance_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  count:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  assassinate_count:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  time_created:
+    dataType: int
+    nullable: NO
+    description: ''
+  time_zoned:
+    dataType: int
+    nullable: NO
+    description: ''
+  time_completed:
+    dataType: int
+    nullable: NO
+    description: ''
+adventure_members:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+adventure_stats:
+  player_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  guk_wins:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  mir_wins:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  mmc_wins:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  ruj_wins:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  tak_wins:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  guk_losses:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  mir_losses:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  mmc_losses:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  ruj_losses:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  tak_losses:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+adventure_template:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  zone_version:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  is_hard:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  is_raid:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  min_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  max_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  type_data:
+    dataType: int
+    nullable: NO
+    description: ''
+  type_count:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  assa_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  assa_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  assa_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  assa_h:
+    dataType: float
+    nullable: NO
+    description: ''
+  text:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_in_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  win_points:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  lose_points:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  theme:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  zone_in_zone_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  zone_in_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  zone_in_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  zone_in_object_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  dest_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_h:
+    dataType: float
+    nullable: NO
+    description: ''
+  graveyard_zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  graveyard_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  graveyard_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  graveyard_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  graveyard_radius:
+    dataType: float
+    nullable: NO
+    description: ''
+adventure_template_entry:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+adventure_template_entry_flavor:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  text:
+    dataType: varchar
+    nullable: NO
+    description: ''
+altadv_vars:
+  skill_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  cost:
+    dataType: int
+    nullable: YES
+    description: ''
+  max_level:
+    dataType: int
+    nullable: YES
+    description: ''
+  hotkey_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  hotkey_sid2:
+    dataType: int
+    nullable: NO
+    description: ''
+  title_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  desc_sid:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  spellid:
+    dataType: int
+    nullable: NO
+    description: ''
+  prereq_skill:
+    dataType: int
+    nullable: NO
+    description: ''
+  prereq_minpoints:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_refresh:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes:
+    dataType: int
+    nullable: NO
+    description: ''
+  berserker:
+    dataType: int
+    nullable: NO
+    description: ''
+  class_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  cost_inc:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  aa_expansion:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  special_category:
+    dataType: int
+    nullable: NO
+    description: ''
+  sof_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sof_cost_inc:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sof_max_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sof_next_skill:
+    dataType: int
+    nullable: NO
+    description: ''
+  clientver:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  account_time_required:
+    dataType: int
+    nullable: NO
+    description: ''
+  sof_current_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sof_next_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  level_inc:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+alternate_currency:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+auras:
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  distance:
+    dataType: int
+    nullable: NO
+    description: ''
+  aura_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  spawn_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  movement:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  cast_time:
+    dataType: int
+    nullable: NO
+    description: ''
+Banned_IPs:
+  ip_address:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  notes:
+    dataType: text
+    nullable: YES
+    description: ''
+base_data:
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  class:
+    dataType: int
+    nullable: NO
+    description: ''
+  hp:
+    dataType: double
+    nullable: NO
+    description: ''
+  mana:
+    dataType: double
+    nullable: NO
+    description: ''
+  end:
+    dataType: double
+    nullable: NO
+    description: ''
+  unk1:
+    dataType: double
+    nullable: NO
+    description: ''
+  unk2:
+    dataType: double
+    nullable: NO
+    description: ''
+  hp_fac:
+    dataType: double
+    nullable: NO
+    description: ''
+  mana_fac:
+    dataType: double
+    nullable: NO
+    description: ''
+  end_fac:
+    dataType: double
+    nullable: NO
+    description: ''
+blocked_spells:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  x_diff:
+    dataType: float
+    nullable: NO
+    description: ''
+  y_diff:
+    dataType: float
+    nullable: NO
+    description: ''
+  z_diff:
+    dataType: float
+    nullable: NO
+    description: ''
+  message:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  description:
+    dataType: varchar
+    nullable: NO
+    description: ''
+books:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  txtfile:
+    dataType: text
+    nullable: NO
+    description: ''
+  language:
+    dataType: int
+    nullable: NO
+    description: ''
+bugs:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  ui:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  type:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  flag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  target:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  bug:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  date:
+    dataType: date
+    nullable: NO
+    description: ''
+  status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+bug_reports:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  client_version_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  client_version_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  account_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  character_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  character_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  reporter_spoof:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  category_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  category_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  reporter_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  ui_path:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  pos_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  pos_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  pos_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: int
+    nullable: NO
+    description: ''
+  time_played:
+    dataType: int
+    nullable: NO
+    description: ''
+  target_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  target_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  optional_info_mask:
+    dataType: int
+    nullable: NO
+    description: ''
+  _can_duplicate:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  _crash_bug:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  _target_info:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  _character_flags:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  _unknown_value:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  bug_report:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  system_info:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  report_datetime:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  bug_status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  last_review:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  last_reviewer:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  reviewer_notes:
+    dataType: varchar
+    nullable: NO
+    description: ''
+buyer:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  buyslot:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  quantity:
+    dataType: int
+    nullable: NO
+    description: ''
+  price:
+    dataType: int
+    nullable: NO
+    description: ''
+character_activities:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+  activityid:
+    dataType: int
+    nullable: NO
+    description: ''
+  donecount:
+    dataType: int
+    nullable: NO
+    description: ''
+  completed:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+character_alternate_abilities:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  aa_value:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_alt_currency:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  currency_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  amount:
+    dataType: int
+    nullable: NO
+    description: ''
+character_auras:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: int
+    nullable: NO
+    description: ''
+character_bandolier:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  bandolier_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  bandolier_slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  bandolier_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+character_bind:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  instance_id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+character_buffs:
+  character_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  caster_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  caster_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  ticsremaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  counters:
+    dataType: int
+    nullable: NO
+    description: ''
+  numhits:
+    dataType: int
+    nullable: NO
+    description: ''
+  melee_rune:
+    dataType: int
+    nullable: NO
+    description: ''
+  magic_rune:
+    dataType: int
+    nullable: NO
+    description: ''
+  persistent:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  dot_rune:
+    dataType: int
+    nullable: NO
+    description: ''
+  caston_x:
+    dataType: int
+    nullable: NO
+    description: ''
+  caston_y:
+    dataType: int
+    nullable: NO
+    description: ''
+  caston_z:
+    dataType: int
+    nullable: NO
+    description: ''
+  ExtraDIChance:
+    dataType: int
+    nullable: NO
+    description: ''
+  instrument_mod:
+    dataType: int
+    nullable: NO
+    description: ''
+character_corpses:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  zone_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  instance_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  time_of_death:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  is_rezzed:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  is_buried:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  was_at_graveyard:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  is_locked:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  exp:
+    dataType: int
+    nullable: YES
+    description: ''
+  size:
+    dataType: int
+    nullable: YES
+    description: ''
+  level:
+    dataType: int
+    nullable: YES
+    description: ''
+  race:
+    dataType: int
+    nullable: YES
+    description: ''
+  gender:
+    dataType: int
+    nullable: YES
+    description: ''
+  class:
+    dataType: int
+    nullable: YES
+    description: ''
+  deity:
+    dataType: int
+    nullable: YES
+    description: ''
+  texture:
+    dataType: int
+    nullable: YES
+    description: ''
+  helm_texture:
+    dataType: int
+    nullable: YES
+    description: ''
+  copper:
+    dataType: int
+    nullable: YES
+    description: ''
+  silver:
+    dataType: int
+    nullable: YES
+    description: ''
+  gold:
+    dataType: int
+    nullable: YES
+    description: ''
+  platinum:
+    dataType: int
+    nullable: YES
+    description: ''
+  hair_color:
+    dataType: int
+    nullable: YES
+    description: ''
+  beard_color:
+    dataType: int
+    nullable: YES
+    description: ''
+  eye_color_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  eye_color_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  hair_style:
+    dataType: int
+    nullable: YES
+    description: ''
+  face:
+    dataType: int
+    nullable: YES
+    description: ''
+  beard:
+    dataType: int
+    nullable: YES
+    description: ''
+  drakkin_heritage:
+    dataType: int
+    nullable: YES
+    description: ''
+  drakkin_tattoo:
+    dataType: int
+    nullable: YES
+    description: ''
+  drakkin_details:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_5:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_6:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_7:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_8:
+    dataType: int
+    nullable: YES
+    description: ''
+  wc_9:
+    dataType: int
+    nullable: YES
+    description: ''
+character_corpse_items:
+  corpse_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  equip_slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_6:
+    dataType: int
+    nullable: NO
+    description: ''
+  attuned:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_currency:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  platinum:
+    dataType: int
+    nullable: NO
+    description: ''
+  gold:
+    dataType: int
+    nullable: NO
+    description: ''
+  silver:
+    dataType: int
+    nullable: NO
+    description: ''
+  copper:
+    dataType: int
+    nullable: NO
+    description: ''
+  platinum_bank:
+    dataType: int
+    nullable: NO
+    description: ''
+  gold_bank:
+    dataType: int
+    nullable: NO
+    description: ''
+  silver_bank:
+    dataType: int
+    nullable: NO
+    description: ''
+  copper_bank:
+    dataType: int
+    nullable: NO
+    description: ''
+  platinum_cursor:
+    dataType: int
+    nullable: NO
+    description: ''
+  gold_cursor:
+    dataType: int
+    nullable: NO
+    description: ''
+  silver_cursor:
+    dataType: int
+    nullable: NO
+    description: ''
+  copper_cursor:
+    dataType: int
+    nullable: NO
+    description: ''
+  radiant_crystals:
+    dataType: int
+    nullable: NO
+    description: ''
+  career_radiant_crystals:
+    dataType: int
+    nullable: NO
+    description: ''
+  ebon_crystals:
+    dataType: int
+    nullable: NO
+    description: ''
+  career_ebon_crystals:
+    dataType: int
+    nullable: NO
+    description: ''
+character_data:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  account_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  last_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  title:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  suffix:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_instance:
+    dataType: int
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  gender:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  race:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  class:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  deity:
+    dataType: int
+    nullable: NO
+    description: ''
+  birthday:
+    dataType: int
+    nullable: NO
+    description: ''
+  last_login:
+    dataType: int
+    nullable: NO
+    description: ''
+  time_played:
+    dataType: int
+    nullable: NO
+    description: ''
+  level2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  anon:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  gm:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  face:
+    dataType: int
+    nullable: NO
+    description: ''
+  hair_color:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  hair_style:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  beard:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  beard_color:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  eye_color_1:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  eye_color_2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  drakkin_heritage:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_tattoo:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_details:
+    dataType: int
+    nullable: NO
+    description: ''
+  ability_time_seconds:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ability_number:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ability_time_minutes:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ability_time_hours:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  exp:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_points_spent:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_exp:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  group_leadership_exp:
+    dataType: int
+    nullable: NO
+    description: ''
+  raid_leadership_exp:
+    dataType: int
+    nullable: NO
+    description: ''
+  group_leadership_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  raid_leadership_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  points:
+    dataType: int
+    nullable: NO
+    description: ''
+  cur_hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  endurance:
+    dataType: int
+    nullable: NO
+    description: ''
+  intoxication:
+    dataType: int
+    nullable: NO
+    description: ''
+  str:
+    dataType: int
+    nullable: NO
+    description: ''
+  sta:
+    dataType: int
+    nullable: NO
+    description: ''
+  cha:
+    dataType: int
+    nullable: NO
+    description: ''
+  dex:
+    dataType: int
+    nullable: NO
+    description: ''
+  int:
+    dataType: int
+    nullable: NO
+    description: ''
+  agi:
+    dataType: int
+    nullable: NO
+    description: ''
+  wis:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_change_count:
+    dataType: int
+    nullable: NO
+    description: ''
+  toxicity:
+    dataType: int
+    nullable: NO
+    description: ''
+  hunger_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  thirst_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  ability_up:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_guk:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_mir:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_mmc:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_ruj:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_tak:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_points_available:
+    dataType: int
+    nullable: NO
+    description: ''
+  tribute_time_remaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  career_tribute_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  tribute_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  tribute_active:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  pvp_kills:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_deaths:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_current_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_career_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_best_kill_streak:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_worst_death_streak:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_current_kill_streak:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp2:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvp_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  show_helm:
+    dataType: int
+    nullable: NO
+    description: ''
+  group_auto_consent:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  raid_auto_consent:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  guild_auto_consent:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  leadership_exp_on:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  RestTimer:
+    dataType: int
+    nullable: NO
+    description: ''
+  air_remaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  autosplit_enabled:
+    dataType: int
+    nullable: NO
+    description: ''
+  lfp:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  lfg:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  mailkey:
+    dataType: char
+    nullable: NO
+    description: ''
+  xtargets:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  firstlogon:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  e_aa_effects:
+    dataType: int
+    nullable: NO
+    description: ''
+  e_percent_to_aa:
+    dataType: int
+    nullable: NO
+    description: ''
+  e_expended_aa_spent:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_points_spent_old:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_points_old:
+    dataType: int
+    nullable: NO
+    description: ''
+  e_last_invsnapshot:
+    dataType: int
+    nullable: NO
+    description: ''
+character_disciplines:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  disc_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_enabledtasks:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+character_inspect_messages:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  inspect_message:
+    dataType: varchar
+    nullable: NO
+    description: ''
+character_item_recast:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  recast_type:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  timestamp:
+    dataType: int
+    nullable: NO
+    description: ''
+character_languages:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  lang_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  value:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_leadership_abilities:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  rank:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_material:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blue:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  green:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  use_tint:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  color:
+    dataType: int
+    nullable: NO
+    description: ''
+character_memmed_spells:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_pet_buffs:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  pet:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  caster_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  castername:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  ticsremaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  counters:
+    dataType: int
+    nullable: NO
+    description: ''
+  numhits:
+    dataType: int
+    nullable: NO
+    description: ''
+  rune:
+    dataType: int
+    nullable: NO
+    description: ''
+  instrument_mod:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+character_pet_info:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  pet:
+    dataType: int
+    nullable: NO
+    description: ''
+  petname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  petpower:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  size:
+    dataType: float
+    nullable: NO
+    description: ''
+character_pet_inventory:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  pet:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+character_potionbelt:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  potion_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+character_skills:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  skill_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  value:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_spells:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+character_tasks:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  acceptedtime:
+    dataType: int
+    nullable: YES
+    description: ''
+character_task_lockouts:
+  character_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  replay_group:
+    dataType: int
+    nullable: NO
+    description: ''
+  original_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  timestamp:
+    dataType: int
+    nullable: NO
+    description: ''
+character_tribute:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  tier:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  tribute:
+    dataType: int
+    nullable: NO
+    description: ''
+char_create_combinations:
+  allocation_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  race:
+    dataType: int
+    nullable: NO
+    description: ''
+  class:
+    dataType: int
+    nullable: NO
+    description: ''
+  deity:
+    dataType: int
+    nullable: NO
+    description: ''
+  start_zone:
+    dataType: int
+    nullable: NO
+    description: ''
+  expansions_req:
+    dataType: int
+    nullable: NO
+    description: ''
+char_create_point_allocations:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_str:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_sta:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_dex:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_agi:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_int:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_wis:
+    dataType: int
+    nullable: NO
+    description: ''
+  base_cha:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_str:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_sta:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_dex:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_agi:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_int:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_wis:
+    dataType: int
+    nullable: NO
+    description: ''
+  alloc_cha:
+    dataType: int
+    nullable: NO
+    description: ''
+char_recipe_list:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  recipe_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  madecount:
+    dataType: int
+    nullable: NO
+    description: ''
+chatchannels:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  owner:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  password:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  minstatus:
+    dataType: int
+    nullable: NO
+    description: ''
+class_skill:
+  class:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  skill_0:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_1:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_2:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_3:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_4:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_5:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_6:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_7:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_8:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_9:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_10:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_11:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_12:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_13:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_14:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_15:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_16:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_17:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_18:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_19:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_20:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_21:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_22:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_23:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_24:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_25:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_26:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_27:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_28:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_29:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_30:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_31:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_32:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_33:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_34:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_35:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_36:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_37:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_38:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_39:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_40:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_41:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_42:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_43:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_44:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_45:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_46:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_47:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_48:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_49:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_50:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_51:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_52:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_53:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_54:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_55:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_56:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_57:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_58:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_59:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_60:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_61:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_62:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_63:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_64:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_65:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_66:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_67:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_68:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_69:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_70:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_71:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_72:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  skill_73:
+    dataType: smallint
+    nullable: YES
+    description: ''
+command_settings:
+  command:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  access:
+    dataType: int
+    nullable: NO
+    description: ''
+  aliases:
+    dataType: varchar
+    nullable: NO
+    description: ''
+completed_tasks:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  completedtime:
+    dataType: int
+    nullable: NO
+    description: ''
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+  activityid:
+    dataType: int
+    nullable: NO
+    description: ''
+damageshieldtypes:
+  spellid:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+data_buckets:
+  id:
+    dataType: bigint
+    nullable: NO
+    description: ''
+  key:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  value:
+    dataType: text
+    nullable: YES
+    description: ''
+  expires:
+    dataType: int
+    nullable: YES
+    description: ''
+db_str:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  value:
+    dataType: text
+    nullable: NO
+    description: ''
+db_version:
+  version:
+    dataType: int
+    nullable: YES
+    description: ''
+discovered_items:
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  char_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  discovered_date:
+    dataType: int
+    nullable: NO
+    description: ''
+  account_status:
+    dataType: int
+    nullable: NO
+    description: ''
+doors:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  doorid:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  pos_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  pos_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  pos_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  opentype:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  guild:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  lockpick:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  keyitem:
+    dataType: int
+    nullable: NO
+    description: ''
+  nokeyring:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  triggerdoor:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  triggertype:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  disable_timer:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  doorisopen:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  door_param:
+    dataType: int
+    nullable: NO
+    description: ''
+  dest_zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  dest_instance:
+    dataType: int
+    nullable: NO
+    description: ''
+  dest_x:
+    dataType: float
+    nullable: YES
+    description: ''
+  dest_y:
+    dataType: float
+    nullable: YES
+    description: ''
+  dest_z:
+    dataType: float
+    nullable: YES
+    description: ''
+  dest_heading:
+    dataType: float
+    nullable: YES
+    description: ''
+  invert_state:
+    dataType: int
+    nullable: YES
+    description: ''
+  incline:
+    dataType: int
+    nullable: YES
+    description: ''
+  size:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  buffer:
+    dataType: float
+    nullable: YES
+    description: ''
+  client_version_mask:
+    dataType: int
+    nullable: NO
+    description: ''
+  is_ldon_door:
+    dataType: smallint
+    nullable: NO
+    description: ''
+eqtime:
+  minute:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  hour:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  day:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  month:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  year:
+    dataType: int
+    nullable: NO
+    description: ''
+  realtime:
+    dataType: int
+    nullable: NO
+    description: ''
+eventlog:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  accountname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  accountid:
+    dataType: int
+    nullable: YES
+    description: ''
+  status:
+    dataType: int
+    nullable: NO
+    description: ''
+  charname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  target:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+  descriptiontype:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  description:
+    dataType: text
+    nullable: NO
+    description: ''
+  event_nid:
+    dataType: int
+    nullable: NO
+    description: ''
+faction_base_data:
+  client_faction_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  min:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  max:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  unk_hero1:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  unk_hero2:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  unk_hero3:
+    dataType: smallint
+    nullable: YES
+    description: ''
+faction_list:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  base:
+    dataType: smallint
+    nullable: NO
+    description: ''
+faction_list_mod:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  faction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  mod:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  mod_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+faction_values:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  faction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  current_value:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  temp:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+fear_hints:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  forced:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  disjoint:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+fishing:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  Itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  skill_level:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  chance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  npc_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_chance:
+    dataType: int
+    nullable: NO
+    description: ''
+forage:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  Itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  level:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  chance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+friends:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+global_loot:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  description:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  loottable_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  enabled:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  min_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  max_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  rare:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  raid:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  race:
+    dataType: mediumtext
+    nullable: YES
+    description: ''
+  class:
+    dataType: mediumtext
+    nullable: YES
+    description: ''
+  bodytype:
+    dataType: mediumtext
+    nullable: YES
+    description: ''
+  zone:
+    dataType: mediumtext
+    nullable: YES
+    description: ''
+gm_ips:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  account_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  ip_address:
+    dataType: varchar
+    nullable: NO
+    description: ''
+goallists:
+  listid:
+    dataType: int
+    nullable: NO
+    description: ''
+  entry:
+    dataType: int
+    nullable: NO
+    description: ''
+graveyard:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+grid:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  type2:
+    dataType: int
+    nullable: NO
+    description: ''
+grid_entries:
+  gridid:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  number:
+    dataType: int
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  pause:
+    dataType: int
+    nullable: NO
+    description: ''
+ground_spawns:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  max_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  item:
+    dataType: int
+    nullable: NO
+    description: ''
+  max_allowed:
+    dataType: int
+    nullable: NO
+    description: ''
+  comment:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  respawn_timer:
+    dataType: int
+    nullable: NO
+    description: ''
+group_id:
+  groupid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  ismerc:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+group_leaders:
+  gid:
+    dataType: int
+    nullable: NO
+    description: ''
+  leadername:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  marknpc:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  leadershipaa:
+    dataType: tinyblob
+    nullable: YES
+    description: ''
+  maintank:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  assist:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  puller:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  mentoree:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  mentor_percent:
+    dataType: int
+    nullable: NO
+    description: ''
+guilds:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  leader:
+    dataType: int
+    nullable: NO
+    description: ''
+  minstatus:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  motd:
+    dataType: text
+    nullable: NO
+    description: ''
+  tribute:
+    dataType: int
+    nullable: NO
+    description: ''
+  motd_setter:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  channel:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  url:
+    dataType: varchar
+    nullable: NO
+    description: ''
+guild_bank:
+  guildid:
+    dataType: int
+    nullable: NO
+    description: ''
+  area:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  qty:
+    dataType: int
+    nullable: NO
+    description: ''
+  donator:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  permissions:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  whofor:
+    dataType: varchar
+    nullable: YES
+    description: ''
+guild_members:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  guild_id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  rank:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  tribute_enable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  total_tribute:
+    dataType: int
+    nullable: NO
+    description: ''
+  last_tribute:
+    dataType: int
+    nullable: NO
+    description: ''
+  banker:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  public_note:
+    dataType: text
+    nullable: NO
+    description: ''
+  alt:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+guild_ranks:
+  guild_id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  rank:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  title:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  can_hear:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_speak:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_invite:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_remove:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_promote:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_demote:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_motd:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  can_warpeace:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+guild_relations:
+  guild1:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  guild2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  relation:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+hackers:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  account:
+    dataType: text
+    nullable: NO
+    description: ''
+  name:
+    dataType: text
+    nullable: NO
+    description: ''
+  hacked:
+    dataType: text
+    nullable: NO
+    description: ''
+  zone:
+    dataType: text
+    nullable: YES
+    description: ''
+  date:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+horses:
+  filename:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  race:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  gender:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  texture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  mountspeed:
+    dataType: float
+    nullable: NO
+    description: ''
+  notes:
+    dataType: varchar
+    nullable: YES
+    description: ''
+instance_list:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: int
+    nullable: NO
+    description: ''
+  version:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  is_global:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  start_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  never_expires:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+instance_list_player:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+inventory:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  slotid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  color:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot1:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot3:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot4:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot5:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot6:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  instnodrop:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  custom_data:
+    dataType: text
+    nullable: YES
+    description: ''
+  ornamenticon:
+    dataType: int
+    nullable: NO
+    description: ''
+  ornamentidfile:
+    dataType: int
+    nullable: NO
+    description: ''
+  ornament_hero_model:
+    dataType: int
+    nullable: NO
+    description: ''
+inventory_snapshots:
+  time_index:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  slotid:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  color:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot1:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot3:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot4:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot5:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot6:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  instnodrop:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  custom_data:
+    dataType: text
+    nullable: YES
+    description: ''
+  ornamenticon:
+    dataType: int
+    nullable: NO
+    description: ''
+  ornamentidfile:
+    dataType: int
+    nullable: NO
+    description: ''
+  ornament_hero_model:
+    dataType: int
+    nullable: NO
+    description: ''
+inventory_versions:
+  version:
+    dataType: int
+    nullable: NO
+    description: ''
+  step:
+    dataType: int
+    nullable: NO
+    description: ''
+  bot_step:
+    dataType: int
+    nullable: NO
+    description: ''
+ip_exemptions:
+  exemption_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  exemption_ip:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  exemption_amount:
+    dataType: int
+    nullable: YES
+    description: ''
+items:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  minstatus:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  Name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  aagi:
+    dataType: int
+    nullable: NO
+    description: ''
+  ac:
+    dataType: int
+    nullable: NO
+    description: ''
+  accuracy:
+    dataType: int
+    nullable: NO
+    description: ''
+  acha:
+    dataType: int
+    nullable: NO
+    description: ''
+  adex:
+    dataType: int
+    nullable: NO
+    description: ''
+  aint:
+    dataType: int
+    nullable: NO
+    description: ''
+  artifactflag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  asta:
+    dataType: int
+    nullable: NO
+    description: ''
+  astr:
+    dataType: int
+    nullable: NO
+    description: ''
+  attack:
+    dataType: int
+    nullable: NO
+    description: ''
+  augrestrict:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot1type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot1visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot2type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot2visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot3type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot3visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot4type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot4visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot5type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot5visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot6type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augslot6visible:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  augtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  avoidance:
+    dataType: int
+    nullable: NO
+    description: ''
+  awis:
+    dataType: int
+    nullable: NO
+    description: ''
+  bagsize:
+    dataType: int
+    nullable: NO
+    description: ''
+  bagslots:
+    dataType: int
+    nullable: NO
+    description: ''
+  bagtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  bagwr:
+    dataType: int
+    nullable: NO
+    description: ''
+  banedmgamt:
+    dataType: int
+    nullable: NO
+    description: ''
+  banedmgraceamt:
+    dataType: int
+    nullable: NO
+    description: ''
+  banedmgbody:
+    dataType: int
+    nullable: NO
+    description: ''
+  banedmgrace:
+    dataType: int
+    nullable: NO
+    description: ''
+  bardtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  bardvalue:
+    dataType: int
+    nullable: NO
+    description: ''
+  book:
+    dataType: int
+    nullable: NO
+    description: ''
+  casttime:
+    dataType: int
+    nullable: NO
+    description: ''
+  casttime_:
+    dataType: int
+    nullable: NO
+    description: ''
+  charmfile:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  charmfileid:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  classes:
+    dataType: int
+    nullable: NO
+    description: ''
+  color:
+    dataType: int
+    nullable: NO
+    description: ''
+  combateffects:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  extradmgskill:
+    dataType: int
+    nullable: NO
+    description: ''
+  extradmgamt:
+    dataType: int
+    nullable: NO
+    description: ''
+  price:
+    dataType: int
+    nullable: NO
+    description: ''
+  cr:
+    dataType: int
+    nullable: NO
+    description: ''
+  damage:
+    dataType: int
+    nullable: NO
+    description: ''
+  damageshield:
+    dataType: int
+    nullable: NO
+    description: ''
+  deity:
+    dataType: int
+    nullable: NO
+    description: ''
+  delay:
+    dataType: int
+    nullable: NO
+    description: ''
+  augdistiller:
+    dataType: int
+    nullable: NO
+    description: ''
+  dotshielding:
+    dataType: int
+    nullable: NO
+    description: ''
+  dr:
+    dataType: int
+    nullable: NO
+    description: ''
+  clicktype:
+    dataType: int
+    nullable: NO
+    description: ''
+  clicklevel2:
+    dataType: int
+    nullable: NO
+    description: ''
+  elemdmgtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  elemdmgamt:
+    dataType: int
+    nullable: NO
+    description: ''
+  endur:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionamt1:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionamt2:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionamt3:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionamt4:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionmod1:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionmod2:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionmod3:
+    dataType: int
+    nullable: NO
+    description: ''
+  factionmod4:
+    dataType: int
+    nullable: NO
+    description: ''
+  filename:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  focuseffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  fr:
+    dataType: int
+    nullable: NO
+    description: ''
+  fvnodrop:
+    dataType: int
+    nullable: NO
+    description: ''
+  haste:
+    dataType: int
+    nullable: NO
+    description: ''
+  clicklevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  regen:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  idfile:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  itemclass:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldonprice:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldontheme:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldonsold:
+    dataType: int
+    nullable: NO
+    description: ''
+  light:
+    dataType: int
+    nullable: NO
+    description: ''
+  lore:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  loregroup:
+    dataType: int
+    nullable: NO
+    description: ''
+  magic:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  manaregen:
+    dataType: int
+    nullable: NO
+    description: ''
+  enduranceregen:
+    dataType: int
+    nullable: NO
+    description: ''
+  material:
+    dataType: int
+    nullable: NO
+    description: ''
+  herosforgemodel:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxcharges:
+    dataType: int
+    nullable: NO
+    description: ''
+  mr:
+    dataType: int
+    nullable: NO
+    description: ''
+  nodrop:
+    dataType: int
+    nullable: NO
+    description: ''
+  norent:
+    dataType: int
+    nullable: NO
+    description: ''
+  pendingloreflag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  pr:
+    dataType: int
+    nullable: NO
+    description: ''
+  procrate:
+    dataType: int
+    nullable: NO
+    description: ''
+  races:
+    dataType: int
+    nullable: NO
+    description: ''
+  range:
+    dataType: int
+    nullable: NO
+    description: ''
+  reclevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  recskill:
+    dataType: int
+    nullable: NO
+    description: ''
+  reqlevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  sellrate:
+    dataType: float
+    nullable: NO
+    description: ''
+  shielding:
+    dataType: int
+    nullable: NO
+    description: ''
+  size:
+    dataType: int
+    nullable: NO
+    description: ''
+  skillmodtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  skillmodvalue:
+    dataType: int
+    nullable: NO
+    description: ''
+  slots:
+    dataType: int
+    nullable: NO
+    description: ''
+  clickeffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellshield:
+    dataType: int
+    nullable: NO
+    description: ''
+  strikethrough:
+    dataType: int
+    nullable: NO
+    description: ''
+  stunresist:
+    dataType: int
+    nullable: NO
+    description: ''
+  summonedflag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  tradeskills:
+    dataType: int
+    nullable: NO
+    description: ''
+  favor:
+    dataType: int
+    nullable: NO
+    description: ''
+  weight:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK012:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK013:
+    dataType: int
+    nullable: NO
+    description: ''
+  benefitflag:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK054:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK059:
+    dataType: int
+    nullable: NO
+    description: ''
+  booktype:
+    dataType: int
+    nullable: NO
+    description: ''
+  recastdelay:
+    dataType: int
+    nullable: NO
+    description: ''
+  recasttype:
+    dataType: int
+    nullable: NO
+    description: ''
+  guildfavor:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK123:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK124:
+    dataType: int
+    nullable: NO
+    description: ''
+  attuneable:
+    dataType: int
+    nullable: NO
+    description: ''
+  nopet:
+    dataType: int
+    nullable: NO
+    description: ''
+  updated:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  comment:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  UNK127:
+    dataType: int
+    nullable: NO
+    description: ''
+  pointtype:
+    dataType: int
+    nullable: NO
+    description: ''
+  potionbelt:
+    dataType: int
+    nullable: NO
+    description: ''
+  potionbeltslots:
+    dataType: int
+    nullable: NO
+    description: ''
+  stacksize:
+    dataType: int
+    nullable: NO
+    description: ''
+  notransfer:
+    dataType: int
+    nullable: NO
+    description: ''
+  stackable:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK134:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  UNK137:
+    dataType: int
+    nullable: NO
+    description: ''
+  proceffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  proctype:
+    dataType: int
+    nullable: NO
+    description: ''
+  proclevel2:
+    dataType: int
+    nullable: NO
+    description: ''
+  proclevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK142:
+    dataType: int
+    nullable: NO
+    description: ''
+  worneffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  worntype:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornlevel2:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornlevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK147:
+    dataType: int
+    nullable: NO
+    description: ''
+  focustype:
+    dataType: int
+    nullable: NO
+    description: ''
+  focuslevel2:
+    dataType: int
+    nullable: NO
+    description: ''
+  focuslevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK152:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrolleffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrolltype:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrolllevel2:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrolllevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK157:
+    dataType: int
+    nullable: NO
+    description: ''
+  serialized:
+    dataType: datetime
+    nullable: YES
+    description: ''
+  verified:
+    dataType: datetime
+    nullable: YES
+    description: ''
+  serialization:
+    dataType: text
+    nullable: YES
+    description: ''
+  source:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  UNK033:
+    dataType: int
+    nullable: NO
+    description: ''
+  lorefile:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  UNK014:
+    dataType: int
+    nullable: NO
+    description: ''
+  svcorruption:
+    dataType: int
+    nullable: NO
+    description: ''
+  skillmodmax:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK060:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot1unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot2unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot3unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot4unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot5unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  augslot6unk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK120:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK121:
+    dataType: int
+    nullable: NO
+    description: ''
+  questitemflag:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK132:
+    dataType: text
+    nullable: YES
+    description: ''
+  clickunk5:
+    dataType: int
+    nullable: NO
+    description: ''
+  clickunk6:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  clickunk7:
+    dataType: int
+    nullable: NO
+    description: ''
+  procunk1:
+    dataType: int
+    nullable: NO
+    description: ''
+  procunk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  procunk3:
+    dataType: int
+    nullable: NO
+    description: ''
+  procunk4:
+    dataType: int
+    nullable: NO
+    description: ''
+  procunk6:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  procunk7:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk1:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk3:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk4:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk5:
+    dataType: int
+    nullable: NO
+    description: ''
+  wornunk6:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  wornunk7:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk1:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk3:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk4:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk5:
+    dataType: int
+    nullable: NO
+    description: ''
+  focusunk6:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  focusunk7:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk1:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk2:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk3:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk4:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk5:
+    dataType: int
+    nullable: NO
+    description: ''
+  scrollunk6:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  scrollunk7:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK193:
+    dataType: int
+    nullable: NO
+    description: ''
+  purity:
+    dataType: int
+    nullable: NO
+    description: ''
+  evoitem:
+    dataType: int
+    nullable: NO
+    description: ''
+  evoid:
+    dataType: int
+    nullable: NO
+    description: ''
+  evolvinglevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  evomax:
+    dataType: int
+    nullable: NO
+    description: ''
+  clickname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  procname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  wornname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  focusname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  scrollname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  dsmitigation:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_str:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_int:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_wis:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_agi:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_dex:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_sta:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_cha:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_pr:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_dr:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_fr:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_cr:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_mr:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  heroic_svcorrup:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  healamt:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  spelldmg:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  clairvoyance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  backstabdmg:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  created:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  elitematerial:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  ldonsellbackrate:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  scriptfileid:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  expendablearrow:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  powersourcecapacity:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardeffect:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardeffecttype:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardlevel2:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardlevel:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardunk1:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardunk2:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardunk3:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardunk4:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardunk5:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  bardname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  bardunk7:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  UNK214:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  UNK219:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK220:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK221:
+    dataType: int
+    nullable: NO
+    description: ''
+  heirloom:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK223:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK224:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK225:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK226:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK227:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK228:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK229:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK230:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK231:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK232:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK233:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK234:
+    dataType: int
+    nullable: NO
+    description: ''
+  placeable:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK236:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK237:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK238:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK239:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK240:
+    dataType: int
+    nullable: NO
+    description: ''
+  UNK241:
+    dataType: int
+    nullable: NO
+    description: ''
+  epicitem:
+    dataType: int
+    nullable: NO
+    description: ''
+item_tick:
+  it_itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  it_chance:
+    dataType: int
+    nullable: NO
+    description: ''
+  it_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  it_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  it_qglobal:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  it_bagslot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+keyring:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+launcher:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  dynamics:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+launcher_zones:
+  launcher:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  port:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+ldon_trap_entries:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  trap_id:
+    dataType: int
+    nullable: NO
+    description: ''
+ldon_trap_templates:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  skill:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  locked:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+level_exp_mods:
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  exp_mod:
+    dataType: float
+    nullable: YES
+    description: ''
+  aa_exp_mod:
+    dataType: float
+    nullable: YES
+    description: ''
+lfguild:
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  comment:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  fromlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  tolevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  classes:
+    dataType: int
+    nullable: NO
+    description: ''
+  aacount:
+    dataType: int
+    nullable: NO
+    description: ''
+  timezone:
+    dataType: int
+    nullable: NO
+    description: ''
+  timeposted:
+    dataType: int
+    nullable: NO
+    description: ''
+login_accounts:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  account_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  account_password:
+    dataType: text
+    nullable: NO
+    description: ''
+  account_email:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  source_loginserver:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  last_ip_address:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  last_login_date:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  created_at:
+    dataType: datetime
+    nullable: YES
+    description: ''
+  updated_at:
+    dataType: datetime
+    nullable: YES
+    description: ''
+login_api_tokens:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  token:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  can_write:
+    dataType: int
+    nullable: YES
+    description: ''
+  can_read:
+    dataType: int
+    nullable: YES
+    description: ''
+  created_at:
+    dataType: datetime
+    nullable: YES
+    description: ''
+  updated_at:
+    dataType: datetime
+    nullable: YES
+    description: ''
+login_server_admins:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  account_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  account_password:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  first_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  last_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  email:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  registration_date:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  registration_ip_address:
+    dataType: varchar
+    nullable: NO
+    description: ''
+login_server_list_types:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  description:
+    dataType: varchar
+    nullable: NO
+    description: ''
+login_world_servers:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  long_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  short_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  tag_description:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  login_server_list_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  last_login_date:
+    dataType: datetime
+    nullable: YES
+    description: ''
+  last_ip_address:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  login_server_admin_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  is_server_trusted:
+    dataType: int
+    nullable: NO
+    description: ''
+  note:
+    dataType: varchar
+    nullable: YES
+    description: ''
+logsys_categories:
+  log_category_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  log_category_description:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  log_to_console:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  log_to_file:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  log_to_gmsay:
+    dataType: smallint
+    nullable: YES
+    description: ''
+lootdrop:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+lootdrop_entries:
+  lootdrop_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_charges:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  equip_item:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  chance:
+    dataType: float
+    nullable: NO
+    description: ''
+  disabled_chance:
+    dataType: float
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  multiplier:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+loottable:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  mincash:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxcash:
+    dataType: int
+    nullable: NO
+    description: ''
+  avgcoin:
+    dataType: int
+    nullable: NO
+    description: ''
+  done:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+loottable_entries:
+  loottable_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  lootdrop_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  multiplier:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  droplimit:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  mindrop:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  probability:
+    dataType: float
+    nullable: NO
+    description: ''
+mail:
+  msgid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  timestamp:
+    dataType: int
+    nullable: NO
+    description: ''
+  from:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  subject:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  body:
+    dataType: text
+    nullable: NO
+    description: ''
+  to:
+    dataType: text
+    nullable: NO
+    description: ''
+  status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+merchantlist:
+  merchantid:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  item:
+    dataType: int
+    nullable: NO
+    description: ''
+  faction_required:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  level_required:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  alt_currency_cost:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  classes_required:
+    dataType: int
+    nullable: NO
+    description: ''
+  probability:
+    dataType: int
+    nullable: NO
+    description: ''
+merchantlist_temp:
+  npcid:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: int
+    nullable: NO
+    description: ''
+mercs:
+  MercID:
+    dataType: int
+    nullable: NO
+    description: ''
+  OwnerCharacterID:
+    dataType: int
+    nullable: NO
+    description: ''
+  Slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  Name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  TemplateID:
+    dataType: int
+    nullable: NO
+    description: ''
+  SuspendedTime:
+    dataType: int
+    nullable: NO
+    description: ''
+  IsSuspended:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  TimerRemaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  Gender:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  MercSize:
+    dataType: float
+    nullable: NO
+    description: ''
+  StanceID:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  HP:
+    dataType: int
+    nullable: NO
+    description: ''
+  Mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  Endurance:
+    dataType: int
+    nullable: NO
+    description: ''
+  Face:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinHairStyle:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinHairColor:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinEyeColor:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinEyeColor2:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinBeardColor:
+    dataType: int
+    nullable: NO
+    description: ''
+  LuclinBeard:
+    dataType: int
+    nullable: NO
+    description: ''
+  DrakkinHeritage:
+    dataType: int
+    nullable: NO
+    description: ''
+  DrakkinTattoo:
+    dataType: int
+    nullable: NO
+    description: ''
+  DrakkinDetails:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_armorinfo:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_npc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  texture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  helmtexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armortint_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  armortint_red:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armortint_green:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armortint_blue:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+merc_buffs:
+  MercBuffId:
+    dataType: int
+    nullable: NO
+    description: ''
+  MercId:
+    dataType: int
+    nullable: NO
+    description: ''
+  SpellId:
+    dataType: int
+    nullable: NO
+    description: ''
+  CasterLevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  DurationFormula:
+    dataType: int
+    nullable: NO
+    description: ''
+  TicsRemaining:
+    dataType: int
+    nullable: NO
+    description: ''
+  PoisonCounters:
+    dataType: int
+    nullable: NO
+    description: ''
+  DiseaseCounters:
+    dataType: int
+    nullable: NO
+    description: ''
+  CurseCounters:
+    dataType: int
+    nullable: NO
+    description: ''
+  CorruptionCounters:
+    dataType: int
+    nullable: NO
+    description: ''
+  HitCount:
+    dataType: int
+    nullable: NO
+    description: ''
+  MeleeRune:
+    dataType: int
+    nullable: NO
+    description: ''
+  MagicRune:
+    dataType: int
+    nullable: NO
+    description: ''
+  dot_rune:
+    dataType: int
+    nullable: NO
+    description: ''
+  caston_x:
+    dataType: int
+    nullable: NO
+    description: ''
+  Persistent:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  caston_y:
+    dataType: int
+    nullable: NO
+    description: ''
+  caston_z:
+    dataType: int
+    nullable: NO
+    description: ''
+  ExtraDIChance:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_inventory:
+  merc_inventory_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_subtype_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  min_level:
+    dataType: int
+    nullable: NO
+    description: ''
+  max_level:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_merchant_entries:
+  merc_merchant_entry_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_merchant_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merchant_id:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_merchant_templates:
+  merc_merchant_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  qglobal:
+    dataType: varchar
+    nullable: YES
+    description: ''
+merc_merchant_template_entries:
+  merc_merchant_template_entry_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_merchant_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_name_types:
+  name_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  class_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  prefix:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  suffix:
+    dataType: varchar
+    nullable: NO
+    description: ''
+merc_npc_types:
+  merc_npc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  proficiency_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  tier_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  class_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+merc_spell_lists:
+  merc_spell_list_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  class_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  proficiency_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+merc_spell_list_entries:
+  merc_spell_list_entry_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_spell_list_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  stance_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  procChance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+merc_stance_entries:
+  merc_stance_entry_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  class_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  proficiency_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  stance_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isdefault:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+merc_stats:
+  merc_npc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  clientlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  AC:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  ATK:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  STR:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  STA:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  DEX:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  AGI:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  _INT:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  WIS:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  CHA:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  MR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  CR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  DR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  FR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  PR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  Corrup:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  mindmg:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxdmg:
+    dataType: int
+    nullable: NO
+    description: ''
+  attack_count:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  attack_speed:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  attack_delay:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  special_abilities:
+    dataType: text
+    nullable: YES
+    description: ''
+  Accuracy:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  hp_regen_rate:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana_regen_rate:
+    dataType: int
+    nullable: NO
+    description: ''
+  runspeed:
+    dataType: float
+    nullable: NO
+    description: ''
+  statscale:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellscale:
+    dataType: float
+    nullable: NO
+    description: ''
+  healscale:
+    dataType: float
+    nullable: NO
+    description: ''
+merc_subtypes:
+  merc_subtype_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  class_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  tier_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  confidence_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+merc_templates:
+  merc_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_subtype_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_npc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  dbstring:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  name_type_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  clientversion:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_types:
+  merc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  race_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  proficiency_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  dbstring:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  clientversion:
+    dataType: int
+    nullable: NO
+    description: ''
+merc_weaponinfo:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merc_npc_type_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  d_melee_texture1:
+    dataType: int
+    nullable: NO
+    description: ''
+  d_melee_texture2:
+    dataType: int
+    nullable: NO
+    description: ''
+  prim_melee_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sec_melee_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+name_filter:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+npc_emotes:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  emoteid:
+    dataType: int
+    nullable: NO
+    description: ''
+  event_:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  text:
+    dataType: varchar
+    nullable: NO
+    description: ''
+npc_faction:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: tinytext
+    nullable: YES
+    description: ''
+  primaryfaction:
+    dataType: int
+    nullable: NO
+    description: ''
+  ignore_primary_assist:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+npc_faction_entries:
+  npc_faction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  faction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  value:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_value:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  temp:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+npc_scale_global_base:
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  ac:
+    dataType: int
+    nullable: YES
+    description: ''
+  hp:
+    dataType: int
+    nullable: YES
+    description: ''
+  accuracy:
+    dataType: int
+    nullable: YES
+    description: ''
+  slow_mitigation:
+    dataType: int
+    nullable: YES
+    description: ''
+  attack:
+    dataType: int
+    nullable: YES
+    description: ''
+  strength:
+    dataType: int
+    nullable: YES
+    description: ''
+  stamina:
+    dataType: int
+    nullable: YES
+    description: ''
+  dexterity:
+    dataType: int
+    nullable: YES
+    description: ''
+  agility:
+    dataType: int
+    nullable: YES
+    description: ''
+  intelligence:
+    dataType: int
+    nullable: YES
+    description: ''
+  wisdom:
+    dataType: int
+    nullable: YES
+    description: ''
+  charisma:
+    dataType: int
+    nullable: YES
+    description: ''
+  magic_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  cold_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  fire_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  poison_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  disease_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  corruption_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  physical_resist:
+    dataType: int
+    nullable: YES
+    description: ''
+  min_dmg:
+    dataType: int
+    nullable: YES
+    description: ''
+  max_dmg:
+    dataType: int
+    nullable: YES
+    description: ''
+  hp_regen_rate:
+    dataType: int
+    nullable: YES
+    description: ''
+  attack_delay:
+    dataType: int
+    nullable: YES
+    description: ''
+  spell_scale:
+    dataType: int
+    nullable: YES
+    description: ''
+  heal_scale:
+    dataType: int
+    nullable: YES
+    description: ''
+  special_abilities:
+    dataType: text
+    nullable: YES
+    description: ''
+npc_spells:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: tinytext
+    nullable: YES
+    description: ''
+  parent_list:
+    dataType: int
+    nullable: NO
+    description: ''
+  attack_proc:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  proc_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  range_proc:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  rproc_chance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  defensive_proc:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  dproc_chance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  fail_recast:
+    dataType: int
+    nullable: NO
+    description: ''
+  engaged_no_sp_recast_min:
+    dataType: int
+    nullable: NO
+    description: ''
+  engaged_no_sp_recast_max:
+    dataType: int
+    nullable: NO
+    description: ''
+  engaged_b_self_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  engaged_b_other_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  engaged_d_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  pursue_no_sp_recast_min:
+    dataType: int
+    nullable: NO
+    description: ''
+  pursue_no_sp_recast_max:
+    dataType: int
+    nullable: NO
+    description: ''
+  pursue_d_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  idle_no_sp_recast_min:
+    dataType: int
+    nullable: NO
+    description: ''
+  idle_no_sp_recast_max:
+    dataType: int
+    nullable: NO
+    description: ''
+  idle_b_chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+npc_spells_effects:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: tinytext
+    nullable: YES
+    description: ''
+  parent_list:
+    dataType: int
+    nullable: NO
+    description: ''
+npc_spells_effects_entries:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_spells_effects_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_effect_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  se_base:
+    dataType: int
+    nullable: NO
+    description: ''
+  se_limit:
+    dataType: int
+    nullable: NO
+    description: ''
+  se_max:
+    dataType: int
+    nullable: NO
+    description: ''
+npc_spells_entries:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_spells_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellid:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  manacost:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  recast_delay:
+    dataType: int
+    nullable: NO
+    description: ''
+  priority:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  resist_adjust:
+    dataType: int
+    nullable: YES
+    description: ''
+  min_hp:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  max_hp:
+    dataType: smallint
+    nullable: YES
+    description: ''
+npc_types:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: text
+    nullable: NO
+    description: ''
+  lastname:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  race:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  class:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  bodytype:
+    dataType: int
+    nullable: NO
+    description: ''
+  hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  gender:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  texture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  helmtexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  herosforgemodel:
+    dataType: int
+    nullable: NO
+    description: ''
+  size:
+    dataType: float
+    nullable: NO
+    description: ''
+  hp_regen_rate:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana_regen_rate:
+    dataType: int
+    nullable: NO
+    description: ''
+  loottable_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  merchant_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  alt_currency_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_spells_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_spells_effects_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_faction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  adventure_template_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  trap_template:
+    dataType: int
+    nullable: YES
+    description: ''
+  mindmg:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxdmg:
+    dataType: int
+    nullable: NO
+    description: ''
+  attack_count:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  npcspecialattks:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  special_abilities:
+    dataType: text
+    nullable: YES
+    description: ''
+  aggroradius:
+    dataType: int
+    nullable: NO
+    description: ''
+  assistradius:
+    dataType: int
+    nullable: NO
+    description: ''
+  face:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_hairstyle:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_haircolor:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_eyecolor:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_eyecolor2:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_beardcolor:
+    dataType: int
+    nullable: NO
+    description: ''
+  luclin_beard:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_heritage:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_tattoo:
+    dataType: int
+    nullable: NO
+    description: ''
+  drakkin_details:
+    dataType: int
+    nullable: NO
+    description: ''
+  armortint_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  armortint_red:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armortint_green:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armortint_blue:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  d_melee_texture1:
+    dataType: int
+    nullable: NO
+    description: ''
+  d_melee_texture2:
+    dataType: int
+    nullable: NO
+    description: ''
+  ammo_idfile:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  prim_melee_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sec_melee_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ranged_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  runspeed:
+    dataType: float
+    nullable: NO
+    description: ''
+  MR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  CR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  DR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  FR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  PR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  Corrup:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  PhR:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  see_invis:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  see_invis_undead:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  qglobal:
+    dataType: int
+    nullable: NO
+    description: ''
+  AC:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  npc_aggro:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  spawn_limit:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  attack_speed:
+    dataType: float
+    nullable: NO
+    description: ''
+  attack_delay:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  findable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  STR:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  STA:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  DEX:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  AGI:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  _INT:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  WIS:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  CHA:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  see_hide:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  see_improved_hide:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  trackable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isbot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  exclude:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ATK:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  Accuracy:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  Avoidance:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  slow_mitigation:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  scalerate:
+    dataType: int
+    nullable: NO
+    description: ''
+  private_corpse:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  unique_spawn_by_name:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  underwater:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isquest:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  emoteid:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellscale:
+    dataType: float
+    nullable: NO
+    description: ''
+  healscale:
+    dataType: float
+    nullable: NO
+    description: ''
+  no_target_hotkey:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  raid_target:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  armtexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  bracertexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  handtexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  legtexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  feettexture:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  light:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  walkspeed:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  peqid:
+    dataType: int
+    nullable: NO
+    description: ''
+  unique_:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fixed:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ignore_despawn:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  show_name:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  untargetable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  charm_ac:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  charm_min_dmg:
+    dataType: int
+    nullable: YES
+    description: ''
+  charm_max_dmg:
+    dataType: int
+    nullable: YES
+    description: ''
+  charm_attack_delay:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  charm_accuracy_rating:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  charm_avoidance_rating:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  charm_atk:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  skip_global_loot:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  rare_spawn:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  stuck_behavior:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  model:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  flymode:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+npc_types_metadata:
+  npc_types_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  isPKMob:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isNamedMob:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isRaidTarget:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isCreatedMob:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  isCustomFeatureNPC:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+npc_types_tint:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  tint_set_name:
+    dataType: text
+    nullable: NO
+    description: ''
+  red1h:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn1h:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu1h:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red2c:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn2c:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu2c:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red3a:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn3a:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu3a:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red4b:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn4b:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu4b:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red5g:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn5g:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu5g:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red6l:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn6l:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu6l:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red7f:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn7f:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu7f:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red8x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn8x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu8x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  red9x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  grn9x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  blu9x:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+object:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  xpos:
+    dataType: float
+    nullable: NO
+    description: ''
+  ypos:
+    dataType: float
+    nullable: NO
+    description: ''
+  zpos:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  objectname:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown08:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  unknown10:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  unknown20:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown24:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown60:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown64:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown68:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown72:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown76:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown84:
+    dataType: int
+    nullable: NO
+    description: ''
+  size:
+    dataType: float
+    nullable: NO
+    description: ''
+  tilt_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  tilt_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  display_name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+object_contents:
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  parentid:
+    dataType: int
+    nullable: NO
+    description: ''
+  bagidx:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  droptime:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  augslot1:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot2:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot3:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot4:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot5:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  augslot6:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+perl_event_export_settings:
+  event_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  event_description:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  export_qglobals:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  export_mob:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  export_zone:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  export_item:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  export_event:
+    dataType: smallint
+    nullable: YES
+    description: ''
+petitions:
+  dib:
+    dataType: int
+    nullable: NO
+    description: ''
+  petid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  accountname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  lastgm:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  petitiontext:
+    dataType: text
+    nullable: NO
+    description: ''
+  gmtext:
+    dataType: text
+    nullable: YES
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  urgency:
+    dataType: int
+    nullable: NO
+    description: ''
+  charclass:
+    dataType: int
+    nullable: NO
+    description: ''
+  charrace:
+    dataType: int
+    nullable: NO
+    description: ''
+  charlevel:
+    dataType: int
+    nullable: NO
+    description: ''
+  checkouts:
+    dataType: int
+    nullable: NO
+    description: ''
+  unavailables:
+    dataType: int
+    nullable: NO
+    description: ''
+  ischeckedout:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  senttime:
+    dataType: bigint
+    nullable: NO
+    description: ''
+pets:
+  type:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  petpower:
+    dataType: int
+    nullable: NO
+    description: ''
+  npcID:
+    dataType: int
+    nullable: NO
+    description: ''
+  temp:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  petcontrol:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  petnaming:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  monsterflag:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  equipmentset:
+    dataType: int
+    nullable: NO
+    description: ''
+pets_equipmentset:
+  set_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  setname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  nested_set:
+    dataType: int
+    nullable: NO
+    description: ''
+pets_equipmentset_entries:
+  set_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+player_titlesets:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  title_set:
+    dataType: int
+    nullable: NO
+    description: ''
+profanity_list:
+  word:
+    dataType: varchar
+    nullable: NO
+    description: ''
+proximities:
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  exploreid:
+    dataType: int
+    nullable: NO
+    description: ''
+  minx:
+    dataType: float
+    nullable: NO
+    description: ''
+  maxx:
+    dataType: float
+    nullable: NO
+    description: ''
+  miny:
+    dataType: float
+    nullable: NO
+    description: ''
+  maxy:
+    dataType: float
+    nullable: NO
+    description: ''
+  minz:
+    dataType: float
+    nullable: NO
+    description: ''
+  maxz:
+    dataType: float
+    nullable: NO
+    description: ''
+qs_merchant_transaction_record:
+  transaction_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+  zone_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  merchant_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+qs_merchant_transaction_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_aa_rate_hourly:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  hour_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  aa_count:
+    dataType: varchar
+    nullable: YES
+    description: ''
+qs_player_delete_record:
+  delete_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  stack_size:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  char_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+qs_player_delete_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_events:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  event:
+    dataType: int
+    nullable: YES
+    description: ''
+  event_desc:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  time:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_handin_record:
+  handin_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+  quest_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  npc_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  npc_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  npc_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  npc_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  npc_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  npc_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+qs_player_handin_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  action_type:
+    dataType: char
+    nullable: YES
+    description: ''
+  char_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_move_record:
+  move_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  from_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  to_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  stack_size:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  char_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  postaction:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+qs_player_move_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  from_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  to_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_npc_kill_record:
+  fight_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  type:
+    dataType: int
+    nullable: YES
+    description: ''
+  zone_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+qs_player_npc_kill_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char_id:
+    dataType: int
+    nullable: YES
+    description: ''
+qs_player_speech:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  from:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  to:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  message:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  minstatus:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  guilddbid:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  timerecorded:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+qs_player_trade_record:
+  trade_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  time:
+    dataType: timestamp
+    nullable: YES
+    description: ''
+  char1_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char1_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char1_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char1_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char1_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char1_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  char2_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  char2_pp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char2_gp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char2_sp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char2_cp:
+    dataType: int
+    nullable: YES
+    description: ''
+  char2_items:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+qs_player_trade_record_entries:
+  event_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  from_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  from_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  to_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  to_slot:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  item_id:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  aug_1:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_2:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_3:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_4:
+    dataType: int
+    nullable: YES
+    description: ''
+  aug_5:
+    dataType: int
+    nullable: YES
+    description: ''
+quest_globals:
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  npcid:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  value:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  expdate:
+    dataType: int
+    nullable: YES
+    description: ''
+races:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  no_coin:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+raid_details:
+  raidid:
+    dataType: int
+    nullable: NO
+    description: ''
+  loottype:
+    dataType: int
+    nullable: NO
+    description: ''
+  locked:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  motd:
+    dataType: varchar
+    nullable: YES
+    description: ''
+raid_leaders:
+  gid:
+    dataType: int
+    nullable: NO
+    description: ''
+  rid:
+    dataType: int
+    nullable: NO
+    description: ''
+  marknpc:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  maintank:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  assist:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  puller:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  leadershipaa:
+    dataType: tinyblob
+    nullable: NO
+    description: ''
+  mentoree:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  mentor_percent:
+    dataType: int
+    nullable: NO
+    description: ''
+raid_members:
+  raidid:
+    dataType: int
+    nullable: NO
+    description: ''
+  charid:
+    dataType: int
+    nullable: NO
+    description: ''
+  groupid:
+    dataType: int
+    nullable: NO
+    description: ''
+  _class:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  isgroupleader:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  israidleader:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  islooter:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+reports:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  reported:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  reported_text:
+    dataType: text
+    nullable: YES
+    description: ''
+respawn_times:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  start:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  instance_id:
+    dataType: smallint
+    nullable: NO
+    description: ''
+rule_sets:
+  ruleset_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+rule_values:
+  ruleset_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  rule_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  rule_value:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  notes:
+    dataType: text
+    nullable: YES
+    description: ''
+saylink:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  phrase:
+    dataType: varchar
+    nullable: NO
+    description: ''
+sharedbank:
+  acctid:
+    dataType: int
+    nullable: YES
+    description: ''
+  slotid:
+    dataType: mediumint
+    nullable: YES
+    description: ''
+  itemid:
+    dataType: int
+    nullable: YES
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  augslot1:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot2:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot3:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot4:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot5:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  augslot6:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  custom_data:
+    dataType: text
+    nullable: YES
+    description: ''
+shared_task_activities:
+  shared_task_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  activity_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  done_count:
+    dataType: int
+    nullable: NO
+    description: ''
+  completed:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+shared_task_members:
+  shared_task_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  character_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  character_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  is_leader:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+shared_task_state:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  task_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  accepted_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  is_locked:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  is_completed:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+skill_caps:
+  skillID:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  class:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  cap:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  class_:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+spawn2:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  spawngroupID:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  respawntime:
+    dataType: int
+    nullable: NO
+    description: ''
+  variance:
+    dataType: int
+    nullable: NO
+    description: ''
+  pathgrid:
+    dataType: int
+    nullable: NO
+    description: ''
+  _condition:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  cond_value:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  enabled:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  animation:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+spawnentry:
+  spawngroupID:
+    dataType: int
+    nullable: NO
+    description: ''
+  npcID:
+    dataType: int
+    nullable: NO
+    description: ''
+  chance:
+    dataType: smallint
+    nullable: NO
+    description: ''
+spawngroup:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  spawn_limit:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  dist:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  delay:
+    dataType: int
+    nullable: NO
+    description: ''
+  mindelay:
+    dataType: int
+    nullable: NO
+    description: ''
+  despawn:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  despawn_timer:
+    dataType: int
+    nullable: NO
+    description: ''
+spawn_conditions:
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  value:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  onchange:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+spawn_condition_values:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  value:
+    dataType: tinyint
+    nullable: YES
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  instance_id:
+    dataType: int
+    nullable: NO
+    description: ''
+spawn_events:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  cond_id:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  period:
+    dataType: int
+    nullable: NO
+    description: ''
+  next_minute:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  next_hour:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  next_day:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  next_month:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  next_year:
+    dataType: int
+    nullable: NO
+    description: ''
+  enabled:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  action:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  argument:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  strict:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+spells_new:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  player_1:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  teleport_zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  you_cast:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  other_casts:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  cast_on_you:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  cast_on_other:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  spell_fades:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  range:
+    dataType: int
+    nullable: NO
+    description: ''
+  aoerange:
+    dataType: int
+    nullable: NO
+    description: ''
+  pushback:
+    dataType: int
+    nullable: NO
+    description: ''
+  pushup:
+    dataType: int
+    nullable: NO
+    description: ''
+  cast_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  recovery_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  recast_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  buffdurationformula:
+    dataType: int
+    nullable: NO
+    description: ''
+  buffduration:
+    dataType: int
+    nullable: NO
+    description: ''
+  AEDuration:
+    dataType: int
+    nullable: NO
+    description: ''
+  mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value1:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value2:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value3:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value4:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value5:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value6:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value7:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value8:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value9:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value10:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value11:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_base_value12:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value1:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value2:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value3:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value4:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value5:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value6:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value7:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value8:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value9:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value10:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value11:
+    dataType: int
+    nullable: NO
+    description: ''
+  effect_limit_value12:
+    dataType: int
+    nullable: NO
+    description: ''
+  max1:
+    dataType: int
+    nullable: NO
+    description: ''
+  max2:
+    dataType: int
+    nullable: NO
+    description: ''
+  max3:
+    dataType: int
+    nullable: NO
+    description: ''
+  max4:
+    dataType: int
+    nullable: NO
+    description: ''
+  max5:
+    dataType: int
+    nullable: NO
+    description: ''
+  max6:
+    dataType: int
+    nullable: NO
+    description: ''
+  max7:
+    dataType: int
+    nullable: NO
+    description: ''
+  max8:
+    dataType: int
+    nullable: NO
+    description: ''
+  max9:
+    dataType: int
+    nullable: NO
+    description: ''
+  max10:
+    dataType: int
+    nullable: NO
+    description: ''
+  max11:
+    dataType: int
+    nullable: NO
+    description: ''
+  max12:
+    dataType: int
+    nullable: NO
+    description: ''
+  icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  memicon:
+    dataType: int
+    nullable: NO
+    description: ''
+  components1:
+    dataType: int
+    nullable: NO
+    description: ''
+  components2:
+    dataType: int
+    nullable: NO
+    description: ''
+  components3:
+    dataType: int
+    nullable: NO
+    description: ''
+  components4:
+    dataType: int
+    nullable: NO
+    description: ''
+  component_counts1:
+    dataType: int
+    nullable: NO
+    description: ''
+  component_counts2:
+    dataType: int
+    nullable: NO
+    description: ''
+  component_counts3:
+    dataType: int
+    nullable: NO
+    description: ''
+  component_counts4:
+    dataType: int
+    nullable: NO
+    description: ''
+  NoexpendReagent1:
+    dataType: int
+    nullable: NO
+    description: ''
+  NoexpendReagent2:
+    dataType: int
+    nullable: NO
+    description: ''
+  NoexpendReagent3:
+    dataType: int
+    nullable: NO
+    description: ''
+  NoexpendReagent4:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula1:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula2:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula3:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula4:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula5:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula6:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula7:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula8:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula9:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula10:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula11:
+    dataType: int
+    nullable: NO
+    description: ''
+  formula12:
+    dataType: int
+    nullable: NO
+    description: ''
+  LightType:
+    dataType: int
+    nullable: NO
+    description: ''
+  goodEffect:
+    dataType: int
+    nullable: NO
+    description: ''
+  Activated:
+    dataType: int
+    nullable: NO
+    description: ''
+  resisttype:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid1:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid2:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid3:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid4:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid5:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid6:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid7:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid8:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid9:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid10:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid11:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectid12:
+    dataType: int
+    nullable: NO
+    description: ''
+  targettype:
+    dataType: int
+    nullable: NO
+    description: ''
+  basediff:
+    dataType: int
+    nullable: NO
+    description: ''
+  skill:
+    dataType: int
+    nullable: NO
+    description: ''
+  zonetype:
+    dataType: int
+    nullable: NO
+    description: ''
+  EnvironmentType:
+    dataType: int
+    nullable: NO
+    description: ''
+  TimeOfDay:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes1:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes2:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes3:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes4:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes5:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes6:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes7:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes8:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes9:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes10:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes11:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes12:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes13:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes14:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes15:
+    dataType: int
+    nullable: NO
+    description: ''
+  classes16:
+    dataType: int
+    nullable: NO
+    description: ''
+  CastingAnim:
+    dataType: int
+    nullable: NO
+    description: ''
+  TargetAnim:
+    dataType: int
+    nullable: NO
+    description: ''
+  TravelType:
+    dataType: int
+    nullable: NO
+    description: ''
+  SpellAffectIndex:
+    dataType: int
+    nullable: NO
+    description: ''
+  disallow_sit:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities0:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities1:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities2:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities3:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities4:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities5:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities6:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities7:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities8:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities9:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities10:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities11:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities12:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities13:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities14:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities15:
+    dataType: int
+    nullable: NO
+    description: ''
+  deities16:
+    dataType: int
+    nullable: NO
+    description: ''
+  field142:
+    dataType: int
+    nullable: NO
+    description: ''
+  field143:
+    dataType: int
+    nullable: NO
+    description: ''
+  new_icon:
+    dataType: int
+    nullable: NO
+    description: ''
+  spellanim:
+    dataType: int
+    nullable: NO
+    description: ''
+  uninterruptable:
+    dataType: int
+    nullable: NO
+    description: ''
+  ResistDiff:
+    dataType: int
+    nullable: NO
+    description: ''
+  dot_stacking_exempt:
+    dataType: int
+    nullable: NO
+    description: ''
+  deleteable:
+    dataType: int
+    nullable: NO
+    description: ''
+  RecourseLink:
+    dataType: int
+    nullable: NO
+    description: ''
+  no_partial_resist:
+    dataType: int
+    nullable: NO
+    description: ''
+  field152:
+    dataType: int
+    nullable: NO
+    description: ''
+  field153:
+    dataType: int
+    nullable: NO
+    description: ''
+  short_buff_box:
+    dataType: int
+    nullable: NO
+    description: ''
+  descnum:
+    dataType: int
+    nullable: NO
+    description: ''
+  typedescnum:
+    dataType: int
+    nullable: YES
+    description: ''
+  effectdescnum:
+    dataType: int
+    nullable: YES
+    description: ''
+  effectdescnum2:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_no_los:
+    dataType: int
+    nullable: NO
+    description: ''
+  field160:
+    dataType: int
+    nullable: NO
+    description: ''
+  reflectable:
+    dataType: int
+    nullable: NO
+    description: ''
+  bonushate:
+    dataType: int
+    nullable: NO
+    description: ''
+  field163:
+    dataType: int
+    nullable: NO
+    description: ''
+  field164:
+    dataType: int
+    nullable: NO
+    description: ''
+  ldon_trap:
+    dataType: int
+    nullable: NO
+    description: ''
+  EndurCost:
+    dataType: int
+    nullable: NO
+    description: ''
+  EndurTimerIndex:
+    dataType: int
+    nullable: NO
+    description: ''
+  IsDiscipline:
+    dataType: int
+    nullable: NO
+    description: ''
+  field169:
+    dataType: int
+    nullable: NO
+    description: ''
+  field170:
+    dataType: int
+    nullable: NO
+    description: ''
+  field171:
+    dataType: int
+    nullable: NO
+    description: ''
+  field172:
+    dataType: int
+    nullable: NO
+    description: ''
+  HateAdded:
+    dataType: int
+    nullable: NO
+    description: ''
+  EndurUpkeep:
+    dataType: int
+    nullable: NO
+    description: ''
+  numhitstype:
+    dataType: int
+    nullable: NO
+    description: ''
+  numhits:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvpresistbase:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvpresistcalc:
+    dataType: int
+    nullable: NO
+    description: ''
+  pvpresistcap:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_category:
+    dataType: int
+    nullable: NO
+    description: ''
+  field181:
+    dataType: int
+    nullable: NO
+    description: ''
+  field182:
+    dataType: int
+    nullable: NO
+    description: ''
+  pcnpc_only_flag:
+    dataType: int
+    nullable: YES
+    description: ''
+  cast_not_standing:
+    dataType: int
+    nullable: YES
+    description: ''
+  can_mgb:
+    dataType: int
+    nullable: NO
+    description: ''
+  nodispell:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_category:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_usefulness:
+    dataType: int
+    nullable: NO
+    description: ''
+  MinResist:
+    dataType: int
+    nullable: NO
+    description: ''
+  MaxResist:
+    dataType: int
+    nullable: NO
+    description: ''
+  viral_targets:
+    dataType: int
+    nullable: NO
+    description: ''
+  viral_timer:
+    dataType: int
+    nullable: NO
+    description: ''
+  nimbuseffect:
+    dataType: int
+    nullable: YES
+    description: ''
+  ConeStartAngle:
+    dataType: int
+    nullable: NO
+    description: ''
+  ConeStopAngle:
+    dataType: int
+    nullable: NO
+    description: ''
+  sneaking:
+    dataType: int
+    nullable: NO
+    description: ''
+  not_extendable:
+    dataType: int
+    nullable: NO
+    description: ''
+  field198:
+    dataType: int
+    nullable: NO
+    description: ''
+  field199:
+    dataType: int
+    nullable: NO
+    description: ''
+  suspendable:
+    dataType: int
+    nullable: YES
+    description: ''
+  viral_range:
+    dataType: int
+    nullable: NO
+    description: ''
+  songcap:
+    dataType: int
+    nullable: YES
+    description: ''
+  field203:
+    dataType: int
+    nullable: YES
+    description: ''
+  field204:
+    dataType: int
+    nullable: YES
+    description: ''
+  no_block:
+    dataType: int
+    nullable: NO
+    description: ''
+  field206:
+    dataType: int
+    nullable: YES
+    description: ''
+  spellgroup:
+    dataType: int
+    nullable: YES
+    description: ''
+  rank:
+    dataType: int
+    nullable: NO
+    description: ''
+  field209:
+    dataType: int
+    nullable: YES
+    description: ''
+  field210:
+    dataType: int
+    nullable: YES
+    description: ''
+  CastRestriction:
+    dataType: int
+    nullable: NO
+    description: ''
+  allowrest:
+    dataType: int
+    nullable: YES
+    description: ''
+  InCombat:
+    dataType: int
+    nullable: NO
+    description: ''
+  OutofCombat:
+    dataType: int
+    nullable: NO
+    description: ''
+  field215:
+    dataType: int
+    nullable: YES
+    description: ''
+  field216:
+    dataType: int
+    nullable: YES
+    description: ''
+  field217:
+    dataType: int
+    nullable: YES
+    description: ''
+  aemaxtargets:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxtargets:
+    dataType: int
+    nullable: YES
+    description: ''
+  field220:
+    dataType: int
+    nullable: YES
+    description: ''
+  field221:
+    dataType: int
+    nullable: YES
+    description: ''
+  field222:
+    dataType: int
+    nullable: YES
+    description: ''
+  field223:
+    dataType: int
+    nullable: YES
+    description: ''
+  persistdeath:
+    dataType: int
+    nullable: YES
+    description: ''
+  field225:
+    dataType: int
+    nullable: NO
+    description: ''
+  field226:
+    dataType: int
+    nullable: NO
+    description: ''
+  min_dist:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_dist_mod:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_dist:
+    dataType: float
+    nullable: NO
+    description: ''
+  max_dist_mod:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_range:
+    dataType: int
+    nullable: NO
+    description: ''
+  field232:
+    dataType: int
+    nullable: NO
+    description: ''
+  field233:
+    dataType: int
+    nullable: NO
+    description: ''
+  field234:
+    dataType: int
+    nullable: NO
+    description: ''
+  field235:
+    dataType: int
+    nullable: NO
+    description: ''
+  field236:
+    dataType: int
+    nullable: NO
+    description: ''
+spell_buckets:
+  spellid:
+    dataType: bigint
+    nullable: NO
+    description: ''
+  key:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  value:
+    dataType: text
+    nullable: YES
+    description: ''
+spell_globals:
+  spellid:
+    dataType: int
+    nullable: NO
+    description: ''
+  spell_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  qglobal:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  value:
+    dataType: varchar
+    nullable: NO
+    description: ''
+starting_items:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  race:
+    dataType: int
+    nullable: NO
+    description: ''
+  class:
+    dataType: int
+    nullable: NO
+    description: ''
+  deityid:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneid:
+    dataType: int
+    nullable: NO
+    description: ''
+  itemid:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_charges:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  gm:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  slot:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+start_zones:
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  bind_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  player_choice:
+    dataType: int
+    nullable: NO
+    description: ''
+  player_class:
+    dataType: int
+    nullable: NO
+    description: ''
+  player_deity:
+    dataType: int
+    nullable: NO
+    description: ''
+  player_race:
+    dataType: int
+    nullable: NO
+    description: ''
+  start_zone:
+    dataType: int
+    nullable: NO
+    description: ''
+  bind_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  bind_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  bind_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  select_rank:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+tasks:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration_code:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  title:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  description:
+    dataType: text
+    nullable: NO
+    description: ''
+  reward:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  rewardid:
+    dataType: int
+    nullable: NO
+    description: ''
+  cashreward:
+    dataType: int
+    nullable: NO
+    description: ''
+  xpreward:
+    dataType: int
+    nullable: NO
+    description: ''
+  rewardmethod:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  reward_points:
+    dataType: int
+    nullable: NO
+    description: ''
+  reward_type:
+    dataType: int
+    nullable: NO
+    description: ''
+  minlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxlevel:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  repeatable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  faction_reward:
+    dataType: int
+    nullable: NO
+    description: ''
+  completion_emote:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  replay_group:
+    dataType: int
+    nullable: NO
+    description: ''
+  min_players:
+    dataType: int
+    nullable: NO
+    description: ''
+  max_players:
+    dataType: int
+    nullable: NO
+    description: ''
+  task_lock_step:
+    dataType: int
+    nullable: NO
+    description: ''
+  instance_zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_version:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_in_zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone_in_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  zone_in_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  zone_in_object_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  dest_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  dest_h:
+    dataType: float
+    nullable: NO
+    description: ''
+tasksets:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+task_activities:
+  taskid:
+    dataType: int
+    nullable: NO
+    description: ''
+  activityid:
+    dataType: int
+    nullable: NO
+    description: ''
+  step:
+    dataType: int
+    nullable: NO
+    description: ''
+  activitytype:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  target_name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  item_list:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  skill_list:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  spell_list:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  description_override:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  goalid:
+    dataType: int
+    nullable: NO
+    description: ''
+  goalmethod:
+    dataType: int
+    nullable: NO
+    description: ''
+  goalcount:
+    dataType: int
+    nullable: YES
+    description: ''
+  delivertonpc:
+    dataType: int
+    nullable: NO
+    description: ''
+  zones:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  optional:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+task_replay_groups:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+timers:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  type:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  start:
+    dataType: int
+    nullable: NO
+    description: ''
+  duration:
+    dataType: int
+    nullable: NO
+    description: ''
+  enable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+titles:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  skill_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  min_skill_value:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  max_skill_value:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  min_aa_points:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  max_aa_points:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  class:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  gender:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  status:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  prefix:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  suffix:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  title_set:
+    dataType: int
+    nullable: NO
+    description: ''
+trader:
+  char_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  serialnumber:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_cost:
+    dataType: int
+    nullable: NO
+    description: ''
+  slot_id:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+trader_audit:
+  time:
+    dataType: datetime
+    nullable: NO
+    description: ''
+  seller:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  buyer:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  itemname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  quantity:
+    dataType: int
+    nullable: NO
+    description: ''
+  totalcost:
+    dataType: int
+    nullable: NO
+    description: ''
+  trantype:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+tradeskill_recipe:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  tradeskill:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  skillneeded:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  trivial:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  nofail:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  replace_container:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  notes:
+    dataType: tinytext
+    nullable: YES
+    description: ''
+  must_learn:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  quest:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  enabled:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+tradeskill_recipe_entries:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  recipe_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  successcount:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  failcount:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  componentcount:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  salvagecount:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  iscontainer:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+traps:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  version:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  x:
+    dataType: int
+    nullable: NO
+    description: ''
+  y:
+    dataType: int
+    nullable: NO
+    description: ''
+  z:
+    dataType: int
+    nullable: NO
+    description: ''
+  chance:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  maxzdiff:
+    dataType: float
+    nullable: NO
+    description: ''
+  radius:
+    dataType: float
+    nullable: NO
+    description: ''
+  effect:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectvalue:
+    dataType: int
+    nullable: NO
+    description: ''
+  effectvalue2:
+    dataType: int
+    nullable: NO
+    description: ''
+  message:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  skill:
+    dataType: int
+    nullable: NO
+    description: ''
+  level:
+    dataType: mediumint
+    nullable: NO
+    description: ''
+  respawn_time:
+    dataType: int
+    nullable: NO
+    description: ''
+  respawn_var:
+    dataType: int
+    nullable: NO
+    description: ''
+  triggered_number:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  group:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  despawn_when_triggered:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  undetectable:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+tributes:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  unknown:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  descr:
+    dataType: mediumtext
+    nullable: NO
+    description: ''
+  isguild:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+tribute_levels:
+  tribute_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  level:
+    dataType: int
+    nullable: NO
+    description: ''
+  cost:
+    dataType: int
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+variables:
+  varname:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  value:
+    dataType: text
+    nullable: NO
+    description: ''
+  information:
+    dataType: text
+    nullable: NO
+    description: ''
+  ts:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+veteran_reward_templates:
+  claim_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  item_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  charges:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  reward_slot:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+zone:
+  short_name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  file_name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  long_name:
+    dataType: text
+    nullable: NO
+    description: ''
+  map_file_name:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  safe_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  safe_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  safe_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  graveyard_id:
+    dataType: float
+    nullable: NO
+    description: ''
+  min_level:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  min_status:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  zoneidnumber:
+    dataType: int
+    nullable: NO
+    description: ''
+  version:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  timezone:
+    dataType: int
+    nullable: NO
+    description: ''
+  maxclients:
+    dataType: int
+    nullable: NO
+    description: ''
+  ruleset:
+    dataType: int
+    nullable: NO
+    description: ''
+  note:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  underworld:
+    dataType: float
+    nullable: NO
+    description: ''
+  minclip:
+    dataType: float
+    nullable: NO
+    description: ''
+  maxclip:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_minclip:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_maxclip:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_blue:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_red:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_green:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  sky:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  ztype:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  zone_exp_multiplier:
+    dataType: decimal
+    nullable: NO
+    description: ''
+  walkspeed:
+    dataType: float
+    nullable: NO
+    description: ''
+  time_type:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_red1:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_green1:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_blue1:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_minclip1:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_maxclip1:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_red2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_green2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_blue2:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_minclip2:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_maxclip2:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_red3:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_green3:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_blue3:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_minclip3:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_maxclip3:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_red4:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_green4:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_blue4:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fog_minclip4:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_maxclip4:
+    dataType: float
+    nullable: NO
+    description: ''
+  fog_density:
+    dataType: float
+    nullable: NO
+    description: ''
+  flag_needed:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  canbind:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  cancombat:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  canlevitate:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  castoutdoor:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  hotzone:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  insttype:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  shutdowndelay:
+    dataType: bigint
+    nullable: NO
+    description: ''
+  peqzone:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  expansion:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  suspendbuffs:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  rain_chance1:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_chance2:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_chance3:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_chance4:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_duration1:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_duration2:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_duration3:
+    dataType: int
+    nullable: NO
+    description: ''
+  rain_duration4:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_chance1:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_chance2:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_chance3:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_chance4:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_duration1:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_duration2:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_duration3:
+    dataType: int
+    nullable: NO
+    description: ''
+  snow_duration4:
+    dataType: int
+    nullable: NO
+    description: ''
+  gravity:
+    dataType: float
+    nullable: NO
+    description: ''
+  type:
+    dataType: int
+    nullable: NO
+    description: ''
+  skylock:
+    dataType: tinyint
+    nullable: NO
+    description: ''
+  fast_regen_hp:
+    dataType: int
+    nullable: NO
+    description: ''
+  fast_regen_mana:
+    dataType: int
+    nullable: NO
+    description: ''
+  fast_regen_endurance:
+    dataType: int
+    nullable: NO
+    description: ''
+  npc_max_aggro_dist:
+    dataType: int
+    nullable: NO
+    description: ''
+  max_movement_update_range:
+    dataType: int
+    nullable: NO
+    description: ''
+zoneserver_auth:
+  host:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  note:
+    dataType: text
+    nullable: YES
+    description: ''
+zone_flags:
+  charID:
+    dataType: int
+    nullable: NO
+    description: ''
+  zoneID:
+    dataType: int
+    nullable: NO
+    description: ''
+zone_points:
+  id:
+    dataType: int
+    nullable: NO
+    description: ''
+  zone:
+    dataType: varchar
+    nullable: YES
+    description: ''
+  version:
+    dataType: int
+    nullable: NO
+    description: ''
+  number:
+    dataType: smallint
+    nullable: NO
+    description: ''
+  y:
+    dataType: float
+    nullable: NO
+    description: ''
+  x:
+    dataType: float
+    nullable: NO
+    description: ''
+  z:
+    dataType: float
+    nullable: NO
+    description: ''
+  heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  target_y:
+    dataType: float
+    nullable: NO
+    description: ''
+  target_x:
+    dataType: float
+    nullable: NO
+    description: ''
+  target_z:
+    dataType: float
+    nullable: NO
+    description: ''
+  target_heading:
+    dataType: float
+    nullable: NO
+    description: ''
+  zoneinst:
+    dataType: smallint
+    nullable: YES
+    description: ''
+  target_zone_id:
+    dataType: int
+    nullable: NO
+    description: ''
+  target_instance:
+    dataType: int
+    nullable: NO
+    description: ''
+  buffer:
+    dataType: float
+    nullable: YES
+    description: ''
+  client_version_mask:
+    dataType: int
+    nullable: NO
+    description: ''
+zone_server:
+  name:
+    dataType: varchar
+    nullable: NO
+    description: ''
+  address:
+    dataType: text
+    nullable: NO
+    description: ''
+  port:
+    dataType: int
+    nullable: NO
+    description: ''
+  player_count:
+    dataType: int
+    nullable: NO
+    description: ''
+  last_alive:
+    dataType: timestamp
+    nullable: NO
+    description: ''
+  rain:
+    dataType: char
+    nullable: NO
+    description: ''
