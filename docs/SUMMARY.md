@@ -1,5 +1,7 @@
 # Summary
 
+## Categories
+
 * [Tasks](placeholder.md)
     * [tasks](tasks.md)
     * [tasksets](tasksets.md)
