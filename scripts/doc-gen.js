@@ -3,6 +3,7 @@ const yaml     = require('js-yaml');
 const fs       = require('fs');
 const database = 'peq';
 const program  = require('commander');
+const table    = require('markdown-table')
 
 var connection = mysql.createConnection({
     host: '127.0.0.1',
@@ -30,15 +31,11 @@ if (fs.existsSync(SCHEMA_REFERENCE_YML_FILE)) {
   console.log('Loaded schema from [' + SCHEMA_REFERENCE_YML_FILE + ']');
 }
 
-console.log(schemaData);
-
 program
   .version('1.0.0')
   .command('pull')
   .description('Pulls database schema and updates working yaml schema reference')
   .action(function (cmd) {
-
-      console.log('hi');
 
       connection.query(`
         SELECT
@@ -101,16 +98,64 @@ program
           /**
            * Write .yml
            */
-          fs.writeFileSync(SCHEMA_REFERENCE_YML_FILE, yaml.safeDump(schemaData, {noCompatMode: true }));
+          fs.writeFileSync(SCHEMA_REFERENCE_YML_FILE, yaml.safeDump(schemaData, { noCompatMode: true }));
 
           console.log('Updated schema written to [' + SCHEMA_REFERENCE_YML_FILE + ']');
         }
       );
+    }
+  );
 
+program.command('write')
+  .description('Writes the schema reference into markdown files')
+  .action(function (cmd) {
+      Object.keys(schemaData).forEach(function (key) {
+        var val         = schemaData[key];
+        const tableName = key;
 
+        let markdownTable = [];
+        markdownTable.push(['Column', 'Data Type', 'Description']);
+
+        Object.keys(val).forEach(function (subKey) {
+          var subVal        = schemaData[key][subKey];
+          const tableColumn = subKey;
+          const dataType    = subVal.dataType;
+          const nullable    = subVal.nullable;
+          const description = subVal.description;
+
+          markdownTable.push([tableColumn, dataType, description]);
+        });
+
+        let fileContents = 'This file was generated ' + formatDate(new Date()) + '\n\n';
+
+        fileContents += table(markdownTable);
+
+        const fileName = 'docs/' + tableName + '.md';
+
+        fs.writeFile(fileName, fileContents, (err) => {
+          console.log('File [' + fileName + '] written');
+        });
+      });
     }
   );
 
 program.parse(process.argv);
+
+function formatDate(date) {
+  var monthNames = [
+    'January', 'February', 'March',
+    'April', 'May', 'June', 'July',
+    'August', 'September', 'October',
+    'November', 'December'
+  ];
+
+  var day        = date.getDate();
+  var monthIndex = date.getMonth();
+  var year       = date.getFullYear();
+
+  return monthNames[monthIndex] + ' ' + day + ' ' + year;
+}
+
+console.log(formatDate(new Date()));
 
 connection.end();
