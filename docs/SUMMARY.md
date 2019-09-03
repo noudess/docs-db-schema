@@ -1,12 +1,10 @@
 # Summary
 
-
 * [Tasks](placeholder.md)
     * [tasks](tasks.md)
     * [tasksets](tasksets.md)
     * [task_activities](task_activities.md)
     * [task_replay_groups](task_replay_groups.md)
-
 * [Guilds](placeholder.md)
     * [guilds](guilds.md)
     * [guild_bank](guild_bank.md)
