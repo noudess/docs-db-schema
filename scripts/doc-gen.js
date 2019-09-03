@@ -158,7 +158,7 @@ program.command('write')
         var tables = tableCategories[category];
 
         console.log(category);
-        categoryTablesList += '\n* [' + category + '](placeholder.md)\n';
+        categoryTablesList += '* [' + category + '](placeholder.md)\n';
         // categoryTablesList += '\n## ' + category + '\n\n';
 
         tables.forEach(function (table) {
@@ -214,6 +214,8 @@ program.command('write')
        * @type {string}
        */
       let summaryFileContents = `# Summary
+
+## Categories
 
 ${categoryTablesList}
 ${summaryTablesList}
