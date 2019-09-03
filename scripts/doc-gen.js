@@ -109,6 +109,13 @@ program
 program.command('write')
   .description('Writes the schema reference into markdown files')
   .action(function (cmd) {
+
+      let summaryFileContents = `# Summary
+
+## Tables
+
+`;
+
       Object.keys(schemaData).forEach(function (key) {
           var val         = schemaData[key];
           const tableName = key;
@@ -130,11 +137,29 @@ program.command('write')
           let fileContents = 'This page was updated ' + formatDate(new Date()) + '\n\n';
           fileContents += table(markdownTable);
 
+          /**
+           * Write doc page
+           *
+           * @type {string}
+           */
           const fileName = 'docs/' + tableName + '.md';
           fs.writeFile(fileName, fileContents, (err) => {
               console.log('File [' + fileName + '] written');
             }
           );
+
+          summaryFileContents += "* [" + tableName + "](" + tableName + ".md)\n";
+        }
+      );
+
+      /**
+       * Write summary
+       *
+       * @type {string}
+       */
+      const fileName = 'docs/SUMMARY.md';
+      fs.writeFile(fileName, summaryFileContents, (err) => {
+          console.log('File [' + fileName + '] written');
         }
       );
     }
