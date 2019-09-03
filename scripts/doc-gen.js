@@ -110,32 +110,33 @@ program.command('write')
   .description('Writes the schema reference into markdown files')
   .action(function (cmd) {
       Object.keys(schemaData).forEach(function (key) {
-        var val         = schemaData[key];
-        const tableName = key;
+          var val         = schemaData[key];
+          const tableName = key;
 
-        let markdownTable = [];
-        markdownTable.push(['Column', 'Data Type', 'Description']);
+          let markdownTable = [];
+          markdownTable.push(['Column', 'Data Type', 'Description']);
 
-        Object.keys(val).forEach(function (subKey) {
-          var subVal        = schemaData[key][subKey];
-          const tableColumn = subKey;
-          const dataType    = subVal.dataType;
-          const nullable    = subVal.nullable;
-          const description = subVal.description;
+          Object.keys(val).forEach(function (subKey) {
+              var subVal        = schemaData[key][subKey];
+              const tableColumn = subKey;
+              const dataType    = subVal.dataType;
+              const nullable    = subVal.nullable;
+              const description = subVal.description;
 
-          markdownTable.push([tableColumn, dataType, description]);
-        });
+              markdownTable.push([tableColumn, dataType, description]);
+            }
+          );
 
-        let fileContents = 'This file was generated ' + formatDate(new Date()) + '\n\n';
+          let fileContents = 'This page was updated ' + formatDate(new Date()) + '\n\n';
+          fileContents += table(markdownTable);
 
-        fileContents += table(markdownTable);
-
-        const fileName = 'docs/' + tableName + '.md';
-
-        fs.writeFile(fileName, fileContents, (err) => {
-          console.log('File [' + fileName + '] written');
-        });
-      });
+          const fileName = 'docs/' + tableName + '.md';
+          fs.writeFile(fileName, fileContents, (err) => {
+              console.log('File [' + fileName + '] written');
+            }
+          );
+        }
+      );
     }
   );
 
