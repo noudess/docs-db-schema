@@ -1,0 +1,83 @@
+# class\_skill
+
+This page was updated September 7 2019
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| class | smallint |  |
+| name | varchar |  |
+| skill\_0 | smallint |  |
+| skill\_1 | smallint |  |
+| skill\_2 | smallint |  |
+| skill\_3 | smallint |  |
+| skill\_4 | smallint |  |
+| skill\_5 | smallint |  |
+| skill\_6 | smallint |  |
+| skill\_7 | smallint |  |
+| skill\_8 | smallint |  |
+| skill\_9 | smallint |  |
+| skill\_10 | smallint |  |
+| skill\_11 | smallint |  |
+| skill\_12 | smallint |  |
+| skill\_13 | smallint |  |
+| skill\_14 | smallint |  |
+| skill\_15 | smallint |  |
+| skill\_16 | smallint |  |
+| skill\_17 | smallint |  |
+| skill\_18 | smallint |  |
+| skill\_19 | smallint |  |
+| skill\_20 | smallint |  |
+| skill\_21 | smallint |  |
+| skill\_22 | smallint |  |
+| skill\_23 | smallint |  |
+| skill\_24 | smallint |  |
+| skill\_25 | smallint |  |
+| skill\_26 | smallint |  |
+| skill\_27 | smallint |  |
+| skill\_28 | smallint |  |
+| skill\_29 | smallint |  |
+| skill\_30 | smallint |  |
+| skill\_31 | smallint |  |
+| skill\_32 | smallint |  |
+| skill\_33 | smallint |  |
+| skill\_34 | smallint |  |
+| skill\_35 | smallint |  |
+| skill\_36 | smallint |  |
+| skill\_37 | smallint |  |
+| skill\_38 | smallint |  |
+| skill\_39 | smallint |  |
+| skill\_40 | smallint |  |
+| skill\_41 | smallint |  |
+| skill\_42 | smallint |  |
+| skill\_43 | smallint |  |
+| skill\_44 | smallint |  |
+| skill\_45 | smallint |  |
+| skill\_46 | smallint |  |
+| skill\_47 | smallint |  |
+| skill\_48 | smallint |  |
+| skill\_49 | smallint |  |
+| skill\_50 | smallint |  |
+| skill\_51 | smallint |  |
+| skill\_52 | smallint |  |
+| skill\_53 | smallint |  |
+| skill\_54 | smallint |  |
+| skill\_55 | smallint |  |
+| skill\_56 | smallint |  |
+| skill\_57 | smallint |  |
+| skill\_58 | smallint |  |
+| skill\_59 | smallint |  |
+| skill\_60 | smallint |  |
+| skill\_61 | smallint |  |
+| skill\_62 | smallint |  |
+| skill\_63 | smallint |  |
+| skill\_64 | smallint |  |
+| skill\_65 | smallint |  |
+| skill\_66 | smallint |  |
+| skill\_67 | smallint |  |
+| skill\_68 | smallint |  |
+| skill\_69 | smallint |  |
+| skill\_70 | smallint |  |
+| skill\_71 | smallint |  |
+| skill\_72 | smallint |  |
+| skill\_73 | smallint |  |
+
