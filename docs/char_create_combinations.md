@@ -1,4 +1,4 @@
-This page was updated September 3 2019
+This page was updated September 7 2019
 
 | Column         | Data Type | Description |
 | -------------- | --------- | ----------- |

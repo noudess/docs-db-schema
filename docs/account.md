@@ -1,4 +1,4 @@
-This page was updated September 3 2019
+This page was updated September 7 2019
 
 | Column         | Data Type | Description |
 | -------------- | --------- | ----------- |
@@ -8,7 +8,6 @@ This page was updated September 3 2019
 | sharedplat     | int       |             |
 | password       | varchar   |             |
 | status         | int       |             |
-| ls_id          | varchar   |             |
 | lsaccount_id   | int       |             |
 | gmspeed        | tinyint   |             |
 | revoked        | tinyint   |             |

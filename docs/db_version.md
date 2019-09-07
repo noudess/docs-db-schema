@@ -1,5 +1,6 @@
-This page was updated September 3 2019
+This page was updated September 7 2019
 
-| Column  | Data Type | Description |
-| ------- | --------- | ----------- |
-| version | int       |             |
+| Column       | Data Type | Description |
+| ------------ | --------- | ----------- |
+| version      | int       |             |
+| bots_version | int       |             |
