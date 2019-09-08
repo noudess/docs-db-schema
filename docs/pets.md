@@ -1,10 +1,10 @@
-| Column       | Data Type | Description |
-| ------------ | --------- | ----------- |
-| type         | varchar   |             |
-| petpower     | int       |             |
-| npcID        | int       |             |
-| temp         | tinyint   |             |
-| petcontrol   | tinyint   |             |
-| petnaming    | tinyint   |             |
-| monsterflag  | tinyint   |             |
-| equipmentset | int       |             |
+| Column       | Data Type | Description                                                                                                                                     |
+| ------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| type         | varchar   | [NPC Type Name](npc_types.md)                                                                                                                   |
+| petpower     | int       | Pet Power                                                                                                                                       |
+| npcID        | int       | [NPC Type Identifier](npc_types.md)                                                                                                             |
+| temp         | tinyint   | Temporary: 0 = False, 1 = True                                                                                                                  |
+| petcontrol   | tinyint   | Pet Control: 0 = No Control, 1 = No Attack Control, 2 = Full Control                                                                            |
+| petnaming    | tinyint   | Pet Naming: 0 = Soandsos Pet, 1 = Soandsos Familiar, 2 = Soandsos Warder, 3 = Random Naming (i.e. Gobaner), 4 = Keeps name from npc_types table |
+| monsterflag  | tinyint   | Monster Flag: 0 = False, 1 = True                                                                                                               |
+| equipmentset | int       | [Pet Equipment Set Identifier](pet_equipmentset.md)                                                                                             |

@@ -1,17 +1,17 @@
-| Column    | Data Type | Description |
-| --------- | --------- | ----------- |
-| id        | int       |             |
-| base_str  | int       |             |
-| base_sta  | int       |             |
-| base_dex  | int       |             |
-| base_agi  | int       |             |
-| base_int  | int       |             |
-| base_wis  | int       |             |
-| base_cha  | int       |             |
-| alloc_str | int       |             |
-| alloc_sta | int       |             |
-| alloc_dex | int       |             |
-| alloc_agi | int       |             |
-| alloc_int | int       |             |
-| alloc_wis | int       |             |
-| alloc_cha | int       |             |
+| Column    | Data Type | Description            |
+| --------- | --------- | ---------------------- |
+| id        | int       | Allocation Identifier  |
+| base_str  | int       | Base Strength          |
+| base_sta  | int       | Base Stamina           |
+| base_dex  | int       | Base Dexterity         |
+| base_agi  | int       | Base Agility           |
+| base_int  | int       | Base Intelligence      |
+| base_wis  | int       | Base Wisdom            |
+| base_cha  | int       | Base Charisma          |
+| alloc_str | int       | Allocated Strength     |
+| alloc_sta | int       | Allocated Stamina      |
+| alloc_dex | int       | Allocated Dexterity    |
+| alloc_agi | int       | Allocated Agility      |
+| alloc_int | int       | Allocated Intelligence |
+| alloc_wis | int       | Allocated Wisdom       |
+| alloc_cha | int       | Allocated Charisma     |

@@ -1,4 +1,4 @@
-| Column   | Data Type | Description |
-| -------- | --------- | ----------- |
-| clientid | int       |             |
-| serverid | int       |             |
+| Column   | Data Type | Description                                  |
+| -------- | --------- | -------------------------------------------- |
+| clientid | int       | [Unique Faction Identifier](faction_list.md) |
+| serverid | int       | [Unique Faction Identifier](faction_list.md) |

@@ -1,6 +1,6 @@
-| Column  | Data Type | Description |
-| ------- | --------- | ----------- |
-| id      | bigint    |             |
-| key     | varchar   |             |
-| value   | text      |             |
-| expires | int       |             |
+| Column  | Data Type | Description                   |
+| ------- | --------- | ----------------------------- |
+| id      | bigint    | Unique Data Bucket Identifier |
+| key     | varchar   | Key                           |
+| value   | text      | Value                         |
+| expires | int       | Expiration UNIX Timestamp     |

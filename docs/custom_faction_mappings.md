@@ -1,4 +1,4 @@
-| Column      | Data Type | Description |
-| ----------- | --------- | ----------- |
-| old_faction | int       |             |
-| new_faction | int       |             |
+| Column      | Data Type | Description                                  |
+| ----------- | --------- | -------------------------------------------- |
+| old_faction | int       | [Unique Faction Identifier](faction_list.md) |
+| new_faction | int       | [Unique Faction Identifier](faction_list.md) |

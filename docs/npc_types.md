@@ -1,123 +1,123 @@
-| Column                 | Data Type | Description |
-| ---------------------- | --------- | ----------- |
-| id                     | int       |             |
-| name                   | text      |             |
-| lastname               | varchar   |             |
-| level                  | tinyint   |             |
-| race                   | smallint  |             |
-| class                  | tinyint   |             |
-| bodytype               | int       |             |
-| hp                     | int       |             |
-| mana                   | int       |             |
-| gender                 | tinyint   |             |
-| texture                | tinyint   |             |
-| helmtexture            | tinyint   |             |
-| herosforgemodel        | int       |             |
-| size                   | float     |             |
-| hp_regen_rate          | int       |             |
-| mana_regen_rate        | int       |             |
-| loottable_id           | int       |             |
-| merchant_id            | int       |             |
-| alt_currency_id        | int       |             |
-| npc_spells_id          | int       |             |
-| npc_spells_effects_id  | int       |             |
-| npc_faction_id         | int       |             |
-| adventure_template_id  | int       |             |
-| trap_template          | int       |             |
-| mindmg                 | int       |             |
-| maxdmg                 | int       |             |
-| attack_count           | smallint  |             |
-| npcspecialattks        | varchar   |             |
-| special_abilities      | text      |             |
-| aggroradius            | int       |             |
-| assistradius           | int       |             |
-| face                   | int       |             |
-| luclin_hairstyle       | int       |             |
-| luclin_haircolor       | int       |             |
-| luclin_eyecolor        | int       |             |
-| luclin_eyecolor2       | int       |             |
-| luclin_beardcolor      | int       |             |
-| luclin_beard           | int       |             |
-| drakkin_heritage       | int       |             |
-| drakkin_tattoo         | int       |             |
-| drakkin_details        | int       |             |
-| armortint_id           | int       |             |
-| armortint_red          | tinyint   |             |
-| armortint_green        | tinyint   |             |
-| armortint_blue         | tinyint   |             |
-| d_melee_texture1       | int       |             |
-| d_melee_texture2       | int       |             |
-| ammo_idfile            | varchar   |             |
-| prim_melee_type        | tinyint   |             |
-| sec_melee_type         | tinyint   |             |
-| ranged_type            | tinyint   |             |
-| runspeed               | float     |             |
-| MR                     | smallint  |             |
-| CR                     | smallint  |             |
-| DR                     | smallint  |             |
-| FR                     | smallint  |             |
-| PR                     | smallint  |             |
-| Corrup                 | smallint  |             |
-| PhR                    | smallint  |             |
-| see_invis              | smallint  |             |
-| see_invis_undead       | smallint  |             |
-| qglobal                | int       |             |
-| AC                     | smallint  |             |
-| npc_aggro              | tinyint   |             |
-| spawn_limit            | tinyint   |             |
-| attack_speed           | float     |             |
-| attack_delay           | tinyint   |             |
-| findable               | tinyint   |             |
-| STR                    | mediumint |             |
-| STA                    | mediumint |             |
-| DEX                    | mediumint |             |
-| AGI                    | mediumint |             |
-| _INT                   | mediumint |             |
-| WIS                    | mediumint |             |
-| CHA                    | mediumint |             |
-| see_hide               | tinyint   |             |
-| see_improved_hide      | tinyint   |             |
-| trackable              | tinyint   |             |
-| isbot                  | tinyint   |             |
-| exclude                | tinyint   |             |
-| ATK                    | mediumint |             |
-| Accuracy               | mediumint |             |
-| Avoidance              | mediumint |             |
-| slow_mitigation        | smallint  |             |
-| version                | smallint  |             |
-| maxlevel               | tinyint   |             |
-| scalerate              | int       |             |
-| private_corpse         | tinyint   |             |
-| unique_spawn_by_name   | tinyint   |             |
-| underwater             | tinyint   |             |
-| isquest                | tinyint   |             |
-| emoteid                | int       |             |
-| spellscale             | float     |             |
-| healscale              | float     |             |
-| no_target_hotkey       | tinyint   |             |
-| raid_target            | tinyint   |             |
-| armtexture             | tinyint   |             |
-| bracertexture          | tinyint   |             |
-| handtexture            | tinyint   |             |
-| legtexture             | tinyint   |             |
-| feettexture            | tinyint   |             |
-| light                  | tinyint   |             |
-| walkspeed              | tinyint   |             |
-| peqid                  | int       |             |
-| unique_                | tinyint   |             |
-| fixed                  | tinyint   |             |
-| ignore_despawn         | tinyint   |             |
-| show_name              | tinyint   |             |
-| untargetable           | tinyint   |             |
-| charm_ac               | smallint  |             |
-| charm_min_dmg          | int       |             |
-| charm_max_dmg          | int       |             |
-| charm_attack_delay     | tinyint   |             |
-| charm_accuracy_rating  | mediumint |             |
-| charm_avoidance_rating | mediumint |             |
-| charm_atk              | mediumint |             |
-| skip_global_loot       | tinyint   |             |
-| rare_spawn             | tinyint   |             |
-| stuck_behavior         | tinyint   |             |
-| model                  | smallint  |             |
-| flymode                | tinyint   |             |
+| Column                 | Data Type | Description                                                                               |
+| ---------------------- | --------- | ----------------------------------------------------------------------------------------- |
+| id                     | int       | Unique NPC Type Identifier                                                                |
+| name                   | text      | Name                                                                                      |
+| lastname               | varchar   | Last Name                                                                                 |
+| level                  | tinyint   | Level                                                                                     |
+| race                   | smallint  | [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)              |
+| class                  | tinyint   | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)            |
+| bodytype               | int       | [Body Type](https://eqemu.gitbook.io/server/categories/types/body-types)                  |
+| hp                     | int       | Health                                                                                    |
+| mana                   | int       | Mana                                                                                      |
+| gender                 | tinyint   | [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)              |
+| texture                | tinyint   | [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)            |
+| helmtexture            | tinyint   | [Helmet Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)     |
+| herosforgemodel        | int       | Hero's Forge Model                                                                        |
+| size                   | float     | Size                                                                                      |
+| hp_regen_rate          | int       | Health Regeneration                                                                       |
+| mana_regen_rate        | int       | Mana Regeneration                                                                         |
+| loottable_id           | int       | [Loottable Identifier](loottable.md)                                                      |
+| merchant_id            | int       | [Merchant Identifier](merchantlist.md)                                                    |
+| alt_currency_id        | int       | [Alternate Currency Identifier](alternate_currency.md)                                    |
+| npc_spells_id          | int       | [NPC Spell Set Identifier](npc_spells.md)                                                 |
+| npc_spells_effects_id  | int       | [NPC Spell Effects Identifier](npc_spells_effects.md)                                     |
+| npc_faction_id         | int       | [NPC Faction Identifier](faction_list.md)                                                 |
+| adventure_template_id  | int       | [Adventure Template Identifier](adventure_template.md)                                    |
+| trap_template          | int       | [Trap Template Identifier](traps.md)                                                      |
+| mindmg                 | int       | Minimum Damage                                                                            |
+| maxdmg                 | int       | Maximum Damage                                                                            |
+| attack_count           | smallint  | Attack Count                                                                              |
+| npcspecialattks        | varchar   | NPC Special Attacks (Deprecated)                                                          |
+| special_abilities      | text      | NPC Special Abilities                                                                     |
+| aggroradius            | int       | Aggro Radius                                                                              |
+| assistradius           | int       | Assist Radius                                                                             |
+| face                   | int       | Face                                                                                      |
+| luclin_hairstyle       | int       | Hair Style                                                                                |
+| luclin_haircolor       | int       | Hair Color                                                                                |
+| luclin_eyecolor        | int       | Eye Color 1                                                                               |
+| luclin_eyecolor2       | int       | Eye Color 2                                                                               |
+| luclin_beardcolor      | int       | Beard Color                                                                               |
+| luclin_beard           | int       | Beard                                                                                     |
+| drakkin_heritage       | int       | Drakkin Heritage                                                                          |
+| drakkin_tattoo         | int       | Drakkin Tattoo                                                                            |
+| drakkin_details        | int       | Drakkin Details                                                                           |
+| armortint_id           | int       | [Armor Tint Identifier](npc_types_tint.md)                                                |
+| armortint_red          | tinyint   | Armor Tint Red: 0 = None, 255 = Max                                                       |
+| armortint_green        | tinyint   | Armor Tint Green: 0 = None, 255 = Max                                                     |
+| armortint_blue         | tinyint   | Armor Tint Blue: 0 = None, 255 = Max                                                      |
+| d_melee_texture1       | int       | Primary Weapon Texture                                                                    |
+| d_melee_texture2       | int       | Secondary Weapon Texture                                                                  |
+| ammo_idfile            | varchar   | Ammo Texture                                                                              |
+| prim_melee_type        | tinyint   | [Primary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)   |
+| sec_melee_type         | tinyint   | [Secondary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
+| ranged_type            | tinyint   | [Ranged Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)          |
+| runspeed               | float     | Run Speed                                                                                 |
+| MR                     | smallint  | Magic Resistance                                                                          |
+| CR                     | smallint  | Cold Resistance                                                                           |
+| DR                     | smallint  | Disease Resistance                                                                        |
+| FR                     | smallint  | Fire Resistance                                                                           |
+| PR                     | smallint  | Poison Resistance                                                                         |
+| Corrup                 | smallint  | Corruption Resistance                                                                     |
+| PhR                    | smallint  | Physical Resistance                                                                       |
+| see_invis              | smallint  | See Invisible: 0 = False, 1 = True                                                        |
+| see_invis_undead       | smallint  | See Invisible vs. Undread: 0 = False, 1 = True                                            |
+| qglobal                | int       | Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated)                                     |
+| AC                     | smallint  | Armor Class                                                                               |
+| npc_aggro              | tinyint   | NPC Aggro: 0 = False, 1 = True                                                            |
+| spawn_limit            | tinyint   | Spawn Limit                                                                               |
+| attack_speed           | float     | Attack Speed: The lower the number, the faster the NPC hits. (Deprecated)                 |
+| attack_delay           | tinyint   | Attack Delay: Delay between the attack arounds in 10ths of a second.                      |
+| findable               | tinyint   | Findable: 0 = False, 1 = True                                                             |
+| STR                    | mediumint | Strength                                                                                  |
+| STA                    | mediumint | Stamina                                                                                   |
+| DEX                    | mediumint | Dexterity                                                                                 |
+| AGI                    | mediumint | Agility                                                                                   |
+| _INT                   | mediumint | Intelligence                                                                              |
+| WIS                    | mediumint | Wisdom                                                                                    |
+| CHA                    | mediumint | Charisma                                                                                  |
+| see_hide               | tinyint   | See Hide: 0 = False, 1 = True                                                             |
+| see_improved_hide      | tinyint   | See Improved Hide: 0 = False, 1 = True                                                    |
+| trackable              | tinyint   | Trackable: 0 = False, 1 = True                                                            |
+| isbot                  | tinyint   | Is Bot: 0 = False, 1 = True                                                               |
+| exclude                | tinyint   | Exclude: 0 = False, 1 = True                                                              |
+| ATK                    | mediumint | Attack                                                                                    |
+| Accuracy               | mediumint | Accuracy                                                                                  |
+| Avoidance              | mediumint | Avoidance                                                                                 |
+| slow_mitigation        | smallint  | Slow Mitigation                                                                           |
+| version                | smallint  | Version                                                                                   |
+| maxlevel               | tinyint   | Maximum Level                                                                             |
+| scalerate              | int       | Scale Rate                                                                                |
+| private_corpse         | tinyint   | Private Corpse: 0 = False, 1 = True                                                       |
+| unique_spawn_by_name   | tinyint   | Unique Spawn By Name: 0 = False, 1 = True                                                 |
+| underwater             | tinyint   | Underwater: 0 = False, 1 = True                                                           |
+| isquest                | tinyint   | Is Quest: 0 = False, 1 = True                                                             |
+| emoteid                | int       | [Emote Identifier](npc_emotes.md)                                                         |
+| spellscale             | float     | Spell Scale: 25 = 25%, 50 = 50%, 100 = 100%                                               |
+| healscale              | float     | Heal Scale: 25 = 25%, 50 = 50%, 100 = 100%                                                |
+| no_target_hotkey       | tinyint   | No Target Hotkey: 0 = False, 1 = True                                                     |
+| raid_target            | tinyint   | Raid Target: 0 = False, 1 = True                                                          |
+| armtexture             | tinyint   | [Arm Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)        |
+| bracertexture          | tinyint   | [Bracer Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)     |
+| handtexture            | tinyint   | [Hand Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)       |
+| legtexture             | tinyint   | [Leg Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)        |
+| feettexture            | tinyint   | [Feet Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)       |
+| light                  | tinyint   | Light                                                                                     |
+| walkspeed              | tinyint   | Walk Speed                                                                                |
+| peqid                  | int       | PEQ Identifier                                                                            |
+| unique_                | tinyint   | Unique                                                                                    |
+| fixed                  | tinyint   | Fixed                                                                                     |
+| ignore_despawn         | tinyint   | Ignore Despawn: 0 = False, 1 = True                                                       |
+| show_name              | tinyint   | Show Name: 0 = False, 1 = True                                                            |
+| untargetable           | tinyint   | Untargetable: 0 = False, 1 = True                                                         |
+| charm_ac               | smallint  | Charmed Armor Class                                                                       |
+| charm_min_dmg          | int       | Charmed Minimum Damage                                                                    |
+| charm_max_dmg          | int       | Charmed Maximum Damage                                                                    |
+| charm_attack_delay     | tinyint   | Charmed Attack Delay                                                                      |
+| charm_accuracy_rating  | mediumint | Charmed Accuracy                                                                          |
+| charm_avoidance_rating | mediumint | Charmed Avoidance                                                                         |
+| charm_atk              | mediumint | Charmed Attack                                                                            |
+| skip_global_loot       | tinyint   | Skip Global Loot: 0 = False, 1 = True                                                     |
+| rare_spawn             | tinyint   | Rare Spawn: 0 = False, 1 = True                                                           |
+| stuck_behavior         | tinyint   | Stuck Behavior                                                                            |
+| model                  | smallint  |                                                                                           |
+| flymode                | tinyint   | [Fly Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes)          |

@@ -1,5 +1,5 @@
-| Column  | Data Type | Description |
-| ------- | --------- | ----------- |
-| id      | int       |             |
-| tier    | tinyint   |             |
-| tribute | int       |             |
+| Column  | Data Type | Description                                      |
+| ------- | --------- | ------------------------------------------------ |
+| id      | int       | [Unique Character Identifier](character_data.md) |
+| tier    | tinyint   | Tier                                             |
+| tribute | int       |                                                  |

@@ -1,13 +1,13 @@
-| Column       | Data Type | Description |
-| ------------ | --------- | ----------- |
-| guild_id     | mediumint |             |
-| rank         | tinyint   |             |
-| title        | varchar   |             |
-| can_hear     | tinyint   |             |
-| can_speak    | tinyint   |             |
-| can_invite   | tinyint   |             |
-| can_remove   | tinyint   |             |
-| can_promote  | tinyint   |             |
-| can_demote   | tinyint   |             |
-| can_motd     | tinyint   |             |
-| can_warpeace | tinyint   |             |
+| Column       | Data Type | Description                          |
+| ------------ | --------- | ------------------------------------ |
+| guild_id     | mediumint | [Unique Guild Identifier](guilds.md) |
+| rank         | tinyint   | Rank Identifier                      |
+| title        | varchar   | Title                                |
+| can_hear     | tinyint   | Can Hear: 0 = False, 1 = True        |
+| can_speak    | tinyint   | Can Speak: 0 = False, 1 = True       |
+| can_invite   | tinyint   | Can Invite: 0 = False, 1 = True      |
+| can_remove   | tinyint   | Can Remove: 0 = False, 1 = True      |
+| can_promote  | tinyint   | Can Promote: 0 = False, 1 = True     |
+| can_demote   | tinyint   | Can Demote: 0 = False, 1 = True      |
+| can_motd     | tinyint   | Can MOTD: 0 = False, 1 = True        |
+| can_warpeace | tinyint   | Can War Peace: 0 = False, 1 = True   |

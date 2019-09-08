@@ -12,7 +12,7 @@ aa_ability:
     nullable: NO
     description: >-
       [AA
-      Category](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/aa-categories)
+      Category](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-categories)
   classes:
     dataType: int
     nullable: NO
@@ -23,7 +23,7 @@ aa_ability:
     dataType: int
     nullable: NO
     description: >-
-      [Races](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/race-list)
+      [Races](hhttps://eqemu.gitbook.io/server/categories/reference-lists/race-list)
   drakkin_heritage:
     dataType: int
     nullable: NO
@@ -32,7 +32,7 @@ aa_ability:
     dataType: int
     nullable: NO
     description: >-
-      [Deities](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/deity-list)
+      [Deities](hhttps://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
   status:
     dataType: int
     nullable: NO
@@ -42,7 +42,7 @@ aa_ability:
     nullable: NO
     description: >-
       [AA
-      Type](https://app.gitbook.com/@eqemu/s/server/categories/types/aa-types)
+      Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-types)
   charges:
     dataType: int
     nullable: NO
@@ -81,13 +81,13 @@ aa_actions:
     nullable: NO
     description: >-
       [AA Target
-      Type](https://app.gitbook.com/@eqemu/s/server/categories/types/aa-target-types)
+      Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-target-types)
   nonspell_action:
     dataType: tinyint
     nullable: NO
     description: >-
       [AA Nonspell
-      Action](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/aa-nonspell-actions)
+      Action](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions)
   nonspell_mana:
     dataType: mediumint
     nullable: NO
@@ -130,7 +130,7 @@ aa_effects:
     nullable: NO
     description: >-
       [Spell Effect
-      Identifier](https://app.gitbook.com/@eqemu/s/server/categories/spells/spell-effect-ids)
+      Identifier](hhttps://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)
   base1:
     dataType: mediumint
     nullable: NO
@@ -208,7 +208,7 @@ aa_rank_effects:
     nullable: NO
     description: >-
       [Spell Effect
-      Identifier](https://app.gitbook.com/@eqemu/s/server/categories/spells/spell-effect-ids)
+      Identifier](hhttps://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)
   base1:
     dataType: int
     nullable: NO
@@ -482,7 +482,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/zones)
+      Name](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
   zone_version:
     dataType: tinyint
     nullable: NO
@@ -560,7 +560,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone In Zone
-      ID](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/zones)
+      ID](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
   zone_in_x:
     dataType: float
     nullable: NO
@@ -594,7 +594,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://app.gitbook.com/@eqemu/s/server/categories/reference-lists/zones)
+      Identifier](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
   graveyard_x:
     dataType: float
     nullable: NO
@@ -783,7 +783,7 @@ auras:
     nullable: NO
     description: >-
       [Aura
-      Type](https://app.gitbook.com/@eqemu/s/server/categories/types/aura-types)
+      Type](hhttps://eqemu.gitbook.io/server/categories/types/aura-types)
   spawn_type:
     dataType: int
     nullable: NO
@@ -921,7 +921,7 @@ books:
   txtfile:
     dataType: text
     nullable: NO
-    description: Book Text
+    description: The text in the book. ` Represents line spaces, `` is two line spaces, ``` is three line spaces, etc. (13 lines per book page)
   language:
     dataType: int
     nullable: NO
@@ -2943,44 +2943,44 @@ character_pet_buffs:
   slot:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Slot'
   spell_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Spell Identifier](spells_new.md)'
   caster_level:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Caster Level'
   castername:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Caster Name'
   ticsremaining:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Tics Remaining'
   counters:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Counters'
   numhits:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Number of Hits'
   rune:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rune'
   instrument_mod:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Instrument Modifier'
 character_pet_info:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   pet:
     dataType: int
     nullable: NO
@@ -2988,32 +2988,32 @@ character_pet_info:
   petname:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Pet Name'
   petpower:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Pet Power'
   spell_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Spell Identifier](spells_new.md)'
   hp:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Health'
   mana:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Mana'
   size:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Size'
 character_pet_inventory:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   pet:
     dataType: int
     nullable: NO
@@ -3021,84 +3021,84 @@ character_pet_inventory:
   slot:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Slot'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
 character_potionbelt:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   potion_id:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Potion Identifie'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   icon:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Icon'
 character_skills:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   skill_id:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   value:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Skill Level'
 character_spells:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   slot_id:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Slot Identifier'
   spell_id:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Spell Identifier](spells_new.md)'
 character_tasks:
   charid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   taskid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Task Identifier](tasks.md)'
   slot:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Slot'
   type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Task Type](https://eqemu.gitbook.io/server/categories/types/task-types)'
   acceptedtime:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Accepted Time UNIX Timestamp'
 character_tribute:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   tier:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Tier'
   tribute:
     dataType: int
     nullable: NO
@@ -3107,524 +3107,524 @@ char_create_combinations:
   allocation_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Allocation Identifier](char_create_point_allocations.md)'
   race:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)'
   class:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   deity:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   start_zone:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Start Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   expansions_req:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Expansions Required](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-bitmasks)'
 char_create_point_allocations:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocation Identifier'
   base_str:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Strength'
   base_sta:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Stamina'
   base_dex:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Dexterity'
   base_agi:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Agility'
   base_int:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Intelligence'
   base_wis:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Wisdom'
   base_cha:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Charisma'
   alloc_str:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Strength'
   alloc_sta:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Stamina'
   alloc_dex:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Dexterity'
   alloc_agi:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Agility'
   alloc_int:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Intelligence'
   alloc_wis:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Wisdom'
   alloc_cha:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Allocated Charisma'
 char_recipe_list:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   recipe_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Recipe Identifier](tradeskill_recipe.md)'
   madecount:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Made Count'
 chatchannels:
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Name'
   owner:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   password:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Password'
   minstatus:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Minimum Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)'
 class_skill:
   class:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Name](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   skill_0:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for 1H Blunt'
   skill_1:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for 1H Slashing'
   skill_2:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for 2H Blunt'
   skill_3:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for 2H Slashing'
   skill_4:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Abjuration'
   skill_5:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Alteration'
   skill_6:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Apply Poison'
   skill_7:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Archery'
   skill_8:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Backstab'
   skill_9:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Bind Wound'
   skill_10:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Bash'
   skill_11:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Block'
   skill_12:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Brass Instruments'
   skill_13:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Channeling'
   skill_14:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Conjuration'
   skill_15:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Defense'
   skill_16:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Disarm'
   skill_17:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Disarm Traps'
   skill_18:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Divination'
   skill_19:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Dodge'
   skill_20:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Double Attack'
   skill_21:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Dragon Punch'
   skill_22:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Dual Wield'
   skill_23:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Eagle Strike'
   skill_24:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Evocation'
   skill_25:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Feign Death'
   skill_26:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Flying Kick'
   skill_27:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Forage'
   skill_28:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Hand to Hand'
   skill_29:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Hide'
   skill_30:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Kick'
   skill_31:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Meditate'
   skill_32:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Mend'
   skill_33:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Offense'
   skill_34:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Parry'
   skill_35:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Pick Lock'
   skill_36:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for 1H Piercing'
   skill_37:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Riposte'
   skill_38:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Round Kick'
   skill_39:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Safe Fall'
   skill_40:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Sense Heading'
   skill_41:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Singing'
   skill_42:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Sneak'
   skill_43:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Abjuration Specialization'
   skill_44:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Alteration Specialization'
   skill_45:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Conjuration Specialization'
   skill_46:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Divination Specialization'
   skill_47:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Evocation Specialization'
   skill_48:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Pick Pocket'
   skill_49:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Stringed Instruments'
   skill_50:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Swimming'
   skill_51:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Throwing'
   skill_52:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Tiger Claw'
   skill_53:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Tracking'
   skill_54:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Wind Instruments'
   skill_55:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Fishing'
   skill_56:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Make Poison'
   skill_57:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Tinkering'
   skill_58:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Research'
   skill_59:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Alchemy'
   skill_60:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Baking'
   skill_61:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Tailoring'
   skill_62:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Sense Traps'
   skill_63:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Blacksmithing'
   skill_64:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Fletching'
   skill_65:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Brewing'
   skill_66:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Alcohol Tolerance'
   skill_67:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Begging'
   skill_68:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Jewelry Making'
   skill_69:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Pottery'
   skill_70:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Percussion Instruments'
   skill_71:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Intimidation'
   skill_72:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Berserking'
   skill_73:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Required Level for Taunt'
 client_faction_associations:
   faction_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
   other_faction_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
   mod:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Modifier'
 client_faction_names:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Name'
 client_server_faction_map:
   clientid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
   serverid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
 command_settings:
   command:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Unique Command Identifier'
   access:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Required Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)'
   aliases:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Aliases'
 completed_tasks:
   charid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   completedtime:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Completed Time UNIX Timestamp'
   taskid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Task Identifier](tasks.md)'
   activityid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Activity Identifier](task_activities.md)'
 custom_faction_mappings:
   old_faction:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
   new_faction:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Unique Faction Identifier](faction_list.md)'
 damageshieldtypes:
   spellid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Spell Identifier](spells_new.md)'
   type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Damage Shield Type](https://eqemu.gitbook.io/server/categories/types/damage-shield-types)'
 data_buckets:
   id:
     dataType: bigint
     nullable: NO
-    description: ''
+    description: 'Unique Data Bucket Identifier'
   key:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Key'
   value:
     dataType: text
     nullable: YES
-    description: ''
+    description: 'Value'
   expires:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Expiration UNIX Timestamp'
 db_str:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Database String Identifier'
   type:
     dataType: int
     nullable: NO
@@ -3663,75 +3663,75 @@ doors:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Entry Identifier'
   doorid:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Unique Door Identifier'
   zone:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Zone Version: -1 For All'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: This is the name of the door, such as 'IT11161' or 'POPCREATE501', for names of objects you can see.
   pos_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Door Y Coordinate'
   pos_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Door X Coordinate'
   pos_z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Door Z Coordinate'
   heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Door Heading Coordinate'
   opentype:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Door Open Type](https://eqemu.gitbook.io/server/categories/types/door-open-types)'
   guild:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Guild Identifier](guilds.md)'
   lockpick:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Lockpicking Skill Required: -1 = Unpickable'
   keyitem:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   nokeyring:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'No Key Ring: 0 = False, 1 = True'
   triggerdoor:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Trigger Door: 0 For Current Door or use a Unique Door Identifier'
   triggertype:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Trigger Type: 1 = Open a Type 255 door, 255 = Will Not Open'
   disable_timer:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Disable Timer'
   doorisopen:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Door Is Open: 0 = False, 1 = True'
   door_param:
     dataType: int
     nullable: NO
@@ -3739,64 +3739,64 @@ doors:
   dest_zone:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   dest_instance:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Destination Instance](instance_list.md)'
   dest_x:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Destination X Coordinate'
   dest_y:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Destination Y Coordinate'
   dest_z:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Destination Z Coordinate'
   dest_heading:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Destination Heading Coordinate'
   invert_state:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](https://eqemu.gitbook.io/server/categories/types/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn.'
   incline:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Incline'
   size:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Size'
   buffer:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Unused'
   client_version_mask:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Client Version Mask](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)'
   is_ldon_door:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Is LDoN Door: 0 = False, 1 = True'
 eqtime:
   minute:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Minutes'
   hour:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Hours'
   day:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Day'
   month:
     dataType: tinyint
     nullable: NO
@@ -3905,54 +3905,7 @@ faction_list_mod:
     dataType: varchar
     nullable: NO
     description: ''
-faction_list_mod_prefix:
-  id:
-    dataType: int
-    nullable: NO
-    description: ''
-  faction_id:
-    dataType: int
-    nullable: NO
-    description: ''
-  mod:
-    dataType: smallint
-    nullable: NO
-    description: ''
-  mod_name:
-    dataType: varchar
-    nullable: NO
-    description: ''
-faction_list_prefix:
-  id:
-    dataType: int
-    nullable: NO
-    description: ''
-  name:
-    dataType: varchar
-    nullable: NO
-    description: ''
-  base:
-    dataType: smallint
-    nullable: NO
-    description: ''
 faction_values:
-  char_id:
-    dataType: int
-    nullable: NO
-    description: ''
-  faction_id:
-    dataType: int
-    nullable: NO
-    description: ''
-  current_value:
-    dataType: smallint
-    nullable: NO
-    description: ''
-  temp:
-    dataType: tinyint
-    nullable: NO
-    description: ''
-faction_values_prefix:
   char_id:
     dataType: int
     nullable: NO
@@ -4392,93 +4345,93 @@ guild_members:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   guild_id:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: '[Unique Guild Identifier](guilds.md)'
   rank:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Rank](https://eqemu.gitbook.io/server/categories/reference-lists/guild-ranks)'
   tribute_enable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Tribute Enable: 0 = False, 1 = True'
   total_tribute:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Total Tribute'
   last_tribute:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Last Tribute'
   banker:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Banked: 0 = False, 1 = True'
   public_note:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Public Note'
   alt:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Alt: 0 = False, 1 = True'
 guild_ranks:
   guild_id:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: '[Unique Guild Identifier](guilds.md)'
   rank:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Rank Identifier'
   title:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Title'
   can_hear:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Hear: 0 = False, 1 = True'
   can_speak:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Speak: 0 = False, 1 = True'
   can_invite:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Invite: 0 = False, 1 = True'
   can_remove:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Remove: 0 = False, 1 = True'
   can_promote:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Promote: 0 = False, 1 = True'
   can_demote:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Demote: 0 = False, 1 = True'
   can_motd:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can MOTD: 0 = False, 1 = True'
   can_warpeace:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can War Peace: 0 = False, 1 = True'
 guild_relations:
   guild1:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: '[Unique Guild Identifier 1](guilds.md)'
   guild2:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: '[Unique Guild Identifier 2](guilds.md)'
   relation:
     dataType: tinyint
     nullable: NO
@@ -4487,27 +4440,27 @@ hackers:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Hacker Entry Identifier'
   account:
     dataType: text
     nullable: NO
-    description: ''
+    description: '[Unique Account Identifier](account.md)'
   name:
     dataType: text
     nullable: NO
-    description: ''
+    description: '[Character Name](character_data.md)'
   hacked:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Hacked'
   zone:
     dataType: text
     nullable: YES
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   date:
     dataType: timestamp
     nullable: NO
-    description: ''
+    description: 'Date Timestamp'
 horses:
   filename:
     dataType: varchar
@@ -5962,15 +5915,15 @@ level_exp_mods:
   level:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Character Level'
   exp_mod:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150%'
   aa_exp_mod:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'AA Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150%'
 lfguild:
   type:
     dataType: tinyint
@@ -6897,44 +6850,6 @@ npc_faction_entries:
     dataType: tinyint
     nullable: NO
     description: ''
-npc_faction_entries_prefix:
-  npc_faction_id:
-    dataType: int
-    nullable: NO
-    description: ''
-  faction_id:
-    dataType: int
-    nullable: NO
-    description: ''
-  value:
-    dataType: int
-    nullable: NO
-    description: ''
-  npc_value:
-    dataType: tinyint
-    nullable: NO
-    description: ''
-  temp:
-    dataType: tinyint
-    nullable: NO
-    description: ''
-npc_faction_prefix:
-  id:
-    dataType: int
-    nullable: NO
-    description: ''
-  name:
-    dataType: tinytext
-    nullable: YES
-    description: ''
-  primaryfaction:
-    dataType: int
-    nullable: NO
-    description: ''
-  ignore_primary_assist:
-    dataType: tinyint
-    nullable: NO
-    description: ''
 npc_scale_global_base:
   type:
     dataType: int
@@ -7052,39 +6967,39 @@ npc_spells:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique NPC Spell Set Identifier'
   name:
     dataType: tinytext
     nullable: YES
-    description: ''
+    description: 'NPC Spell Set Name'
   parent_list:
     dataType: int
     nullable: NO
-    description: ''
+    description: Inherit all the spells from this list, and merge them with our spells. Only one level of inheritance is allowed, so your parent's parent will not be included.
   attack_proc:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](spells_new.md)'
   proc_chance:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Proc Chance: 0 = Never, 100 = Always'
   range_proc:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'The ranged proc that an NPC with this spell set will add to their list of procs. '
   rproc_chance:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Ranged Proc Chance: 0 = Never, 100 = Always'
   defensive_proc:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'The defensive proc that an NPC with this spell set will add to their list of procs. '
   dproc_chance:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Defensive Proc Chance: 0 = Never, 100 = Always'
   fail_recast:
     dataType: int
     nullable: NO
@@ -7183,528 +7098,528 @@ npc_spells_entries:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique NPC Spell Entry Identifier'
   npc_spells_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique NPC Spell Set Identifier](npc_spells.md)'
   spellid:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Spell Identifier](spells_new.md)'
   type:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Spell Type Bitmask](https://eqemu.gitbook.io/server/categories/types/spell-types)'
   minlevel:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Minimum Level'
   maxlevel:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Maximum Level'
   manacost:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Mana Cost'
   recast_delay:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Recast Delay'
   priority:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Priority: 0 = Innate, 1 = Highest Priority, 5 = Lower Priority, 10 = Even Lower Priority'
   resist_adjust:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Resist Adjustment'
   min_hp:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Minimum Health Percentage'
   max_hp:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Maximum Health Percentage'
 npc_types:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique NPC Type Identifier'
   name:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Name'
   lastname:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Last Name'
   level:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Level'
   race:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)'
   class:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   bodytype:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Body Type](https://eqemu.gitbook.io/server/categories/types/body-types)'
   hp:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Health'
   mana:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Mana'
   gender:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)'
   texture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   helmtexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Helmet Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   herosforgemodel:
     dataType: int
     nullable: NO
-    description: ''
+    description: Hero's Forge Model
   size:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Size'
   hp_regen_rate:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Health Regeneration'
   mana_regen_rate:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Mana Regeneration'
   loottable_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Loottable Identifier](loottable.md)'
   merchant_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Merchant Identifier](merchantlist.md)'
   alt_currency_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Alternate Currency Identifier](alternate_currency.md)'
   npc_spells_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Spell Set Identifier](npc_spells.md)'
   npc_spells_effects_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Spell Effects Identifier](npc_spells_effects.md)'
   npc_faction_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Faction Identifier](faction_list.md)'
   adventure_template_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Adventure Template Identifier](adventure_template.md)'
   trap_template:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Trap Template Identifier](traps.md)'
   mindmg:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Minimum Damage'
   maxdmg:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Maximum Damage'
   attack_count:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Attack Count'
   npcspecialattks:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'NPC Special Attacks (Deprecated)'
   special_abilities:
     dataType: text
     nullable: YES
-    description: ''
+    description: 'NPC Special Abilities'
   aggroradius:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Aggro Radius'
   assistradius:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Assist Radius'
   face:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Face'
   luclin_hairstyle:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Hair Style'
   luclin_haircolor:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Hair Color'
   luclin_eyecolor:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Eye Color 1'
   luclin_eyecolor2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Eye Color 2'
   luclin_beardcolor:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Beard Color'
   luclin_beard:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Beard'
   drakkin_heritage:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Drakkin Heritage'
   drakkin_tattoo:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Drakkin Tattoo'
   drakkin_details:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Drakkin Details'
   armortint_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Armor Tint Identifier](npc_types_tint.md)'
   armortint_red:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Armor Tint Red: 0 = None, 255 = Max'
   armortint_green:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Armor Tint Green: 0 = None, 255 = Max'
   armortint_blue:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Armor Tint Blue: 0 = None, 255 = Max'
   d_melee_texture1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Primary Weapon Texture'
   d_melee_texture2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Secondary Weapon Texture'
   ammo_idfile:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Ammo Texture'
   prim_melee_type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Primary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   sec_melee_type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Secondary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   ranged_type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Ranged Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   runspeed:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Run Speed'
   MR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Magic Resistance'
   CR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Cold Resistance'
   DR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Disease Resistance'
   FR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Fire Resistance'
   PR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Poison Resistance'
   Corrup:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Corruption Resistance'
   PhR:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Physical Resistance'
   see_invis:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'See Invisible: 0 = False, 1 = True'
   see_invis_undead:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'See Invisible vs. Undread: 0 = False, 1 = True'
   qglobal:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated)'
   AC:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Armor Class'
   npc_aggro:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'NPC Aggro: 0 = False, 1 = True'
   spawn_limit:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Spawn Limit'
   attack_speed:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Attack Speed: The lower the number, the faster the NPC hits. (Deprecated)'
   attack_delay:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Attack Delay: Delay between the attack arounds in 10ths of a second.'
   findable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Findable: 0 = False, 1 = True'
   STR:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Strength'
   STA:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Stamina'
   DEX:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Dexterity'
   AGI:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Agility'
   _INT:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Intelligence'
   WIS:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Wisdom'
   CHA:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Charisma'
   see_hide:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'See Hide: 0 = False, 1 = True'
   see_improved_hide:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'See Improved Hide: 0 = False, 1 = True'
   trackable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Trackable: 0 = False, 1 = True'
   isbot:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Bot: 0 = False, 1 = True'
   exclude:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Exclude: 0 = False, 1 = True'
   ATK:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Attack'
   Accuracy:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Accuracy'
   Avoidance:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Avoidance'
   slow_mitigation:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Slow Mitigation'
   version:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Version'
   maxlevel:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Maximum Level'
   scalerate:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Scale Rate'
   private_corpse:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Private Corpse: 0 = False, 1 = True'
   unique_spawn_by_name:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Unique Spawn By Name: 0 = False, 1 = True'
   underwater:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Underwater: 0 = False, 1 = True'
   isquest:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Quest: 0 = False, 1 = True'
   emoteid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Emote Identifier](npc_emotes.md)'
   spellscale:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Spell Scale: 25 = 25%, 50 = 50%, 100 = 100%'
   healscale:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Heal Scale: 25 = 25%, 50 = 50%, 100 = 100%'
   no_target_hotkey:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'No Target Hotkey: 0 = False, 1 = True'
   raid_target:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Raid Target: 0 = False, 1 = True'
   armtexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Arm Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   bracertexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Bracer Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   handtexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Hand Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   legtexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Leg Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   feettexture:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Feet Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)'
   light:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Light'
   walkspeed:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Walk Speed'
   peqid:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'PEQ Identifier'
   unique_:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Unique'
   fixed:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fixed'
   ignore_despawn:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Ignore Despawn: 0 = False, 1 = True'
   show_name:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Show Name: 0 = False, 1 = True'
   untargetable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Untargetable: 0 = False, 1 = True'
   charm_ac:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Charmed Armor Class'
   charm_min_dmg:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Charmed Minimum Damage'
   charm_max_dmg:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Charmed Maximum Damage'
   charm_attack_delay:
     dataType: tinyint
     nullable: YES
-    description: ''
+    description: 'Charmed Attack Delay'
   charm_accuracy_rating:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Charmed Accuracy'
   charm_avoidance_rating:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Charmed Avoidance'
   charm_atk:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Charmed Attack'
   skip_global_loot:
     dataType: tinyint
     nullable: YES
-    description: ''
+    description: 'Skip Global Loot: 0 = False, 1 = True'
   rare_spawn:
     dataType: tinyint
     nullable: YES
-    description: ''
+    description: 'Rare Spawn: 0 = False, 1 = True'
   stuck_behavior:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Stuck Behavior'
   model:
     dataType: smallint
     nullable: NO
@@ -7712,263 +7627,263 @@ npc_types:
   flymode:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Fly Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes)'
 npc_types_metadata:
   npc_types_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Type Identifier](npc_types.md)'
   isPKMob:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is PK Mob: 0 = False, 1 = True'
   isNamedMob:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Named Mob: 0 = False, 1 = True'
   isRaidTarget:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Raid Target: 0 = False, 1 = True'
   isCreatedMob:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Created Mob: 0 = False, 1 = True'
   isCustomFeatureNPC:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Custom Feature NPC: 0 = False, 1 = True'
 npc_types_tint:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique NPC Type Tint Identifier'
   tint_set_name:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Tint Set Name'
   red1h:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Helmet: 0 = None, 255 = Max'
   grn1h:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Helmet: 0 = None, 255 = Max'
   blu1h:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Helmet: 0 = None, 255 = Max'
   red2c:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Chest: 0 = None, 255 = Max'
   grn2c:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Chest: 0 = None, 255 = Max'
   blu2c:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Chest: 0 = None, 255 = Max'
   red3a:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Arms: 0 = None, 255 = Max'
   grn3a:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Arms: 0 = None, 255 = Max'
   blu3a:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Arms: 0 = None, 255 = Max'
   red4b:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Bracers: 0 = None, 255 = Max'
   grn4b:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Bracers: 0 = None, 255 = Max'
   blu4b:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Bracers: 0 = None, 255 = Max'
   red5g:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Hands: 0 = None, 255 = Max'
   grn5g:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Hands: 0 = None, 255 = Max'
   blu5g:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Hands: 0 = None, 255 = Max'
   red6l:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Legs: 0 = None, 255 = Max'
   grn6l:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Legs: 0 = None, 255 = Max'
   blu6l:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Legs: 0 = None, 255 = Max'
   red7f:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Feet: 0 = None, 255 = Max'
   grn7f:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Feet: 0 = None, 255 = Max'
   blu7f:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Feet: 0 = None, 255 = Max'
   red8x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Unkmown: 0 = None, 255 = Max'
   grn8x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Unkmown: 0 = None, 255 = Max'
   blu8x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Unkmown: 0 = None, 255 = Max'
   red9x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Red for Unkmown: 0 = None, 255 = Max'
   grn9x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Green for Unkmown: 0 = None, 255 = Max'
   blu9x:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Blue for Unkmown: 0 = None, 255 = Max'
 object:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Object Identifier'
   zoneid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Version: -1 For All'
   xpos:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'X Coordinate'
   ypos:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Y Coordinate'
   zpos:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Z Coordinate'
   heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Heading Coordinate'
   itemid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   charges:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Charges'
   objectname:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Object Name'
   type:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Type'
   icon:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Icon'
   unknown08:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown10:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown20:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown24:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown60:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown64:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown68:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown72:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown76:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   unknown84:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   size:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Size'
   tilt_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Tilt X'
   tilt_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Tilt Y'
   display_name:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Display Name'
 object_contents:
   zoneid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   parentid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Object Identifier](object.md)'
   bagidx:
     dataType: int
     nullable: NO
@@ -7976,68 +7891,68 @@ object_contents:
   itemid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   charges:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Charges'
   droptime:
     dataType: datetime
     nullable: NO
-    description: ''
+    description: 'Drop Time'
   augslot1:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Augment Slot 1'
   augslot2:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Augment Slot 2'
   augslot3:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Augment Slot 3'
   augslot4:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Augment Slot 4'
   augslot5:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Augment Slot 5'
   augslot6:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 6'
 perl_event_export_settings:
   event_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Perl Event Identifier](https://eqemu.gitbook.io/quest-api/events)'
   event_description:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Event Description'
   export_qglobals:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Export QGlobals: 0 = False, 1 = True'
   export_mob:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Export Mob: 0 = False, 1 = True'
   export_zone:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Export Zone: 0 = False, 1 = True'
   export_item:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Export Item: 0 = False, 1 = True'
   export_event:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Export Event: 0 = False, 1 = True'
 petitions:
   dib:
     dataType: int
@@ -8107,61 +8022,61 @@ pets:
   type:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[NPC Type Name](npc_types.md)'
   petpower:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Pet Power'
   npcID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Type Identifier](npc_types.md)'
   temp:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Temporary: 0 = False, 1 = True'
   petcontrol:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Pet Control: 0 = No Control, 1 = No Attack Control, 2 = Full Control'
   petnaming:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Pet Naming: 0 = Soandsos Pet, 1 = Soandsos Familiar, 2 = Soandsos Warder, 3 = Random Naming (i.e. Gobaner), 4 = Keeps name from npc_types table'
   monsterflag:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Monster Flag: 0 = False, 1 = True'
   equipmentset:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Pet Equipment Set Identifier](pet_equipmentset.md)'
 pets_equipmentset:
   set_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Pet Equipment Set Identifier'
   setname:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Pet Equipment Set Name'
   nested_set:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Nested Set Identifier'
 pets_equipmentset_entries:
   set_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Pet Equipment Set Identifier](pets_equipmentset.md)'
   slot:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Slot'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
 player_titlesets:
   id:
     dataType: int
@@ -8184,96 +8099,96 @@ proximities:
   zoneid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   exploreid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Explore Identifier](goallists.md)'
   minx:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum X Coordinate'
   maxx:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum X Coordinate'
   miny:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum Y Coordinate'
   maxy:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum Y Coordinate'
   minz:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum Z Coordinate'
   maxz:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum Z Coordinate'
 qs_merchant_transaction_record:
   transaction_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Transaction Identifier'
   time:
     dataType: timestamp
     nullable: YES
-    description: ''
+    description: 'Timestamp'
   zone_id:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   merchant_id:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Merchant Identifier](merchantlist.md)'
   merchant_pp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Merchant Platinum'
   merchant_gp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Merchant Gold'
   merchant_sp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Merchant Silver'
   merchant_cp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Merchant Copper'
   merchant_items:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Merchant Items'
   char_id:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   char_pp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Character Platinum'
   char_gp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Character Gold'
   char_sp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Character Silver'
   char_cp:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Character Copper'
   char_items:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: 'Character Items'
 qs_merchant_transaction_record_entries:
   event_id:
     dataType: int
@@ -8941,200 +8856,200 @@ saylink:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Saylink Identifier'
   phrase:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Phrase'
 sharedbank:
   acctid:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Unique Account Identifier](account.md)'
   slotid:
     dataType: mediumint
     nullable: YES
-    description: ''
+    description: '[Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)'
   itemid:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Item Identifier](items.md)'
   charges:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: 'Charges'
   augslot1:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 1'
   augslot2:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 2'
   augslot3:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 3'
   augslot4:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 4'
   augslot5:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 5'
   augslot6:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Augment Slot 6'
   custom_data:
     dataType: text
     nullable: YES
-    description: ''
+    description: 'Custom Data'
 skill_caps:
   skillID:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   class:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   level:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Level'
   cap:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Cap'
   class_:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Unknown'
 spawn2:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Spawn2 Entry Identifier'
   spawngroupID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Spawngroup Identifier](spawngroup.md)'
   zone:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Version'
   x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'X Coordinate'
   y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Y Coordinate'
   z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Z Coordinate'
   heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Heading Coordinate'
   respawntime:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Respawn Time in Seconds'
   variance:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Variance in Seconds'
   pathgrid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Path Grid Identifier](grid.md)'
   _condition:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Condition'
   cond_value:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Condition Value'
   enabled:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Enabled: 0 = False, 1 = True'
   animation:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Animation](https://eqemu.gitbook.io/server/categories/types/npc-animation-types)'
 spawnentry:
   spawngroupID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Spawn Group Identifier](spawngroup.md)'
   npcID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Type Identifier](npc_types.md)'
   chance:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Chance: 0 = Never, 100 = Always'
 spawngroup:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Spawn Group Identifier'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Name'
   spawn_limit:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Spawn Limit'
   dist:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Distance'
   max_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Max X Coordinate'
   min_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Min X Coordinate'
   max_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Max Y Coordinate'
   min_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Min Y Coordinate'
   delay:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Roaming Delay'
   mindelay:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Minimum Delay'
   despawn:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Despawn Type](https://eqemu.gitbook.io/server/categories/types/npc-despawn-types)'
   despawn_timer:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Despawn Timer in Seconds'
 spawn_conditions:
   zone:
     dataType: varchar
@@ -9234,11 +9149,11 @@ spells_new:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Spell Identifier'
   name:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Name'
   player_1:
     dataType: varchar
     nullable: YES
@@ -9246,483 +9161,483 @@ spells_new:
   teleport_zone:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The zone you are teleporting to or the [NPC Name](npc_types.md) you want to spawn.'
   you_cast:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The message sent to others when you cast the spell.'
   other_casts:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The message seen when someone around you casts the spell.'
   cast_on_you:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The message received when the spell is cast on you.'
   cast_on_other:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The message recieved when the spell is cast on another.'
   spell_fades:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'The message recieved when the spell fades.'
   range:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Range'
   aoerange:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Area of Effect Range'
   pushback:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Push Back'
   pushup:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Push Up'
   cast_time:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Cast Time in Milliseconds'
   recovery_time:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Recovery Time in Seconds'
   recast_time:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Recast Time in Seconds'
   buffdurationformula:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Buff Duration Formula](https://eqemu.gitbook.io/server/categories/spells/buff-duration-formulas)'
   buffduration:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Buff Duration'
   AEDuration:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Area of Effect Duration'
   mana:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Mana Cost'
   effect_base_value1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 1'
   effect_base_value2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 2'
   effect_base_value3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 3'
   effect_base_value4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 4'
   effect_base_value5:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 5'
   effect_base_value6:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 6'
   effect_base_value7:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 7'
   effect_base_value8:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 8'
   effect_base_value9:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 9'
   effect_base_value10:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 10'
   effect_base_value11:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 11'
   effect_base_value12:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Base Value 12'
   effect_limit_value1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 1'
   effect_limit_value2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 2'
   effect_limit_value3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 3'
   effect_limit_value4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 4'
   effect_limit_value5:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 5'
   effect_limit_value6:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 6'
   effect_limit_value7:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 7'
   effect_limit_value8:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 8'
   effect_limit_value9:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 9'
   effect_limit_value10:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 10'
   effect_limit_value11:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 11'
   effect_limit_value12:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Limit Value 12'
   max1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 1'
   max2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 2'
   max3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 3'
   max4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 4'
   max5:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 5'
   max6:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 6'
   max7:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 7'
   max8:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 8'
   max9:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 9'
   max10:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 10'
   max11:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 11'
   max12:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max 12'
   icon:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Icon'
   memicon:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Memmed Icon'
   components1:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   components2:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   components3:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   components4:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   component_counts1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Component Count 1'
   component_counts2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Component Count 2'
   component_counts3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Component Count 3'
   component_counts4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Component Count 4'
   NoexpendReagent1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well.'
   NoexpendReagent2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well.'
   NoexpendReagent3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well.'
   NoexpendReagent4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well.'
   formula1:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 1](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula2:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 2](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula3:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 3](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula4:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 4](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula5:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 5](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula6:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 6](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula7:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 7](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula8:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 8](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula9:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 9](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula10:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 10](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula11:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 11](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   formula12:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Formula 12](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas)'
   LightType:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Light Type'
   goodEffect:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Good Effect: 0 = Detrimental, 1 = Beneficial, 2 = Beneficial Group Only'
   Activated:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Activated'
   resisttype:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Resist Type](https://eqemu.gitbook.io/server/categories/types/resist-types)'
   effectid1:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 1](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid2:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 2](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid3:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 3](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid4:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 4](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid5:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 5](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid6:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 6](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid7:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 7](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid8:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 8](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid9:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 9](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid10:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 10](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid11:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 11](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   effectid12:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect ID 12](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)'
   targettype:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Target Type](https://eqemu.gitbook.io/server/categories/types/target-types)'
   basediff:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Base Difficult Fizzle Adjustment'
   skill:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   zonetype:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Type](https://eqemu.gitbook.io/server/categories/types/zone-types)'
   EnvironmentType:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Environment Type](https://eqemu.gitbook.io/server/categories/types/environment-types)'
   TimeOfDay:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Time of Day Type](https://eqemu.gitbook.io/server/categories/types/time-of-day-types'
   classes1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Warrior'
   classes2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Cleric'
   classes3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Paladin'
   classes4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Shadow Knight'
   classes5:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Ranger'
   classes6:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Druid'
   classes7:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Monk'
   classes8:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Bard'
   classes9:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Rogue'
   classes10:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Shaman'
   classes11:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Necromancer'
   classes12:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Wizard'
   classes13:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Magician'
   classes14:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Enchanter'
   classes15:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Beastlord'
   classes16:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Required Level for Berserker'
   CastingAnim:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Casting Animation'
   TargetAnim:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Target Animation'
   TravelType:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Travel Type (Unused)'
   SpellAffectIndex:
     dataType: int
     nullable: NO
@@ -9730,335 +9645,335 @@ spells_new:
   disallow_sit:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Disallow Sit: 0 = False, 1 = True'
   deities0:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities1:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities2:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities3:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities4:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities5:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities6:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities7:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities8:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities9:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities10:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities11:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities12:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities13:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities14:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities15:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   deities16:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   field142:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field143:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   new_icon:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'New Icon'
   spellanim:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Spell Animation'
   uninterruptable:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Uninterruptable: 0 = False, 1 = True'
   ResistDiff:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Resist Difference'
   dot_stacking_exempt:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Damage Over Time Stacking Exempt: 0 = False, 1 = True'
   deleteable:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Deleteable: 0 = False, 1 = True'
   RecourseLink:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Recourse Spell Identifier](spells_new.md)'
   no_partial_resist:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'No Partial Resist: 0 = False, 1 = True'
   field152:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field153:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   short_buff_box:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Short Buff Box: 0 = False, 1 = True'
   descnum:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Description Number](db_str.md)'
   typedescnum:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Type Description Number](db_str.md)'
   effectdescnum:
     dataType: int
     nullable: YES
-    description: ''
+    description: '[Effect Description Number](db_str.md)'
   effectdescnum2:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Effect Description Number 2](db_str.md)'
   npc_no_los:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'NPC No Line of Sight: 0 = False, 1 = True'
   field160:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   reflectable:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Reflectable: 0 = False, 1 = True'
   bonushate:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Bonus Hate'
   field163:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field164:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   ldon_trap:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[LDoN Trap Identifier](traps.md)'
   EndurCost:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Endurance Cost'
   EndurTimerIndex:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Endurance Timer'
   IsDiscipline:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Is Discipline: 0 = False, 1 = True'
   field169:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field170:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field171:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field172:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   HateAdded:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Hate Added'
   EndurUpkeep:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Endurance Upkeep'
   numhitstype:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Number of Hits Type](https://eqemu.gitbook.io/server/categories/types/numhit-types)'
   numhits:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Number of Hits'
   pvpresistbase:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'PVP Resist Base'
   pvpresistcalc:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'PVP Resist Calc'
   pvpresistcap:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'PVP Resist Cap'
   spell_category:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Spell Category](https://eqemu.gitbook.io/server/categories/spells/spell-groups)'
   field181:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field182:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   pcnpc_only_flag:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs'
   cast_not_standing:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Cast Not Standing: 0 = False, 1 = True'
   can_mgb:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Can Mass Group Buff: 0 = False, 1 = True'
   nodispell:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'No Dispell: 0 = False, 1 = True'
   npc_category:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[NPC Spell Category Identifier](https://eqemu.gitbook.io/server/categories/spells/npc-spell-categories)'
   npc_usefulness:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'NPC Usefulness'
   MinResist:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Minimum Resistance'
   MaxResist:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Maximum Resistance'
   viral_targets:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Viral Targets'
   viral_timer:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Viral Timer'
   nimbuseffect:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Nimbus Effect'
   ConeStartAngle:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Cone Start Angle'
   ConeStopAngle:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Cone Stop Angle'
   sneaking:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Sneaking: 0 = False, 1 = True'
   not_extendable:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Not Extendable: 0 = False, 1 = True'
   field198:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   field199:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   suspendable:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Suspendable: 0 = False, 1 = True'
   viral_range:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Viral Range'
   songcap:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Song Cap'
   field203:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unknown'
   field204:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unknown'
   no_block:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'No Block: 0 = False, 1 = True'
   field206:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unknown'
   spellgroup:
     dataType: int
     nullable: YES
@@ -10066,387 +9981,387 @@ spells_new:
   rank:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rank: 0 = None, 1 = First, 2 = Second, 5 = Third'
   field209:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unknown'
   field210:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unknown'
   CastRestriction:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Cast Restrictions](https://eqemu.gitbook.io/server/categories/spells/spell-target-restrictions)'
   allowrest:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Allow Rest: 0 = False, 1 = True'
   InCombat:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'In Combat: 0 = False, 1 = True'
   OutofCombat:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Out Of Combat: 0 = False, 1 = True'
   field215:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   field216:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   field217:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   aemaxtargets:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Area of Effect Max Targets'
   maxtargets:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Max Targets'
   field220:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   field221:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   field222:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   field223:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Unkmown'
   persistdeath:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Persist Death: 0 = False, 1 = True'
   field225:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   field226:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   min_dist:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum Distance'
   min_dist_mod:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum Distance Modifier'
   max_dist:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum Distance'
   max_dist_mod:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum Distance Modifier'
   min_range:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Minimum Range'
   field232:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   field233:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   field234:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   field235:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
   field236:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unkmown'
 spell_buckets:
   spellid:
     dataType: bigint
     nullable: NO
-    description: ''
+    description: '[Unique Spell Identifier](spells_new.md)'
   key:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: '[Data Bucket Name](data_buckets.md)'
   value:
     dataType: text
     nullable: YES
-    description: ''
+    description: 'Data Bucket Value'
 spell_globals:
   spellid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Spell Identifier](spells_new.md)'
   spell_name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Spell Name](spells_new.md)'
   qglobal:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Quest Global Name](quest_globals.md)'
   value:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Quest Global Value'
 starting_items:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Starting Items Entry Identifier'
   race:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list): 0 = All'
   class:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list): 0 = All'
   deityid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list): 0 = Alll'
   zoneid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   itemid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   item_charges:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Item Charges'
   gm:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'GM: 0 = False, 1 = True'
   slot:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: '[Slot](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)'
 start_zones:
   x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'X Coordinate'
   y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Y Coordinate'
   z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Z Coordinate'
   heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Heading Coordinate'
   zone_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   bind_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Bind Identifier'
   player_choice:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Player Choice'
   player_class:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Player Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   player_deity:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Player Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)'
   player_race:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Player Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)'
   start_zone:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   bind_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Bind X Coordinate'
   bind_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Bind Y Coordinate'
   bind_z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Bind Z Coordinate'
   select_rank:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Select Rank: Always 50'
 tasks:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Task Identifier'
   type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Task Type](https://eqemu.gitbook.io/server/categories/types/task-types)'
   duration:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Duration'
   duration_code:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Duration Code](https://eqemu.gitbook.io/server/categories/reference-lists/task-duration-codes)'
   title:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Title'
   description:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Description'
   reward:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Reward Description'
   rewardid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Reward Item Identifier](items.md)'
   cashreward:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Cash Reward in Copper'
   xpreward:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Experience Reward'
   rewardmethod:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Reward Method: 0 = Single Item ID, 1 = List of Items, 2 = Quest Controlled'
   minlevel:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Minimum Level'
   maxlevel:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Maximum Level'
   repeatable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Repeatable: 0 = False, 1 = True'
   faction_reward:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Faction Reward'
   completion_emote:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Completion Emote'
 tasksets:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Task Set Entry Identifier'
   taskid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Task Identifier](tasks.md)'
 task_activities:
   taskid:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Task Identifier](tasks.md)'
   activityid:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Activity Identifier: Starts at 0'
   step:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Step: 0 = Always Available, >0 = Must Complete Previous'
   activitytype:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Activity Type](https://eqemu.gitbook.io/server/categories/types/task-activity-types)'
   target_name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Target Name'
   item_list:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Item Identifier List](items.md)'
   skill_list:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Skill Identifier List](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   spell_list:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Spell Identifier List](spells_new.md)'
   description_override:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Description Override'
   goalid:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Goal Identifier or [Goal List Identifier](goallists.md)'
   goalmethod:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Goal Method: 0 = Single Value, 1 = List'
   goalcount:
     dataType: int
     nullable: YES
-    description: ''
+    description: 'Goal Count'
   delivertonpc:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Deliver To NPC: 0 = No Delivery NPC, >0 = [NPC Type Identifier](npc_types.md)'
   zones:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Zones List](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   optional:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Optional: 0 = False, 1 = True'
 timers:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   type:
     dataType: mediumint
     nullable: NO
@@ -10467,260 +10382,260 @@ titles:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Title Identifier'
   skill_id:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   min_skill_value:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Minimum Skill Value'
   max_skill_value:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Maximum Skill Value'
   min_aa_points:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Minimum AA Points'
   max_aa_points:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Maximum AA Points'
   class:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)'
   gender:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)'
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   status:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Required Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   prefix:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Prefix'
   suffix:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Suffix'
   title_set:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Title Set Identifier'
 trader:
   char_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   serialnumber:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Serial Number'
   charges:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Charges'
   item_cost:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Item Cost'
   slot_id:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)'
 trader_audit:
   time:
     dataType: datetime
     nullable: NO
-    description: ''
+    description: 'Time'
   seller:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Seller'
   buyer:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Buyer'
   itemname:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Item Name](items.md)'
   quantity:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Quantity'
   totalcost:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Total Cost'
   trantype:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Transaction Type'
 tradeskill_recipe:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Tradeskill Recipe Identifier'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Recipe Name'
   tradeskill:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: '[Tradeskill](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   skillneeded:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Skill Level Needed'
   trivial:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Trivial Skill Level'
   nofail:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'No Fail: 0 = False, 1 = True'
   replace_container:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Replace Container: 0 = False, 1 = True'
   notes:
     dataType: tinytext
     nullable: YES
-    description: ''
+    description: 'Notes'
   must_learn:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Must Learn: 0 = False, 1 = True'
   quest:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Quest: 0 = False, 1 = True'
   enabled:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Enabled: 0 = False, 1 = True'
 tradeskill_recipe_entries:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Tradeskill Recipe Entry Identifier'
   recipe_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Tradeskill Recipe Identifier](tradeskill_recipe.md)'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   successcount:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Success Count'
   failcount:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fail Count'
   componentcount:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Component Count'
   salvagecount:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Salvage Count'
   iscontainer:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Container: 0 = False, 1 = True'
 traps:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Trap Identifier'
   zone:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Version: -1 For All'
   x:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'X Coordinate'
   y:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Y Coordinate'
   z:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Z Coordinate'
   chance:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Chance: 0 = None, 100 = Always'
   maxzdiff:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Max Z Difference'
   radius:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Trap Radius'
   effect:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Trap Type](https://eqemu.gitbook.io/server/categories/types/trap-types)'
   effectvalue:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Value: (Based on Trap Type) 0 = [Spell Identifier](spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](npc_types.md), 3 = [NPC Type Identifier](npc_types.md), 4 = Minimum Damage'
   effectvalue2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Effect Value 2: (Based on Trap Type) 0 = Unused, 1 = (0 = Everything Will Aggro, 1 = Only KoS Will Agro), 2 = Number of NPCs, 3 = Number of NPCs, 4 = Maximum Damage'
   message:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Message'
   skill:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Skill Required](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
   level:
     dataType: mediumint
     nullable: NO
-    description: ''
+    description: 'Level'
   respawn_time:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Respawn Timer in Seconds'
   respawn_var:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Random Respawn Timer Variance in Seconds'
   triggered_number:
     dataType: tinyint
     nullable: NO
@@ -10732,316 +10647,316 @@ traps:
   despawn_when_triggered:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Despawn When Triggered: 0 = False, 1 = True'
   undetectable:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Undetectable: 0 = False, 1= True'
 tributes:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Tribute Identifier'
   unknown:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unknown'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Name'
   descr:
     dataType: mediumtext
     nullable: NO
-    description: ''
+    description: 'Description'
   isguild:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Is Guild: 0 = false, 1 = True'
 tribute_levels:
   tribute_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Tribute Identifier](tributes.md)'
   level:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Level'
   cost:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Cost'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
 variables:
   varname:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Variable Name'
   value:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Value'
   information:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Information'
   ts:
     dataType: timestamp
     nullable: NO
-    description: ''
+    description: 'Timestamp'
 veteran_reward_templates:
   claim_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Claim Identifier'
   name:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: 'Name'
   item_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Item Identifier](items.md)'
   charges:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Charges'
   reward_slot:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Reward Slot'
 zone:
   short_name:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Short Name'
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Entry Identifier'
   file_name:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'File Name'
   long_name:
     dataType: text
     nullable: NO
-    description: ''
+    description: 'Long Name'
   map_file_name:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Map File Name'
   safe_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Safe X Coordinate'
   safe_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Safe Y Coordinate'
   safe_z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Safe Z Coordinate'
   graveyard_id:
     dataType: float
     nullable: NO
-    description: ''
+    description: '[Graveyard Identifier](graveyard.md)'
   min_level:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Minimum Level'
   min_status:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Minimum Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)'
   zoneidnumber:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Version'
   timezone:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Timezone'
   maxclients:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Maximum Clients'
   ruleset:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Ruleset Identifier](rule_sets.md)'
   note:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: 'Note'
   underworld:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Bottom Z to represent when the player is under the world'
   minclip:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Minimum Clipping Distance'
   maxclip:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Maximum Clipping Distance'
   fog_minclip:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Minimum Clipping Distance'
   fog_maxclip:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Maximum Clipping Distance'
   fog_blue:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Blue Level: 0 = None, 255 = Max'
   fog_red:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Red Level: 0 = None, 255 = Max'
   fog_green:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Green Level: 0 = None, 255 = Max'
   sky:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Sky type the client will present as the backdrop'
   ztype:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'This field is sent directly to the client on zone-in, most zones are set to 0, 1 or 255.'
   zone_exp_multiplier:
     dataType: decimal
     nullable: NO
-    description: ''
+    description: 'This will multiply the XP to this percentage value (decimal based, 100% = 1.0)'
   walkspeed:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Walkspeed in this zone'
   time_type:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, (akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.)'
   fog_red1:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Red Level 1: 0 = None, 255 = Max'
   fog_green1:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Green Level 1: 0 = None, 255 = Max'
   fog_blue1:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Blue Level 1: 0 = None, 255 = Max'
   fog_minclip1:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Minimum Clipping Distance 1'
   fog_maxclip1:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Maximum Clipping Distance 1'
   fog_red2:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Red Level 2: 0 = None, 255 = Max'
   fog_green2:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Green Level 2: 0 = None, 255 = Max'
   fog_blue2:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Blue Level 2: 0 = None, 255 = Max'
   fog_minclip2:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Minimum Clipping Distance 2'
   fog_maxclip2:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Maximum Clipping Distance 2'
   fog_red3:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Red Level 3: 0 = None, 255 = Max'
   fog_green3:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Green Level 3: 0 = None, 255 = Max'
   fog_blue3:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Blue Level 3: 0 = None, 255 = Max'
   fog_minclip3:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Minimum Clipping Distance 3'
   fog_maxclip3:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Maximum Clipping Distance 4'
   fog_red4:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Red Level 4: 0 = None, 255 = Max'
   fog_green4:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Green Level 4: 0 = None, 255 = Max'
   fog_blue4:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Fog Blue Level 4: 0 = None, 255 = Max'
   fog_minclip4:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Minimum Clipping Distance 4'
   fog_maxclip4:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Fog Maximum Clipping Distance 4'
   fog_density:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'This is the intensity of the fog, this should be a number between 0-1, most commonly used is .1 or .33'
   flag_needed:
     dataType: varchar
     nullable: NO
-    description: ''
+    description: '[Flag Required](zone_flags.md)'
   canbind:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Bind: 0 = False, 1 = True (for Caster), 2 = True (for All)'
   cancombat:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Combat: 0 = False, 1 = True'
   canlevitate:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Can Levitate: 0 = False, 1 = True (Does not affect those with #gm on)'
   castoutdoor:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Cast Outdoors: 0 = False, 1 = True'
   hotzone:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Hotzone: 0 = False, 1 = True'
   insttype:
     dataType: tinyint
     nullable: NO
@@ -11049,87 +10964,87 @@ zone:
   shutdowndelay:
     dataType: bigint
     nullable: NO
-    description: ''
+    description: 'Shutdown Delay'
   peqzone:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '#peqzone: 0 = False, 1 = True'
   expansion:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: '[Expansion](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-list)'
   suspendbuffs:
     dataType: tinyint
     nullable: NO
-    description: ''
+    description: 'Suspend Buffs: 0 = False, 1 = True'
   rain_chance1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Chance 1'
   rain_chance2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Chance 2'
   rain_chance3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Chance 3'
   rain_chance4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Chance 4'
   rain_duration1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Duration 1'
   rain_duration2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Duration 2'
   rain_duration3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Duration 3'
   rain_duration4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Rain Duration 4'
   snow_chance1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Chance 1'
   snow_chance2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Chance 2'
   snow_chance3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Chance 3'
   snow_chance4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Chance 4'
   snow_duration1:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Duration 1'
   snow_duration2:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Duration 2'
   snow_duration3:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Duration 3'
   snow_duration4:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Snow Duration 4'
   gravity:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Gravity'
   type:
     dataType: int
     nullable: NO
@@ -11141,23 +11056,23 @@ zone:
   fast_regen_hp:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Fast Regen Health'
   fast_regen_mana:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Fast Regen Mana'
   fast_regen_endurance:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Fast Regen Endurance'
   npc_max_aggro_dist:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'NPC Max Aggro Distance'
   max_movement_update_range:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Max Movement Update Range'
 zoneserver_auth:
   host:
     dataType: varchar
@@ -11171,80 +11086,80 @@ zone_flags:
   charID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Unique Character Identifier](character_data.md)'
   zoneID:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
 zone_points:
   id:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Unique Zone Point Identifier'
   zone:
     dataType: varchar
     nullable: YES
-    description: ''
+    description: '[Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   version:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Zone Version'
   number:
     dataType: smallint
     nullable: NO
-    description: ''
+    description: 'Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in (during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin (erudnext).'
   y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Zone Point Y Coordinate'
   x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Zone Point X Coordinate'
   z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Zone Point Z Coordinate'
   heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Zone Point Heading Coordinate'
   target_y:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Target Y Coordinate'
   target_x:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Target X Coordinate'
   target_z:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Target Z Coordinate'
   target_heading:
     dataType: float
     nullable: NO
-    description: ''
+    description: 'Target Heading Coordinate'
   zoneinst:
     dataType: smallint
     nullable: YES
-    description: ''
+    description: '[Instance Identifier](instance_list.d)'
   target_zone_id:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Target Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)'
   target_instance:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Target Instance Identifier'
   buffer:
     dataType: float
     nullable: YES
-    description: ''
+    description: 'Zone Point Buffer'
   client_version_mask:
     dataType: int
     nullable: NO
-    description: ''
+    description: '[Client Version Mask](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)'
 zone_server:
   name:
     dataType: varchar
@@ -11261,12 +11176,12 @@ zone_server:
   player_count:
     dataType: int
     nullable: NO
-    description: ''
+    description: 'Player Count'
   last_alive:
     dataType: timestamp
     nullable: NO
-    description: ''
+    description: 'Last Alive Timestamp'
   rain:
     dataType: char
     nullable: NO
-    description: ''
+    description: 'Rain: '
