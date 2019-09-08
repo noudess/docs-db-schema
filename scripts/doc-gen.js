@@ -186,8 +186,7 @@ program.command('write')
             }
           );
 
-          let fileContents = 'This page was updated ' + formatDate(new Date()) + '\n\n';
-          fileContents += table(markdownTable);
+          let fileContents = table(markdownTable);
 
           /**
            * Write doc page
