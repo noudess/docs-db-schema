@@ -11,28 +11,35 @@ const database = 'peq';
 const program  = require('commander');
 const table    = require('markdown-table')
 
-var connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'root',
-    database: database
-  }
+var connection = mysql.createConnection(
+	{
+		host: '127.0.0.1',
+		user: 'root',
+		password: 'root',
+		database: database
+	}
 );
 
 connection.connect();
 
-let schemaData                  = {};
+let schemaData = {};
 const SCHEMA_REFERENCE_YML_FILE = 'database-schema-reference.yml';
 
 /**
  * Tables to be excluded from the 'pull' command
  */
 const excludedTables = [
-  'tblServerListType',
-  'tblServerAdminRegistration',
-  'tblLoginServerAccounts',
-  'tblWorldServerRegistration',
-  'zone_state_dump'
+	'peq_admin',
+	'tblServerListType',
+	'tblServerAdminRegistration',
+	'tblLoginServerAccounts',
+	'tblWorldServerRegistration',
+	'vw_bot_character_mobs',
+	'vw_bot_groups',
+	'vw_groups',
+	'vw_guild_members',
+	'vwmercnpctypes',
+	'zone_state_dump'
 ];
 
 
@@ -40,19 +47,234 @@ const excludedTables = [
  * To update which categories a table falls under, update this
  */
 const tableCategories = {
-  'Tasks': [
-    'tasks',
-    'tasksets',
-    'task_activities',
-    'task_replay_groups'
-  ],
-  'Guilds': [
-    'guilds',
-    'guild_bank',
-    'guild_ranks',
-    'guild_members',
-    'guild_relations'
-  ]
+	'AAs': [
+		'aa_ability',
+		'aa_actions',
+		'aa_effects',
+		'aa_ranks',
+		'aa_rank_effects',
+		'aa_rank_prereqs',
+		'aa_required_level_cost',
+		'aa_timers',
+		'altadv_vars'
+	],
+	'Account': [
+		'account',
+		'account_flags',
+		'account_ip',
+		'account_rewards'
+	],
+	'Adventures': [
+		'adventure_details',
+		'adventure_members',
+		'adventure_stats',
+		'adventure_template',
+		'adventure_template_entry',
+		'adventure_template_entry_flavor'
+	],
+	'Bots': [
+		'bot_buffs',
+		'bot_command_settings',
+		'bot_data',
+		'bot_groups',
+		'bot_group_members',
+		'bot_guild_members',
+		'bot_heal_rotations',
+		'bot_heal_rotation_members',
+		'bot_heal_rotation_targets',
+		'bot_inspect_messages',
+		'bot_inventories',
+		'bot_owner_options',
+		'bot_pets',
+		'bot_pet_buffs',
+		'bot_pet_inventories',
+		'bot_spells_entries',
+		'bot_spell_casting_chances',
+		'bot_stances',
+		'bot_timers'
+	],
+	'Characters': [
+		'character_activities',
+		'character_alternate_abilities',
+		'character_alt_currency',
+		'character_auras',
+		'character_bandolier',
+		'character_bind',
+		'character_buffs',
+		'character_corpses',
+		'character_corpse_items',
+		'character_currency',
+		'character_data',
+		'character_disciplines',
+		'character_enabledtasks',
+		'character_inspect_messages',
+		'character_item_recast',
+		'character_languages',
+		'character_leadership_abilities',
+		'character_material',
+		'character_memmed_spells',
+		'character_pet_buffs',
+		'character_pet_info',
+		'character_pet_inventory',
+		'character_potionbelt',
+		'character_skills',
+		'character_spells',
+		'character_tasks',
+		'character_task_lockouts',
+		'character_tribute',
+		'char_create_combinations',
+		'char_create_point_allocations',
+		'char_recipe_list',
+		'player_titlesets',
+		'start_zones',
+		'starting_items'
+	],
+	'Factions': [
+		'client_faction_associations',
+		'client_faction_names',
+		'client_server_faction_map',
+		'custom_faction_mappings',
+		'faction_base_data',
+		'faction_list',
+		'faction_list_mod',
+		'faction_values',
+	],
+	'Groups': [
+		'group_id',
+		'group_leaders'
+	],
+	'Guilds': [
+		'guilds',
+		'guild_bank',
+		'guild_ranks',
+		'guild_members',
+		'guild_relations'
+	],
+	'Grids': [
+		'grid',
+		'grid_entries'
+	],
+	'Instances': [
+		'instance_list',
+		'instance_list_player'
+	],
+	'Inventory': [
+		'inventory',
+		'inventory_snapshots',
+		'inventory_versions'
+	],
+	'Items': [
+		'items',
+		'item_tick'
+	],
+	'Loot': [
+		'lootdrop',
+		'lootdrop_entries',
+		'loottable',
+		'lootdrop_entries'
+	],
+	'Mercenaries': [
+		'mercs',
+		'merc_armorinfo',
+		'merc_buffs',
+		'merc_inventory',
+		'merc_merchant_entries',
+		'merc_merchant_templates',
+		'merc_merchant_template_entries',
+		'merc_name_types',
+		'merc_npc_types',
+		'merc_spell_lists',
+		'merc_spell_list_entries',
+		'merc_stance_entries',
+		'merc_stats',
+		'merc_subtypes',
+		'merc_templates',
+		'merc_types',
+		'merc_weaponinfo'
+	],
+	'Merchants': [
+		'merchantlist',
+		'merchantlist_temp'
+	],
+	'NPCs': [
+		'npc_emotes',
+		'npc_faction',
+		'npc_faction_entries',
+		'npc_scale_global_base',
+		'npc_spells',
+		'npc_spells_effects',
+		'npc_spells_effects_entries',
+		'npc_spells_entries',
+		'npc_types',
+		'npc_types_metadata',
+		'npc_types_tint'
+	],
+	'Pets': [
+		'pets',
+		'pets_equipmentset',
+		'pets_equipmentset_entries'
+	],
+	'Query Server': [
+		'qs_merchant_transaction_record',
+		'qs_merchant_transaction_record_entries',
+		'qs_player_aa_rate_hourly',
+		'qs_player_delete_record',
+		'qs_player_delete_record_entries',
+		'qs_player_events',
+		'qs_player_handin_record',
+		'qs_player_handin_record_entries',
+		'qs_player_move_record',
+		'qs_player_move_record_entries',
+		'qs_player_npc_kill_record',
+		'qs_player_npc_kill_record_entries',
+		'qs_player_speech',
+		'qs_player_trade_record',
+		'qs_player_trade_record_entries'
+	],
+	'Raids': [
+		'raid_details',
+		'raid_leaders',
+		'raid_members'
+	],
+	'Rules': [
+		'rule_sets',
+		'rule_values'
+	],
+	'Spawns': [
+		'spawn2',
+		'spawnentry',
+		'spawngroup',
+		'spawn_conditions',
+		'spawn_condition_values',
+		'spawn_events'
+	],
+	'Tasks': [
+		'completed_tasks',
+		'tasks',
+		'tasksets',
+		'task_activities',
+		'task_replay_groups'
+	],
+	'Trader': [
+		'trader',
+		'trader_audit'
+	],
+	'Tradeskills': [
+		'tradeskill_recipe',
+		'tradeskill_recipe_entries'
+	],
+	'Traps': [
+		'ldon_trap_entries',
+		'ldon_trap_templates',
+		'traps'
+	],
+	'Zone': [
+		'zone',
+		'zoneserver_auth',
+		'zone_flags',
+		'zone_points',
+		'zone_server'
+	],
 };
 
 let tablesWrittenToIndex = {};
@@ -186,8 +408,7 @@ program.command('write')
             }
           );
 
-          let fileContents = 'This page was updated ' + formatDate(new Date()) + '\n\n';
-          fileContents += table(markdownTable);
+          let fileContents = table(markdownTable);
 
           /**
            * Write doc page

@@ -1,6 +1,4 @@
-This page was updated September 7 2019
-
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| ip_address | varchar   |             |
-| notes      | text      |             |
+| Column     | Data Type | Description                         |
+| ---------- | --------- | ----------------------------------- |
+| ip_address | varchar   | [Account IP Address](account_ip.md) |
+| notes      | varchar   | Ban reason                          |
