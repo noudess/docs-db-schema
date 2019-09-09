@@ -1,6 +1,6 @@
 | Column    | Data Type | Description                                                                                |
 | --------- | --------- | ------------------------------------------------------------------------------------------ |
 | name      | varchar   | Name                                                                                       |
-| owner     | varchar   | [Unique Character Identifier](character_data.md)                                           |
+| owner     | varchar   | [Owner Character Identifier](character_data.md)                                            |
 | password  | varchar   | Password                                                                                   |
 | minstatus | int       | [Minimum Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels) |

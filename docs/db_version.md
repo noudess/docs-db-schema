@@ -1,4 +1,4 @@
-| Column       | Data Type | Description |
-| ------------ | --------- | ----------- |
-| version      | int       |             |
-| bots_version | int       |             |
+| Column       | Data Type | Description      |
+| ------------ | --------- | ---------------- |
+| version      | int       | Database Version |
+| bots_version | int       | Bots Version     |

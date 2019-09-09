@@ -1,15 +1,15 @@
 | Column            | Data Type | Description                                                                          |
 | ----------------- | --------- | ------------------------------------------------------------------------------------ |
-| id                | int       | [Unique Adventure Identifier](adventure_details.md)                                  |
+| id                | int       | [Adventure Identifier](adventure_details.md)                                         |
 | zone              | varchar   | [Zone Short Name](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones) |
 | zone_version      | tinyint   | Zone Version                                                                         |
 | is_hard           | tinyint   | Hard: 0 = False, 1 = True                                                            |
 | is_raid           | tinyint   | Raid: 0 = False, 1 = True                                                            |
 | min_level         | tinyint   | Minimum Level                                                                        |
 | max_level         | tinyint   | Maximum Level                                                                        |
-| type              | tinyint   |                                                                                      |
-| type_data         | int       |                                                                                      |
-| type_count        | smallint  |                                                                                      |
+| type              | tinyint   | Type                                                                                 |
+| type_data         | int       | Type Data                                                                            |
+| type_count        | smallint  | Type Count                                                                           |
 | assa_x            | float     | Assassination X Coordinate                                                           |
 | assa_y            | float     | Assassination Y Coordinate                                                           |
 | assa_z            | float     | Assassination Z Coordinate                                                           |

@@ -1,7 +1,7 @@
 | Column              | Data Type | Description                                                                                   |
 | ------------------- | --------- | --------------------------------------------------------------------------------------------- |
 | inventories_index   | int       | Unique Bot Inventory Identifier                                                               |
-| bot_id              | int       | [Unique Bot Identifier](bot_data.md)                                                          |
+| bot_id              | int       | [Bot Identifier](bot_data.md)                                                                 |
 | slot_id             | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots) |
 | item_id             | int       | [Item Identifier](items.md)                                                                   |
 | inst_charges        | smallint  | Charges                                                                                       |

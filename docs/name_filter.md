@@ -1,4 +1,4 @@
-| Column | Data Type | Description |
-| ------ | --------- | ----------- |
-| id     | int       |             |
-| name   | varchar   |             |
+| Column | Data Type | Description                   |
+| ------ | --------- | ----------------------------- |
+| id     | int       | Unique Name Filter Identifier |
+| name   | varchar   | Name                          |

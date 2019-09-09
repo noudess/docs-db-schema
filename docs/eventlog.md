@@ -1,12 +1,12 @@
-| Column          | Data Type | Description |
-| --------------- | --------- | ----------- |
-| id              | int       |             |
-| accountname     | varchar   |             |
-| accountid       | int       |             |
-| status          | int       |             |
-| charname        | varchar   |             |
-| target          | varchar   |             |
-| time            | timestamp |             |
-| descriptiontype | varchar   |             |
-| description     | text      |             |
-| event_nid       | int       |             |
+| Column          | Data Type | Description                                                                        |
+| --------------- | --------- | ---------------------------------------------------------------------------------- |
+| id              | int       | Unique Event Identifier                                                            |
+| accountname     | varchar   | [Account Name](account.md)                                                         |
+| accountid       | int       | [Account Identifier](account.md)                                                   |
+| status          | int       | [Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels) |
+| charname        | varchar   | [Character Name](character_data.md)                                                |
+| target          | varchar   | Target                                                                             |
+| time            | timestamp | TIme Timestamp                                                                     |
+| descriptiontype | varchar   | Description Type                                                                   |
+| description     | text      | Description                                                                        |
+| event_nid       | int       | Event Identifier                                                                   |

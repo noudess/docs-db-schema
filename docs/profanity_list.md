@@ -1,3 +1,3 @@
 | Column | Data Type | Description |
 | ------ | --------- | ----------- |
-| word   | varchar   |             |
+| word   | varchar   | Word        |

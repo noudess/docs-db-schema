@@ -1,26 +1,26 @@
-| Column           | Data Type | Description |
-| ---------------- | --------- | ----------- |
-| MercID           | int       |             |
-| OwnerCharacterID | int       |             |
-| Slot             | tinyint   |             |
-| Name             | varchar   |             |
-| TemplateID       | int       |             |
-| SuspendedTime    | int       |             |
-| IsSuspended      | tinyint   |             |
-| TimerRemaining   | int       |             |
-| Gender           | tinyint   |             |
-| MercSize         | float     |             |
-| StanceID         | tinyint   |             |
-| HP               | int       |             |
-| Mana             | int       |             |
-| Endurance        | int       |             |
-| Face             | int       |             |
-| LuclinHairStyle  | int       |             |
-| LuclinHairColor  | int       |             |
-| LuclinEyeColor   | int       |             |
-| LuclinEyeColor2  | int       |             |
-| LuclinBeardColor | int       |             |
-| LuclinBeard      | int       |             |
-| DrakkinHeritage  | int       |             |
-| DrakkinTattoo    | int       |             |
-| DrakkinDetails   | int       |             |
+| Column           | Data Type | Description                                                                             |
+| ---------------- | --------- | --------------------------------------------------------------------------------------- |
+| MercID           | int       | Unique Mercenary Identifier                                                             |
+| OwnerCharacterID | int       | [Owner Character Identifier](character_data.md)                                         |
+| Slot             | tinyint   | Slot                                                                                    |
+| Name             | varchar   | Name                                                                                    |
+| TemplateID       | int       | [Template Identifier](merc_templates.md)                                                |
+| SuspendedTime    | int       | Suspended Time UNIX Timestamp                                                           |
+| IsSuspended      | tinyint   | Is Suspended: 0 = False, 1 = True                                                       |
+| TimerRemaining   | int       | Timer Remaining in Seconds                                                              |
+| Gender           | tinyint   | [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)            |
+| MercSize         | float     | Mercenary Size                                                                          |
+| StanceID         | tinyint   | [Stance Type Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types) |
+| HP               | int       | Health                                                                                  |
+| Mana             | int       | Mana                                                                                    |
+| Endurance        | int       | Endurance                                                                               |
+| Face             | int       | Face                                                                                    |
+| LuclinHairStyle  | int       | Hair Style                                                                              |
+| LuclinHairColor  | int       | Hair Color                                                                              |
+| LuclinEyeColor   | int       | Eye Color 1                                                                             |
+| LuclinEyeColor2  | int       | Eye Color 2                                                                             |
+| LuclinBeardColor | int       | Beard Color                                                                             |
+| LuclinBeard      | int       | Beard                                                                                   |
+| DrakkinHeritage  | int       | Drakkin Heritage                                                                        |
+| DrakkinTattoo    | int       | Drakkin Tattoo                                                                          |
+| DrakkinDetails   | int       | Drakkin Details                                                                         |

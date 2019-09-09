@@ -1,7 +1,7 @@
 | Column           | Data Type | Description                                                                         |
 | ---------------- | --------- | ----------------------------------------------------------------------------------- |
 | id               | int       | Unique Corpse Identifier                                                            |
-| charid           | int       | [Unique Character Identifier](character_data.md)                                    |
+| charid           | int       | [Character Identifier](character_data.md)                                           |
 | charname         | varchar   | Character Name                                                                      |
 | zone_id          | smallint  | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
 | instance_id      | smallint  | Instance Identifier                                                                 |
@@ -37,12 +37,12 @@
 | drakkin_heritage | int       | Drakkin Heritage                                                                    |
 | drakkin_tattoo   | int       | Drakkin Tattoo                                                                      |
 | drakkin_details  | int       | Drakkin Details                                                                     |
-| wc_1             | int       |                                                                                     |
-| wc_2             | int       |                                                                                     |
-| wc_3             | int       |                                                                                     |
-| wc_4             | int       |                                                                                     |
-| wc_5             | int       |                                                                                     |
-| wc_6             | int       |                                                                                     |
-| wc_7             | int       |                                                                                     |
-| wc_8             | int       |                                                                                     |
-| wc_9             | int       |                                                                                     |
+| wc_1             | int       | Wear Change 1                                                                       |
+| wc_2             | int       | Wear Change 2                                                                       |
+| wc_3             | int       | Wear Change 3                                                                       |
+| wc_4             | int       | Wear Change 4                                                                       |
+| wc_5             | int       | Wear Change 5                                                                       |
+| wc_6             | int       | Wear Change 6                                                                       |
+| wc_7             | int       | Wear Change 7                                                                       |
+| wc_8             | int       | Wear Change 8                                                                       |
+| wc_9             | int       | Wear Change 9                                                                       |

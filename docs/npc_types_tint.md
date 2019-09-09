@@ -23,9 +23,9 @@
 | red7f         | tinyint   | Red for Feet: 0 = None, 255 = Max      |
 | grn7f         | tinyint   | Green for Feet: 0 = None, 255 = Max    |
 | blu7f         | tinyint   | Blue for Feet: 0 = None, 255 = Max     |
-| red8x         | tinyint   | Red for Unkmown: 0 = None, 255 = Max   |
-| grn8x         | tinyint   | Green for Unkmown: 0 = None, 255 = Max |
-| blu8x         | tinyint   | Blue for Unkmown: 0 = None, 255 = Max  |
-| red9x         | tinyint   | Red for Unkmown: 0 = None, 255 = Max   |
-| grn9x         | tinyint   | Green for Unkmown: 0 = None, 255 = Max |
-| blu9x         | tinyint   | Blue for Unkmown: 0 = None, 255 = Max  |
+| red8x         | tinyint   | Red for Unknown: 0 = None, 255 = Max   |
+| grn8x         | tinyint   | Green for Unknown: 0 = None, 255 = Max |
+| blu8x         | tinyint   | Blue for Unknown: 0 = None, 255 = Max  |
+| red9x         | tinyint   | Red for Unknown: 0 = None, 255 = Max   |
+| grn9x         | tinyint   | Green for Unknown: 0 = None, 255 = Max |
+| blu9x         | tinyint   | Blue for Unknown: 0 = None, 255 = Max  |

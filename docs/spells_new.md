@@ -2,7 +2,7 @@
 | -------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | id                   | int       | Unique Spell Identifier                                                                                                                                      |
 | name                 | varchar   | Name                                                                                                                                                         |
-| player_1             | varchar   |                                                                                                                                                              |
+| player_1             | varchar   | Player_1                                                                                                                                                     |
 | teleport_zone        | varchar   | The zone you are teleporting to or the [NPC Name](npc_types.md) you want to spawn.                                                                           |
 | you_cast             | varchar   | The message sent to others when you cast the spell.                                                                                                          |
 | other_casts          | varchar   | The message seen when someone around you casts the spell.                                                                                                    |
@@ -123,7 +123,7 @@
 | CastingAnim          | int       | Casting Animation                                                                                                                                            |
 | TargetAnim           | int       | Target Animation                                                                                                                                             |
 | TravelType           | int       | Travel Type (Unused)                                                                                                                                         |
-| SpellAffectIndex     | int       |                                                                                                                                                              |
+| SpellAffectIndex     | int       | Spell Affect Index                                                                                                                                           |
 | disallow_sit         | int       | Disallow Sit: 0 = False, 1 = True                                                                                                                            |
 | deities0             | int       | [Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)                                                                          |
 | deities1             | int       | [Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)                                                                          |
@@ -207,33 +207,33 @@
 | field204             | int       | Unknown                                                                                                                                                      |
 | no_block             | int       | No Block: 0 = False, 1 = True                                                                                                                                |
 | field206             | int       | Unknown                                                                                                                                                      |
-| spellgroup           | int       |                                                                                                                                                              |
-| rank                 | int       | Rank: 0 = None, 1 = First, 2 = Second, 5 = Third                                                                                                             |
+| spellgroup           | int       | [Spell Group](https://eqemu.gitbook.io/server/categories/spells/spell-groups)                                                                                |
+| rank                 | int       | Rank                                                                                                                                                         |
 | field209             | int       | Unknown                                                                                                                                                      |
 | field210             | int       | Unknown                                                                                                                                                      |
 | CastRestriction      | int       | [Cast Restrictions](https://eqemu.gitbook.io/server/categories/spells/spell-target-restrictions)                                                             |
 | allowrest            | int       | Allow Rest: 0 = False, 1 = True                                                                                                                              |
 | InCombat             | int       | In Combat: 0 = False, 1 = True                                                                                                                               |
 | OutofCombat          | int       | Out Of Combat: 0 = False, 1 = True                                                                                                                           |
-| field215             | int       | Unkmown                                                                                                                                                      |
-| field216             | int       | Unkmown                                                                                                                                                      |
-| field217             | int       | Unkmown                                                                                                                                                      |
+| field215             | int       | Unknown                                                                                                                                                      |
+| field216             | int       | Unknown                                                                                                                                                      |
+| field217             | int       | Unknown                                                                                                                                                      |
 | aemaxtargets         | int       | Area of Effect Max Targets                                                                                                                                   |
 | maxtargets           | int       | Max Targets                                                                                                                                                  |
-| field220             | int       | Unkmown                                                                                                                                                      |
-| field221             | int       | Unkmown                                                                                                                                                      |
-| field222             | int       | Unkmown                                                                                                                                                      |
-| field223             | int       | Unkmown                                                                                                                                                      |
+| field220             | int       | Unknown                                                                                                                                                      |
+| field221             | int       | Unknown                                                                                                                                                      |
+| field222             | int       | Unknown                                                                                                                                                      |
+| field223             | int       | Unknown                                                                                                                                                      |
 | persistdeath         | int       | Persist Death: 0 = False, 1 = True                                                                                                                           |
-| field225             | int       | Unkmown                                                                                                                                                      |
-| field226             | int       | Unkmown                                                                                                                                                      |
+| field225             | int       | Unknown                                                                                                                                                      |
+| field226             | int       | Unknown                                                                                                                                                      |
 | min_dist             | float     | Minimum Distance                                                                                                                                             |
 | min_dist_mod         | float     | Minimum Distance Modifier                                                                                                                                    |
 | max_dist             | float     | Maximum Distance                                                                                                                                             |
 | max_dist_mod         | float     | Maximum Distance Modifier                                                                                                                                    |
 | min_range            | int       | Minimum Range                                                                                                                                                |
-| field232             | int       | Unkmown                                                                                                                                                      |
-| field233             | int       | Unkmown                                                                                                                                                      |
-| field234             | int       | Unkmown                                                                                                                                                      |
-| field235             | int       | Unkmown                                                                                                                                                      |
-| field236             | int       | Unkmown                                                                                                                                                      |
+| field232             | int       | Unknown                                                                                                                                                      |
+| field233             | int       | Unknown                                                                                                                                                      |
+| field234             | int       | Unknown                                                                                                                                                      |
+| field235             | int       | Unknown                                                                                                                                                      |
+| field236             | int       | Unknown                                                                                                                                                      |

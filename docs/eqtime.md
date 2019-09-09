@@ -1,8 +1,8 @@
 | Column   | Data Type | Description |
 | -------- | --------- | ----------- |
-| minute   | tinyint   | Minutes     |
-| hour     | tinyint   | Hours       |
+| minute   | tinyint   | Minute      |
+| hour     | tinyint   | Hour        |
 | day      | tinyint   | Day         |
-| month    | tinyint   |             |
-| year     | int       |             |
-| realtime | int       |             |
+| month    | tinyint   | Month       |
+| year     | int       | Year        |
+| realtime | int       | Real Time   |

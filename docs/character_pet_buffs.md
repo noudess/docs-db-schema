@@ -1,13 +1,13 @@
-| Column         | Data Type | Description                                      |
-| -------------- | --------- | ------------------------------------------------ |
-| char_id        | int       | [Unique Character Identifier](character_data.md) |
-| pet            | int       |                                                  |
-| slot           | int       | Slot                                             |
-| spell_id       | int       | [Spell Identifier](spells_new.md)                |
-| caster_level   | tinyint   | Caster Level                                     |
-| castername     | varchar   | Caster Name                                      |
-| ticsremaining  | int       | Tics Remaining                                   |
-| counters       | int       | Counters                                         |
-| numhits        | int       | Number of Hits                                   |
-| rune           | int       | Rune                                             |
-| instrument_mod | tinyint   | Instrument Modifier                              |
+| Column         | Data Type | Description                               |
+| -------------- | --------- | ----------------------------------------- |
+| char_id        | int       | [Character Identifier](character_data.md) |
+| pet            | int       | Pet                                       |
+| slot           | int       | Slot                                      |
+| spell_id       | int       | [Spell Identifier](spells_new.md)         |
+| caster_level   | tinyint   | Caster Level                              |
+| castername     | varchar   | Caster Name                               |
+| ticsremaining  | int       | Tics Remaining                            |
+| counters       | int       | Counters                                  |
+| numhits        | int       | Number of Hits                            |
+| rune           | int       | Rune                                      |
+| instrument_mod | tinyint   | Instrument Modifier                       |

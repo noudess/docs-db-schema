@@ -1,4 +1,4 @@
 | Column | Data Type | Description |
 | ------ | --------- | ----------- |
-| host   | varchar   |             |
-| note   | text      |             |
+| host   | varchar   | Host        |
+| note   | text      | Note        |

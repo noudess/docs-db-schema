@@ -1,5 +1,5 @@
-| Column           | Data Type | Description |
-| ---------------- | --------- | ----------- |
-| exemption_id     | int       |             |
-| exemption_ip     | varchar   |             |
-| exemption_amount | int       |             |
+| Column           | Data Type | Description                           |
+| ---------------- | --------- | ------------------------------------- |
+| exemption_id     | int       | Exemption Identifier                  |
+| exemption_ip     | varchar   | [Exemption IP Address](account_ip.md) |
+| exemption_amount | int       | Exemption Amount                      |

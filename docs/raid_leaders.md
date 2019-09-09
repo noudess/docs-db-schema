@@ -1,11 +1,11 @@
-| Column         | Data Type | Description |
-| -------------- | --------- | ----------- |
-| gid            | int       |             |
-| rid            | int       |             |
-| marknpc        | varchar   |             |
-| maintank       | varchar   |             |
-| assist         | varchar   |             |
-| puller         | varchar   |             |
-| leadershipaa   | tinyblob  |             |
-| mentoree       | varchar   |             |
-| mentor_percent | int       |             |
+| Column         | Data Type | Description                          |
+| -------------- | --------- | ------------------------------------ |
+| gid            | int       | [Group Identifier](group_id.md)      |
+| rid            | int       | [Raid Identifier](raid_details.md)   |
+| marknpc        | varchar   | Mark NPC: 0 = False, 1 = True        |
+| maintank       | varchar   | Main Tank: 0 = False, 1 = True       |
+| assist         | varchar   | Assist: 0 = False, 1 = True          |
+| puller         | varchar   | Puller: 0 = False, 1 = True          |
+| leadershipaa   | tinyblob  | Leadership AA                        |
+| mentoree       | varchar   | Mentoree: 0 = False, 1 = True        |
+| mentor_percent | int       | Mentore Percent: 0 = None, 100 = Max |

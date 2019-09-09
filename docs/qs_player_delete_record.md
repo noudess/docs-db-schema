@@ -1,7 +1,7 @@
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| delete_id  | int       |             |
-| time       | timestamp |             |
-| char_id    | int       |             |
-| stack_size | mediumint |             |
-| char_items | mediumint |             |
+| Column     | Data Type | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| delete_id  | int       | Unique Delete Identifier                  |
+| time       | timestamp | Time Timestamp                            |
+| char_id    | int       | [Character Identifier](character_data.md) |
+| stack_size | mediumint | Stack Size                                |
+| char_items | mediumint | [Character Items Identifier](items.md)    |

@@ -1,4 +1,4 @@
 | Column   | Data Type | Description |
 | -------- | --------- | ----------- |
-| name     | varchar   |             |
-| dynamics | tinyint   |             |
+| name     | varchar   | Name        |
+| dynamics | tinyint   | Dynamics    |

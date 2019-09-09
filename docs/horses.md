@@ -1,8 +1,8 @@
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| filename   | varchar   |             |
-| race       | smallint  |             |
-| gender     | tinyint   |             |
-| texture    | tinyint   |             |
-| mountspeed | float     |             |
-| notes      | varchar   |             |
+| Column     | Data Type | Description                                                                    |
+| ---------- | --------- | ------------------------------------------------------------------------------ |
+| filename   | varchar   | [NPC Type Name](npc_types.md)                                                  |
+| race       | smallint  | [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)   |
+| gender     | tinyint   | [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)   |
+| texture    | tinyint   | [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures) |
+| mountspeed | float     | Mount Run Speed                                                                |
+| notes      | varchar   | Notes                                                                          |

@@ -9,7 +9,7 @@
 | rproc_chance             | smallint  | Ranged Proc Chance: 0 = Never, 100 = Always                                                                                                                    |
 | defensive_proc           | smallint  | The defensive proc that an NPC with this spell set will add to their list of procs.                                                                            |
 | dproc_chance             | smallint  | Defensive Proc Chance: 0 = Never, 100 = Always                                                                                                                 |
-| fail_recast              | int       |                                                                                                                                                                |
+| fail_recast              | int       | Fail Recast                                                                                                                                                    |
 | engaged_no_sp_recast_min | int       |                                                                                                                                                                |
 | engaged_no_sp_recast_max | int       |                                                                                                                                                                |
 | engaged_b_self_chance    | tinyint   |                                                                                                                                                                |

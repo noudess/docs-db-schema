@@ -119,5 +119,5 @@
 | skip_global_loot       | tinyint   | Skip Global Loot: 0 = False, 1 = True                                                     |
 | rare_spawn             | tinyint   | Rare Spawn: 0 = False, 1 = True                                                           |
 | stuck_behavior         | tinyint   | Stuck Behavior                                                                            |
-| model                  | smallint  |                                                                                           |
+| model                  | smallint  | Model                                                                                     |
 | flymode                | tinyint   | [Fly Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes)          |

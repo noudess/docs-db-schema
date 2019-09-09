@@ -1,5 +1,5 @@
-| Column      | Data Type | Description |
-| ----------- | --------- | ----------- |
-| id          | int       |             |
-| name        | tinytext  |             |
-| parent_list | int       |             |
+| Column      | Data Type | Description                     |
+| ----------- | --------- | ------------------------------- |
+| id          | int       | Unique Spell Effects Identifier |
+| name        | tinytext  | Name                            |
+| parent_list | int       | Parent List                     |

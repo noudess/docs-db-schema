@@ -1,4 +1,4 @@
-| Column      | Data Type | Description                                            |
-| ----------- | --------- | ------------------------------------------------------ |
-| id          | int       | [Unique Adventure Identifier](adventure_details.md)    |
-| template_id | int       | [Adventure Template Identifier](adventure_template.md) |
+| Column      | Data Type | Description                                  |
+| ----------- | --------- | -------------------------------------------- |
+| id          | int       | [Adventure Identifier](adventure_details.md) |
+| template_id | int       | [Template Identifier](adventure_template.md) |

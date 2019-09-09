@@ -1,11 +1,11 @@
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| type       | tinyint   |             |
-| name       | varchar   |             |
-| comment    | varchar   |             |
-| fromlevel  | tinyint   |             |
-| tolevel    | tinyint   |             |
-| classes    | int       |             |
-| aacount    | int       |             |
-| timezone   | int       |             |
-| timeposted | int       |             |
+| Column     | Data Type | Description                                                                      |
+| ---------- | --------- | -------------------------------------------------------------------------------- |
+| type       | tinyint   | Type                                                                             |
+| name       | varchar   | Name                                                                             |
+| comment    | varchar   | Comment                                                                          |
+| fromlevel  | tinyint   | From Level                                                                       |
+| tolevel    | tinyint   | To Level                                                                         |
+| classes    | int       | [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| aacount    | int       | AA Count                                                                         |
+| timezone   | int       | Time Zone                                                                        |
+| timeposted | int       | Time Posted UNIX Timestamp                                                       |

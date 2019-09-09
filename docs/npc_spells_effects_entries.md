@@ -1,10 +1,10 @@
-| Column                | Data Type | Description |
-| --------------------- | --------- | ----------- |
-| id                    | int       |             |
-| npc_spells_effects_id | int       |             |
-| spell_effect_id       | smallint  |             |
-| minlevel              | tinyint   |             |
-| maxlevel              | tinyint   |             |
-| se_base               | int       |             |
-| se_limit              | int       |             |
-| se_max                | int       |             |
+| Column                | Data Type | Description                                                                                   |
+| --------------------- | --------- | --------------------------------------------------------------------------------------------- |
+| id                    | int       | Unique Spell Effect Entry Identifier                                                          |
+| npc_spells_effects_id | int       | [NPC Spells Effects Identifier](npc_spells_effects.md)                                        |
+| spell_effect_id       | smallint  | [Spell Effect Identifier](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
+| minlevel              | tinyint   | Minimum Level                                                                                 |
+| maxlevel              | tinyint   | Maximum Level                                                                                 |
+| se_base               | int       | Spell Effect Base                                                                             |
+| se_limit              | int       | Spell Effect Limit                                                                            |
+| se_max                | int       | Spell Effect Maximum                                                                          |

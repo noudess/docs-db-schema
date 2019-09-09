@@ -2,7 +2,7 @@
 | -------- | --------- | ----------------------------------------------------------------------------------- |
 | zoneid   | int       | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
 | parentid | int       | [Object Identifier](object.md)                                                      |
-| bagidx   | int       |                                                                                     |
+| bagidx   | int       | Bag Index                                                                           |
 | itemid   | int       | [Item Identifier](items.md)                                                         |
 | charges  | smallint  | Charges                                                                             |
 | droptime | datetime  | Drop Time                                                                           |

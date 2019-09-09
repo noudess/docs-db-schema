@@ -1,8 +1,8 @@
 | Column            | Data Type | Description                                                                                           |
 | ----------------- | --------- | ----------------------------------------------------------------------------------------------------- |
-| aaid              | mediumint | Unique AA Identifier                                                                                  |
+| aaid              | mediumint | AA Identifier                                                                                         |
 | rank              | tinyint   | Rank: Starts at 0                                                                                     |
-| reuse_time        | mediumint | Reuse timer                                                                                           |
+| reuse_time        | mediumint | Reuse timer in seconds                                                                                |
 | spell_id          | mediumint | [Spell Identifier](spells_new.md)                                                                     |
 | target            | tinyint   | [AA Target Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-target-types)                   |
 | nonspell_action   | tinyint   | [AA Nonspell Action](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions) |
