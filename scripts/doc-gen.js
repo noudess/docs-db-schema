@@ -13,9 +13,9 @@ const table    = require('markdown-table')
 
 var connection = mysql.createConnection(
 	{
-		host: '127.0.0.1',
+		host: 'localhost',
 		user: 'root',
-		password: 'root',
+		password: 'password',
 		database: database
 	}
 );
@@ -30,6 +30,7 @@ const SCHEMA_REFERENCE_YML_FILE = 'database-schema-reference.yml';
  */
 const excludedTables = [
 	'peq_admin',
+	'player_reports',
 	'tblServerListType',
 	'tblServerAdminRegistration',
 	'tblLoginServerAccounts',
@@ -62,7 +63,38 @@ const tableCategories = {
 		'account',
 		'account_flags',
 		'account_ip',
-		'account_rewards'
+		'account_rewards',
+		'sharedbank'
+	],	
+	'Admin': [
+		'banned_ips',
+		'bot_command_settings',
+		'bug_reports',
+		'bugs',
+		'chatchannels',
+		'class_skill',
+		'command_settings',
+		'db_version',
+		'discovered_items',
+		'eqtime',
+		'eventlog',
+		'fear_hints',
+		'gm_ips',
+		'hackers',
+		'ip_exemptions',
+		'level_exp_mods',
+		'logsys_categories',
+		'name_filter',
+		'perl_event_export_settings',
+		'petitions',
+		'profanity_list',
+		'races',
+		'reports',
+		'saylink',
+		'start_zones',
+		'starting_items',
+		'variables',
+		'veteran_reward_templates'
 	],
 	'Adventures': [
 		'adventure_details',
@@ -72,9 +104,14 @@ const tableCategories = {
 		'adventure_template_entry',
 		'adventure_template_entry_flavor'
 	],
+	'Alternate Currency': [
+		'alternate_currency'
+	],
+	'Books': [
+		'books'
+	],
 	'Bots': [
 		'bot_buffs',
-		'bot_command_settings',
 		'bot_data',
 		'bot_groups',
 		'bot_group_members',
@@ -92,6 +129,9 @@ const tableCategories = {
 		'bot_spell_casting_chances',
 		'bot_stances',
 		'bot_timers'
+	],
+	'Buyers': [
+		'buyer'
 	],
 	'Characters': [
 		'character_activities',
@@ -125,9 +165,24 @@ const tableCategories = {
 		'char_create_combinations',
 		'char_create_point_allocations',
 		'char_recipe_list',
-		'player_titlesets',
-		'start_zones',
-		'starting_items'
+		'friends',
+		'keyring',
+		'lfguild',
+		'mail',
+		'player_titlesets'
+	],
+	'Client Files': [
+		'base_data',
+		'db_str',
+		'skill_caps',
+		'spells_new'
+	],
+	'Data Storage': [
+		'data_buckets',
+		'quest_globals'
+	],
+	'Doors': [
+		'doors'
 	],
 	'Factions': [
 		'client_faction_associations',
@@ -138,6 +193,12 @@ const tableCategories = {
 		'faction_list',
 		'faction_list_mod',
 		'faction_values',
+	],
+	'Graveyards': [
+		'graveyard'
+	],
+	'Ground Spawns': [
+		'ground_spawns',
 	],
 	'Groups': [
 		'group_id',
@@ -154,6 +215,9 @@ const tableCategories = {
 		'grid',
 		'grid_entries'
 	],
+	'Horses': [
+		'horses'
+	],
 	'Instances': [
 		'instance_list',
 		'instance_list_player'
@@ -167,11 +231,19 @@ const tableCategories = {
 		'items',
 		'item_tick'
 	],
+	'Loginserver': [
+		'login_accounts',
+		'login_api_tokens',
+		'login_server_admins',
+		'login_server_list_types',
+		'login_world_servers'
+	],
 	'Loot': [
+		'global_loot',
 		'lootdrop',
 		'lootdrop_entries',
 		'loottable',
-		'lootdrop_entries'
+		'loottable_entries'
 	],
 	'Mercenaries': [
 		'mercs',
@@ -207,7 +279,12 @@ const tableCategories = {
 		'npc_spells_entries',
 		'npc_types',
 		'npc_types_metadata',
-		'npc_types_tint'
+		'npc_types_tint',
+		'proximities'
+	],
+	'Objects': [
+		'object',
+		'object_contents'
 	],
 	'Pets': [
 		'pets',
@@ -241,6 +318,7 @@ const tableCategories = {
 		'rule_values'
 	],
 	'Spawns': [
+		'respawn_times',
 		'spawn2',
 		'spawnentry',
 		'spawngroup',
@@ -248,18 +326,35 @@ const tableCategories = {
 		'spawn_condition_values',
 		'spawn_events'
 	],
+	'Spells': [
+		'auras',
+		'blocked_spells',
+		'damageshieldtypes',
+		'spell_buckets',
+		'spell_globals',
+		'spells_new',
+	],
 	'Tasks': [
 		'completed_tasks',
+		'goallists',
 		'tasks',
 		'tasksets',
 		'task_activities',
 		'task_replay_groups'
+	],
+	'Timers': [
+		'timers'
+	],
+	'Titles': [
+		'titles'
 	],
 	'Trader': [
 		'trader',
 		'trader_audit'
 	],
 	'Tradeskills': [
+		'fishing',
+		'forage',
 		'tradeskill_recipe',
 		'tradeskill_recipe_entries'
 	],
@@ -268,7 +363,13 @@ const tableCategories = {
 		'ldon_trap_templates',
 		'traps'
 	],
+	'Tributes': [
+		'tributes',
+		'tribute_levels'
+	],
 	'Zone': [
+		'launcher',
+		'launcher_zones',
 		'zone',
 		'zoneserver_auth',
 		'zone_flags',

@@ -1,10 +1,8 @@
-This page was updated September 3 2019
-
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| id         | int       |             |
-| token      | varchar   |             |
-| can_write  | int       |             |
-| can_read   | int       |             |
-| created_at | datetime  |             |
-| updated_at | datetime  |             |
+| Column     | Data Type | Description                       |
+| ---------- | --------- | --------------------------------- |
+| id         | int       | Unique Login API Token Identifier |
+| token      | varchar   | Token Identifier                  |
+| can_write  | int       | Can Write: 0 = False, 1 = True    |
+| can_read   | int       | Can Read: 0 = False, 1 = True     |
+| created_at | datetime  | Created At Date                   |
+| updated_at | datetime  | Updated At Date                   |

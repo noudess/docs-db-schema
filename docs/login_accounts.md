@@ -1,13 +1,11 @@
-This page was updated September 3 2019
-
-| Column             | Data Type | Description |
-| ------------------ | --------- | ----------- |
-| id                 | int       |             |
-| account_name       | varchar   |             |
-| account_password   | text      |             |
-| account_email      | varchar   |             |
-| source_loginserver | varchar   |             |
-| last_ip_address    | varchar   |             |
-| last_login_date    | datetime  |             |
-| created_at         | datetime  |             |
-| updated_at         | datetime  |             |
+| Column             | Data Type | Description                      |
+| ------------------ | --------- | -------------------------------- |
+| id                 | int       | Unique Account Identifier        |
+| account_name       | varchar   | [Account Name](account.md)       |
+| account_password   | text      | Account Password                 |
+| account_email      | varchar   | Account Email                    |
+| source_loginserver | varchar   | Source Loginserver               |
+| last_ip_address    | varchar   | [Last IP Address](account_ip.md) |
+| last_login_date    | datetime  | Last Login Date                  |
+| created_at         | datetime  | Created At Date                  |
+| updated_at         | datetime  | Updated At Date                  |

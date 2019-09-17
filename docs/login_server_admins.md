@@ -1,12 +1,10 @@
-This page was updated September 3 2019
-
-| Column                  | Data Type | Description |
-| ----------------------- | --------- | ----------- |
-| id                      | int       |             |
-| account_name            | varchar   |             |
-| account_password        | varchar   |             |
-| first_name              | varchar   |             |
-| last_name               | varchar   |             |
-| email                   | varchar   |             |
-| registration_date       | datetime  |             |
-| registration_ip_address | varchar   |             |
+| Column                  | Data Type | Description                              |
+| ----------------------- | --------- | ---------------------------------------- |
+| id                      | int       | Unique Account Identifier                |
+| account_name            | varchar   | Account Name                             |
+| account_password        | varchar   | Account Password                         |
+| first_name              | varchar   | First Name                               |
+| last_name               | varchar   | Last Name                                |
+| email                   | varchar   | Email                                    |
+| registration_date       | datetime  | Registration Date                        |
+| registration_ip_address | varchar   | [Registration IP Address](account_ip.md) |

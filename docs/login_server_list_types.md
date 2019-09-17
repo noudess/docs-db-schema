@@ -1,6 +1,4 @@
-This page was updated September 3 2019
-
-| Column      | Data Type | Description |
-| ----------- | --------- | ----------- |
-| id          | int       |             |
-| description | varchar   |             |
+| Column      | Data Type | Description                 |
+| ----------- | --------- | --------------------------- |
+| id          | int       | Unique List Type Identifier |
+| description | varchar   | Description                 |
