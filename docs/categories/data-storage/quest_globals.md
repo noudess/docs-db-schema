@@ -1,5 +1,7 @@
 # quest\_globals
 
+Please consider using [Data Buckets](https://eqemu.gitbook.io/server/categories/how-to-guides/scripting/using-data-buckets), rather than Quest Globals.
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | charid | int | [Character Identifier](../characters/character_data.md) |
