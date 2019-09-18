@@ -1,18 +1,16 @@
 # guild\_ranks
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| guild\_id | mediumint |  |
-| rank | tinyint |  |
-| title | varchar |  |
-| can\_hear | tinyint |  |
-| can\_speak | tinyint |  |
-| can\_invite | tinyint |  |
-| can\_remove | tinyint |  |
-| can\_promote | tinyint |  |
-| can\_demote | tinyint |  |
-| can\_motd | tinyint |  |
-| can\_warpeace | tinyint |  |
+| guild\_id | mediumint | [Guild Identifier](guilds.md) |
+| rank | tinyint | Rank Identifier |
+| title | varchar | Title |
+| can\_hear | tinyint | Can Hear: 0 = False, 1 = True |
+| can\_speak | tinyint | Can Speak: 0 = False, 1 = True |
+| can\_invite | tinyint | Can Invite: 0 = False, 1 = True |
+| can\_remove | tinyint | Can Remove: 0 = False, 1 = True |
+| can\_promote | tinyint | Can Promote: 0 = False, 1 = True |
+| can\_demote | tinyint | Can Demote: 0 = False, 1 = True |
+| can\_motd | tinyint | Can MOTD: 0 = False, 1 = True |
+| can\_warpeace | tinyint | Can War Peace: 0 = False, 1 = True |
 

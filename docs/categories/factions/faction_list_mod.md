@@ -1,11 +1,9 @@
 # faction\_list\_mod
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| faction\_id | int |  |
-| mod | smallint |  |
-| mod\_name | varchar |  |
+| id | int | Unique Faction List Modifier Identifier |
+| faction\_id | int | [Faction Identifier](faction_list.md) |
+| mod | smallint | Modifier |
+| mod\_name | varchar | Modifier Name: r\# = [Race Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/race-list), c\# = [Class Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list), d\# = [Deity Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list) |
 

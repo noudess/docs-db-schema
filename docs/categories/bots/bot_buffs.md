@@ -1,27 +1,25 @@
 # bot\_buffs
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| buffs\_index | int |  |
-| bot\_id | int |  |
-| spell\_id | int |  |
-| caster\_level | tinyint |  |
-| duration\_formula | int |  |
-| tics\_remaining | int |  |
-| poison\_counters | int |  |
-| disease\_counters | int |  |
-| curse\_counters | int |  |
-| corruption\_counters | int |  |
-| numhits | int |  |
-| melee\_rune | int |  |
-| magic\_rune | int |  |
-| dot\_rune | int |  |
-| persistent | tinyint |  |
-| caston\_x | int |  |
-| caston\_y | int |  |
-| caston\_z | int |  |
-| extra\_di\_chance | int |  |
-| instrument\_mod | int |  |
+| buffs\_index | int | Unique Entry Identifier |
+| bot\_id | int | [Bot Identifier](bot_data.md) |
+| spell\_id | int | [Spell Identifier](../spells/spells_new.md) |
+| caster\_level | tinyint | Caster level |
+| duration\_formula | int | Duration Formula |
+| tics\_remaining | int | Tics Remaining |
+| poison\_counters | int | Poison Counter |
+| disease\_counters | int | Disease Counter |
+| curse\_counters | int | Curse Counter |
+| corruption\_counters | int | Corruption Counter |
+| numhits | int | Number of Hits |
+| melee\_rune | int | Melee Rune |
+| magic\_rune | int | Magic Rune |
+| dot\_rune | int | Damage Over Time Rune |
+| persistent | tinyint | Persistent: 0 = False, 1 = True |
+| caston\_x | int | X Coordinate |
+| caston\_y | int | Y Coordinate |
+| caston\_z | int | Z Coordinate |
+| extra\_di\_chance | int | Extra DI Chance |
+| instrument\_mod | int | Instrument Modifier |
 

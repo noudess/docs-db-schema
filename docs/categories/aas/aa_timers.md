@@ -1,11 +1,9 @@
 # aa\_timers
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| charid | int |  |
-| ability | smallint |  |
-| begin | int |  |
-| end | int |  |
+| charid | int | [Character Identifier](../characters/character_data.md) |
+| ability | smallint | [AA Identifier](aa_ability.md) |
+| begin | int | When the timer began. |
+| end | int | When the timer ends. |
 

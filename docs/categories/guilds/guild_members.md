@@ -1,16 +1,14 @@
 # guild\_members
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int |  |
-| guild\_id | mediumint |  |
-| rank | tinyint |  |
-| tribute\_enable | tinyint |  |
-| total\_tribute | int |  |
-| last\_tribute | int |  |
-| banker | tinyint |  |
-| public\_note | text |  |
-| alt | tinyint |  |
+| char\_id | int | [Character Identifier](../characters/character_data.md) |
+| guild\_id | mediumint | [Guild Identifier](guilds.md) |
+| rank | tinyint | [Rank](https://eqemu.gitbook.io/server/categories/reference-lists/guild-ranks) |
+| tribute\_enable | tinyint | Tribute Enable: 0 = False, 1 = True |
+| total\_tribute | int | Total Tribute |
+| last\_tribute | int | Last Tribute |
+| banker | tinyint | Banked: 0 = False, 1 = True |
+| public\_note | text | Public Note |
+| alt | tinyint | Alt: 0 = False, 1 = True |
 

@@ -1,24 +1,22 @@
 # character\_buffs
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| character\_id | int |  |
-| slot\_id | tinyint |  |
-| spell\_id | smallint |  |
-| caster\_level | tinyint |  |
-| caster\_name | varchar |  |
-| ticsremaining | int |  |
-| counters | int |  |
-| numhits | int |  |
-| melee\_rune | int |  |
-| magic\_rune | int |  |
-| persistent | tinyint |  |
-| dot\_rune | int |  |
-| caston\_x | int |  |
-| caston\_y | int |  |
-| caston\_z | int |  |
-| ExtraDIChance | int |  |
-| instrument\_mod | int |  |
+| character\_id | int | [Character Identifier](character_data.md) |
+| slot\_id | tinyint | Buff Slot |
+| spell\_id | smallint | [Buff Spell Identifier](../spells/spells_new.md) |
+| caster\_level | tinyint | Caster Level |
+| caster\_name | varchar | Caster Name |
+| ticsremaining | int | Tics Remaining |
+| counters | int | Counters |
+| numhits | int | Number of Hits |
+| melee\_rune | int | Melee Rune |
+| magic\_rune | int | Magic Rune |
+| persistent | tinyint | Persistent: 0 = False, 1 = True |
+| dot\_rune | int | Damage Over Time Rune |
+| caston\_x | int | X Coordinate |
+| caston\_y | int | Y Coordinate |
+| caston\_z | int | Z Coordinate |
+| ExtraDIChance | int | Extra DI Chance |
+| instrument\_mod | int | Instrument Modifier |
 

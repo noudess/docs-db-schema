@@ -1,19 +1,17 @@
 # npc\_spells\_entries
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| npc\_spells\_id | int |  |
-| spellid | smallint |  |
-| type | int |  |
-| minlevel | tinyint |  |
-| maxlevel | tinyint |  |
-| manacost | smallint |  |
-| recast\_delay | int |  |
-| priority | smallint |  |
-| resist\_adjust | int |  |
-| min\_hp | smallint |  |
-| max\_hp | smallint |  |
+| id | int | Unique NPC Spell Entry Identifier |
+| npc\_spells\_id | int | [Unique NPC Spell Set Identifier](npc_spells.md) |
+| spellid | smallint | [Spell Identifier](../spells/spells_new.md) |
+| type | int | [Spell Type Bitmask](https://eqemu.gitbook.io/server/categories/types/spell-types) |
+| minlevel | tinyint | Minimum Level |
+| maxlevel | tinyint | Maximum Level |
+| manacost | smallint | Mana Cost |
+| recast\_delay | int | Recast Delay |
+| priority | smallint | Priority: 0 = Innate, 1 = Highest Priority, 5 = Lower Priority, 10 = Even Lower Priority |
+| resist\_adjust | int | Resist Adjustment |
+| min\_hp | smallint | Minimum Health Percentage |
+| max\_hp | smallint | Maximum Health Percentage |
 

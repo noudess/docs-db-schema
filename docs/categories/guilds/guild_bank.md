@@ -1,15 +1,13 @@
 # guild\_bank
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| guildid | int |  |
-| area | tinyint |  |
-| slot | int |  |
-| itemid | int |  |
-| qty | int |  |
-| donator | varchar |  |
-| permissions | tinyint |  |
-| whofor | varchar |  |
+| guildid | int | [Guild Identifier](guilds.md) |
+| area | tinyint | Area |
+| slot | int | Slot Identifier |
+| itemid | int | [Item Identifier](../items/items.md) |
+| qty | int | Quantity |
+| donator | varchar | [Character Identifier](../characters/character_data.md) |
+| permissions | tinyint | Permissions |
+| whofor | varchar | Who For |
 

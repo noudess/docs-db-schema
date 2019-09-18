@@ -1,24 +1,22 @@
 # character\_currency
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| platinum | int |  |
-| gold | int |  |
-| silver | int |  |
-| copper | int |  |
-| platinum\_bank | int |  |
-| gold\_bank | int |  |
-| silver\_bank | int |  |
-| copper\_bank | int |  |
-| platinum\_cursor | int |  |
-| gold\_cursor | int |  |
-| silver\_cursor | int |  |
-| copper\_cursor | int |  |
-| radiant\_crystals | int |  |
-| career\_radiant\_crystals | int |  |
-| ebon\_crystals | int |  |
-| career\_ebon\_crystals | int |  |
+| id | int | [Character Identifier](character_data.md) |
+| platinum | int | Platinum |
+| gold | int | Gold |
+| silver | int | Silver |
+| copper | int | Copper |
+| platinum\_bank | int | Banked Platinum |
+| gold\_bank | int | Banked Gold |
+| silver\_bank | int | Banked Silver |
+| copper\_bank | int | Banked Copper |
+| platinum\_cursor | int | Cursor Platinum |
+| gold\_cursor | int | Cursor Gold |
+| silver\_cursor | int | Cursor Silver |
+| copper\_cursor | int | Cursor Copper |
+| radiant\_crystals | int | Radiant Crystals |
+| career\_radiant\_crystals | int | Career Radiant Crystals |
+| ebon\_crystals | int | Ebon Crystals |
+| career\_ebon\_crystals | int | Career Ebon Crystals |
 

@@ -1,13 +1,11 @@
 # bot\_pets
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| pets\_index | int |  |
-| spell\_id | int |  |
-| bot\_id | int |  |
-| name | varchar |  |
-| mana | int |  |
-| hp | int |  |
+| pets\_index | int | Unique Bot Pet Identifier |
+| spell\_id | int | [Spell Identifier](../spells/spells_new.md) |
+| bot\_id | int | [Bot Identifier](bot_data.md) |
+| name | varchar | Name |
+| mana | int | Mana |
+| hp | int | Health |
 

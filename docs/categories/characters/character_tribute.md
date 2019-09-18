@@ -1,10 +1,8 @@
 # character\_tribute
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| tier | tinyint |  |
-| tribute | int |  |
+| id | int | [Character Identifier](character_data.md) |
+| tier | tinyint | Tier |
+| tribute | int | Tribute |
 

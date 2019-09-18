@@ -1,9 +1,7 @@
 # bot\_stances
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| bot\_id | int |  |
-| stance\_id | tinyint |  |
+| bot\_id | int | [Bot Identifier](bot_data.md) |
+| stance\_id | tinyint | [Stance Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types) |
 

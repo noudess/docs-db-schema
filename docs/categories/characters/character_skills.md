@@ -1,10 +1,8 @@
 # character\_skills
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| skill\_id | smallint |  |
-| value | smallint |  |
+| id | int | [Character Identifier](character_data.md) |
+| skill\_id | smallint | [Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
+| value | smallint | Skill Level |
 

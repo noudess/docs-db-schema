@@ -1,10 +1,8 @@
 # character\_item\_recast
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| recast\_type | smallint |  |
-| timestamp | int |  |
+| id | int | [Character Identifier](character_data.md) |
+| recast\_type | smallint | Recast Type |
+| timestamp | int | Recast Timestamp |
 

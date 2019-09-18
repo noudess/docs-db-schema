@@ -1,11 +1,9 @@
 # character\_alternate\_abilities
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| aa\_id | smallint |  |
-| aa\_value | smallint |  |
-| charges | smallint |  |
+| id | int | [Character Identifier](character_data.md) |
+| aa\_id | smallint | [AA Identifier](../aas/aa_ability.md) |
+| aa\_value | smallint | AA Value |
+| charges | smallint | Charges |
 

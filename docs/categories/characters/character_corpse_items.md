@@ -1,18 +1,16 @@
 # character\_corpse\_items
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| corpse\_id | int |  |
-| equip\_slot | int |  |
-| item\_id | int |  |
-| charges | int |  |
-| aug\_1 | int |  |
-| aug\_2 | int |  |
-| aug\_3 | int |  |
-| aug\_4 | int |  |
-| aug\_5 | int |  |
-| aug\_6 | int |  |
-| attuned | smallint |  |
+| corpse\_id | int | [Corpse Identifier](character_corpses.md) |
+| equip\_slot | int | Equipment Slot |
+| item\_id | int | [Item Identifier](../items/items.md) |
+| charges | int | Item Charges |
+| aug\_1 | int | Item Augment Slot 1 |
+| aug\_2 | int | Item Augment Slot 2 |
+| aug\_3 | int | Item Augment Slot 3 |
+| aug\_4 | int | Item Augment Slot 4 |
+| aug\_5 | int | Item Augment Slot 5 |
+| aug\_6 | int | Item Augment Slot 6 |
+| attuned | smallint | Item Attuned: 0 = False, 1 = True |
 

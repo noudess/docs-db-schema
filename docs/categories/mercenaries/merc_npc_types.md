@@ -1,12 +1,10 @@
 # merc\_npc\_types
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_npc\_type\_id | int |  |
-| proficiency\_id | tinyint |  |
-| tier\_id | tinyint |  |
-| class\_id | int |  |
-| name | varchar |  |
+| merc\_npc\_type\_id | int | Mercenary NPC Type Identifier |
+| proficiency\_id | tinyint | Proficiency Identifier |
+| tier\_id | tinyint | Tier Identifier |
+| class\_id | int | [Class Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| name | varchar | Name |
 

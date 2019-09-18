@@ -1,10 +1,8 @@
 # guild\_relations
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| guild1 | mediumint |  |
-| guild2 | mediumint |  |
+| guild1 | mediumint | [Unique Guild Identifier 1](guilds.md) |
+| guild2 | mediumint | [Unique Guild Identifier 2](guilds.md) |
 | relation | tinyint |  |
 

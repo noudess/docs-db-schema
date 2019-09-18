@@ -1,12 +1,10 @@
 # merc\_stance\_entries
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_stance\_entry\_id | int |  |
-| class\_id | int |  |
-| proficiency\_id | tinyint |  |
-| stance\_id | tinyint |  |
-| isdefault | tinyint |  |
+| merc\_stance\_entry\_id | int | Unique Mercenary Stance Entry Identifier |
+| class\_id | int | [Class Identifier](https://eqemu.gitbook.io/server/categories/reference-list/class-list) |
+| proficiency\_id | tinyint | Proficiency Identifier |
+| stance\_id | tinyint | [Stance Type Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types) |
+| isdefault | tinyint | Is Default: 0 = False, 1 = True |
 

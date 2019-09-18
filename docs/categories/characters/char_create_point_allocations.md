@@ -1,22 +1,20 @@
 # char\_create\_point\_allocations
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| base\_str | int |  |
-| base\_sta | int |  |
-| base\_dex | int |  |
-| base\_agi | int |  |
-| base\_int | int |  |
-| base\_wis | int |  |
-| base\_cha | int |  |
-| alloc\_str | int |  |
-| alloc\_sta | int |  |
-| alloc\_dex | int |  |
-| alloc\_agi | int |  |
-| alloc\_int | int |  |
-| alloc\_wis | int |  |
-| alloc\_cha | int |  |
+| id | int | Allocation Identifier |
+| base\_str | int | Base Strength |
+| base\_sta | int | Base Stamina |
+| base\_dex | int | Base Dexterity |
+| base\_agi | int | Base Agility |
+| base\_int | int | Base Intelligence |
+| base\_wis | int | Base Wisdom |
+| base\_cha | int | Base Charisma |
+| alloc\_str | int | Allocated Strength |
+| alloc\_sta | int | Allocated Stamina |
+| alloc\_dex | int | Allocated Dexterity |
+| alloc\_agi | int | Allocated Agility |
+| alloc\_int | int | Allocated Intelligence |
+| alloc\_wis | int | Allocated Wisdom |
+| alloc\_cha | int | Allocated Charisma |
 

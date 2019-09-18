@@ -1,19 +1,17 @@
 # npc\_spells
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| name | tinytext |  |
-| parent\_list | int |  |
-| attack\_proc | smallint |  |
-| proc\_chance | tinyint |  |
-| range\_proc | smallint |  |
-| rproc\_chance | smallint |  |
-| defensive\_proc | smallint |  |
-| dproc\_chance | smallint |  |
-| fail\_recast | int |  |
+| id | int | Unique NPC Spell Set Identifier |
+| name | tinytext | NPC Spell Set Name |
+| parent\_list | int | Inherit all the spells from this list, and merge them with our spells. Only one level of inheritance is allowed, so your parent's parent will not be included. |
+| attack\_proc | smallint | The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](../spells/spells_new.md) |
+| proc\_chance | tinyint | Proc Chance: 0 = Never, 100 = Always |
+| range\_proc | smallint | The ranged proc that an NPC with this spell set will add to their list of procs. |
+| rproc\_chance | smallint | Ranged Proc Chance: 0 = Never, 100 = Always |
+| defensive\_proc | smallint | The defensive proc that an NPC with this spell set will add to their list of procs. |
+| dproc\_chance | smallint | Defensive Proc Chance: 0 = Never, 100 = Always |
+| fail\_recast | int | Fail Recast |
 | engaged\_no\_sp\_recast\_min | int |  |
 | engaged\_no\_sp\_recast\_max | int |  |
 | engaged\_b\_self\_chance | tinyint |  |

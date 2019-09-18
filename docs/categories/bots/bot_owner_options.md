@@ -1,9 +1,7 @@
 # bot\_owner\_options
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| owner\_id | int |  |
-| death\_marquee | smallint |  |
+| owner\_id | int | [Owner Character Identifier](../characters/character_data.md) |
+| death\_marquee | smallint | Death Marquee Message: 0 = False, 1 = True |
 

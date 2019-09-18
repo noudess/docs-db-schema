@@ -1,11 +1,9 @@
 # spawn\_condition\_values
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| value | tinyint |  |
-| zone | varchar |  |
-| instance\_id | int |  |
+| id | int | [Spawn Condition Identifier](spawn_conditions.md) |
+| value | tinyint | Value |
+| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| instance\_id | int | [Instance Identifier](../instances/instance_list.md) |
 

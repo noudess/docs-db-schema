@@ -1,10 +1,8 @@
 # npc\_spells\_effects
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| name | tinytext |  |
-| parent\_list | int |  |
+| id | int | Unique Spell Effects Identifier |
+| name | tinytext | Name |
+| parent\_list | int | Parent List |
 

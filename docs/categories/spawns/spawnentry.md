@@ -1,10 +1,8 @@
 # spawnentry
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| spawngroupID | int |  |
-| npcID | int |  |
-| chance | smallint |  |
+| spawngroupID | int | [Unique Spawn Group Identifier](spawngroup.md) |
+| npcID | int | [NPC Type Identifier](../npcs/npc_types.md) |
+| chance | smallint | Chance: 0 = Never, 100 = Always |
 

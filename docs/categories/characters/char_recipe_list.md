@@ -1,10 +1,8 @@
 # char\_recipe\_list
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int |  |
-| recipe\_id | int |  |
-| madecount | int |  |
+| char\_id | int | [Character Identifier](character_data.md) |
+| recipe\_id | int | [Recipe Identifier](../tradeskills/tradeskill_recipe.md) |
+| madecount | int | Made Count |
 

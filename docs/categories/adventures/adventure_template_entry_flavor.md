@@ -1,9 +1,7 @@
 # adventure\_template\_entry\_flavor
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| text | varchar |  |
+| id | int | [Adventure Identifier](adventure_details.md) |
+| text | varchar | Text |
 

@@ -1,11 +1,9 @@
 # character\_pet\_inventory
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int |  |
-| pet | int |  |
-| slot | int |  |
-| item\_id | int |  |
+| char\_id | int | [Character Identifier](character_data.md) |
+| pet | int | Pet |
+| slot | int | Slot |
+| item\_id | int | [Item Identifier](../items/items.md) |
 

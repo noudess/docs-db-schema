@@ -1,16 +1,14 @@
 # qs\_merchant\_transaction\_record\_entries
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| event\_id | int |  |
-| char\_slot | mediumint |  |
-| item\_id | int |  |
-| charges | mediumint |  |
-| aug\_1 | int |  |
-| aug\_2 | int |  |
-| aug\_3 | int |  |
-| aug\_4 | int |  |
-| aug\_5 | int |  |
+| event\_id | int | Unique Event Identifier |
+| char\_slot | mediumint | [Character Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots) |
+| item\_id | int | [Item Identifier](../items/items.md) |
+| charges | mediumint | Charges |
+| aug\_1 | int | Augment Slot 1 |
+| aug\_2 | int | Augment Slot 2 |
+| aug\_3 | int | Augment Slot 3 |
+| aug\_4 | int | Augment Slot 4 |
+| aug\_5 | int | Augment Slot 5 |
 

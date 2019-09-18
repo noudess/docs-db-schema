@@ -1,11 +1,9 @@
 # character\_potionbelt
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| potion\_id | tinyint |  |
-| item\_id | int |  |
-| icon | int |  |
+| id | int | [Character Identifier](character_data.md) |
+| potion\_id | tinyint | Potion Identifier |
+| item\_id | int | [Item Identifier](../items/items.md) |
+| icon | int | Icon |
 

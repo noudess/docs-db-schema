@@ -1,16 +1,14 @@
 # adventure\_details
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| adventure\_id | smallint |  |
-| instance\_id | int |  |
-| count | smallint |  |
-| assassinate\_count | smallint |  |
-| status | tinyint |  |
-| time\_created | int |  |
-| time\_zoned | int |  |
-| time\_completed | int |  |
+| id | int | Unique Entry Identifier |
+| adventure\_id | smallint | Unique Adventure Identifier |
+| instance\_id | int | [Instance Identifier](../instances/instance_list.md) |
+| count | smallint | Count |
+| assassinate\_count | smallint | Assassinate Count |
+| status | tinyint | Status |
+| time\_created | int | Time Created UNIX Timestamp |
+| time\_zoned | int | Time Zoned UNIX Timestamp |
+| time\_completed | int | Time Completed UNIX Timestamp |
 

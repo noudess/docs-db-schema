@@ -1,12 +1,10 @@
 # merc\_inventory
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_inventory\_id | int |  |
-| merc\_subtype\_id | int |  |
-| item\_id | int |  |
-| min\_level | int |  |
-| max\_level | int |  |
+| merc\_inventory\_id | int | Unique Mercenary Inventory Identifier |
+| merc\_subtype\_id | int | [Mercenary Subtype Identifier](merc_subtypes.md) |
+| item\_id | int | [Item Identifier](../items/items.md) |
+| min\_level | int | Minimum Level |
+| max\_level | int | Maximum Level |
 

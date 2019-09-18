@@ -1,108 +1,106 @@
 # character\_data
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| account\_id | int |  |
-| name | varchar |  |
-| last\_name | varchar |  |
-| title | varchar |  |
-| suffix | varchar |  |
-| zone\_id | int |  |
-| zone\_instance | int |  |
-| y | float |  |
-| x | float |  |
-| z | float |  |
-| heading | float |  |
-| gender | tinyint |  |
-| race | smallint |  |
-| class | tinyint |  |
-| level | int |  |
-| deity | int |  |
-| birthday | int |  |
-| last\_login | int |  |
-| time\_played | int |  |
-| level2 | tinyint |  |
-| anon | tinyint |  |
-| gm | tinyint |  |
-| face | int |  |
-| hair\_color | tinyint |  |
-| hair\_style | tinyint |  |
-| beard | tinyint |  |
-| beard\_color | tinyint |  |
-| eye\_color\_1 | tinyint |  |
-| eye\_color\_2 | tinyint |  |
-| drakkin\_heritage | int |  |
-| drakkin\_tattoo | int |  |
-| drakkin\_details | int |  |
-| ability\_time\_seconds | tinyint |  |
-| ability\_number | tinyint |  |
-| ability\_time\_minutes | tinyint |  |
-| ability\_time\_hours | tinyint |  |
-| exp | int |  |
-| aa\_points\_spent | int |  |
-| aa\_exp | int |  |
-| aa\_points | int |  |
-| group\_leadership\_exp | int |  |
-| raid\_leadership\_exp | int |  |
-| group\_leadership\_points | int |  |
-| raid\_leadership\_points | int |  |
-| points | int |  |
-| cur\_hp | int |  |
-| mana | int |  |
-| endurance | int |  |
-| intoxication | int |  |
-| str | int |  |
-| sta | int |  |
-| cha | int |  |
-| dex | int |  |
-| int | int |  |
-| agi | int |  |
-| wis | int |  |
-| zone\_change\_count | int |  |
-| toxicity | int |  |
-| hunger\_level | int |  |
-| thirst\_level | int |  |
-| ability\_up | int |  |
-| ldon\_points\_guk | int |  |
-| ldon\_points\_mir | int |  |
-| ldon\_points\_mmc | int |  |
-| ldon\_points\_ruj | int |  |
-| ldon\_points\_tak | int |  |
-| ldon\_points\_available | int |  |
-| tribute\_time\_remaining | int |  |
-| career\_tribute\_points | int |  |
-| tribute\_points | int |  |
-| tribute\_active | int |  |
-| pvp\_status | tinyint |  |
-| pvp\_kills | int |  |
-| pvp\_deaths | int |  |
-| pvp\_current\_points | int |  |
-| pvp\_career\_points | int |  |
-| pvp\_best\_kill\_streak | int |  |
-| pvp\_worst\_death\_streak | int |  |
-| pvp\_current\_kill\_streak | int |  |
-| pvp2 | int |  |
-| pvp\_type | int |  |
-| show\_helm | int |  |
-| group\_auto\_consent | tinyint |  |
-| raid\_auto\_consent | tinyint |  |
-| guild\_auto\_consent | tinyint |  |
-| leadership\_exp\_on | tinyint |  |
-| RestTimer | int |  |
-| air\_remaining | int |  |
-| autosplit\_enabled | int |  |
-| lfp | tinyint |  |
-| lfg | tinyint |  |
-| mailkey | char |  |
-| xtargets | tinyint |  |
-| firstlogon | tinyint |  |
-| e\_aa\_effects | int |  |
-| e\_percent\_to\_aa | int |  |
-| e\_expended\_aa\_spent | int |  |
-| aa\_points\_spent\_old | int |  |
-| aa\_points\_old | int |  |
-| e\_last\_invsnapshot | int |  |
+| id | int | Unique Character Identifier |
+| account\_id | int | [Account Identifier](../account/account.md) |
+| name | varchar | Name |
+| last\_name | varchar | Last Name |
+| title | varchar | Title |
+| suffix | varchar | Suffix |
+| zone\_id | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| zone\_instance | int | Zone Instance Identifier |
+| y | float | Y Coordinate |
+| x | float | X Coordinate |
+| z | float | Z Coordinate |
+| heading | float | Heading Coordinate |
+| gender | tinyint | [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders) |
+| race | smallint | [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list) |
+| class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| level | int | Level |
+| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list) |
+| birthday | int | UNIX Timestamp of Birthday |
+| last\_login | int | UNIX Timestamp of Last Login |
+| time\_played | int | Time Played |
+| level2 | tinyint | Level 2 |
+| anon | tinyint | Anon: 0 = False, 1 = Anonymous, 2 = Roleplaying |
+| gm | tinyint | GM: 0 = False, 1 = True |
+| face | int | Face |
+| hair\_color | tinyint | Hair Color |
+| hair\_style | tinyint | Hair Style |
+| beard | tinyint | Beard |
+| beard\_color | tinyint | Beard Color |
+| eye\_color\_1 | tinyint | Eye Color 1 |
+| eye\_color\_2 | tinyint | Eye Color 2 |
+| drakkin\_heritage | int | Drakkin Heritage |
+| drakkin\_tattoo | int | Drakkin Tattoo |
+| drakkin\_details | int | Drakkin Details |
+| ability\_time\_seconds | tinyint | Ability Timer in Seconds |
+| ability\_number | tinyint | [Ability Number](../aas/aa_ability.md) |
+| ability\_time\_minutes | tinyint | Ability Timer in Minutes |
+| ability\_time\_hours | tinyint | Ability Timer in Hours |
+| exp | int | Experience |
+| aa\_points\_spent | int | AA Points Spent |
+| aa\_exp | int | AA Experience |
+| aa\_points | int | AA Points |
+| group\_leadership\_exp | int | Group Leadership Experience |
+| raid\_leadership\_exp | int | Raid Leadership Experience |
+| group\_leadership\_points | int | Group Leadership Points |
+| raid\_leadership\_points | int | Raid Leadership Points |
+| points | int | Points |
+| cur\_hp | int | Health |
+| mana | int | Mana |
+| endurance | int | Endurance |
+| intoxication | int | Intoxication |
+| str | int | Strength |
+| sta | int | Stamina |
+| cha | int | Charisma |
+| dex | int | Dexterity |
+| int | int | Intelligence |
+| agi | int | Agility |
+| wis | int | Wisdom |
+| zone\_change\_count | int | Zone Change Count |
+| toxicity | int | Toxicity |
+| hunger\_level | int | Hunger Level |
+| thirst\_level | int | Thirst Level |
+| ability\_up | int | Ability Up |
+| ldon\_points\_guk | int | LDoN Points - [Deepest Guk](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| ldon\_points\_mir | int | LDoN Points - [Miragul's Menagerie](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| ldon\_points\_mmc | int | LDoN Points - [Mistmoore Catacombs](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| ldon\_points\_ruj | int | LDoN Points - [Rujarkian Hills](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| ldon\_points\_tak | int | LDoN Points - [Takish-Hiz](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| ldon\_points\_available | int | LDoN Points Available |
+| tribute\_time\_remaining | int | Tribute Time Remaining |
+| career\_tribute\_points | int | Career Tribute Points |
+| tribute\_points | int | Tribute Points |
+| tribute\_active | int | Tribute Active: 0 = False, 1 = True |
+| pvp\_status | tinyint | PVP Status: 0 = False, 1 = True |
+| pvp\_kills | int | PVP Kills |
+| pvp\_deaths | int | PVP Deaths |
+| pvp\_current\_points | int | PVP Points |
+| pvp\_career\_points | int | Career PVP Points |
+| pvp\_best\_kill\_streak | int | Best Kill Streak |
+| pvp\_worst\_death\_streak | int | Worse Death Streak |
+| pvp\_current\_kill\_streak | int | Current Kill Streak |
+| pvp2 | int | PVP Status: 0 = False, 1 = True |
+| pvp\_type | int | PVP Type |
+| show\_helm | int | Show Helm: 0 = False, 1 = True |
+| group\_auto\_consent | tinyint | Group Auto Consent: 0 = False, 1 = True |
+| raid\_auto\_consent | tinyint | Raid Auto Consent: 0 = False, 1 = True |
+| guild\_auto\_consent | tinyint | Guild Auto Consent: 0 = False, 1 = True |
+| leadership\_exp\_on | tinyint | Leadership Experience On : 0 = False, 1 = True |
+| RestTimer | int | Rest Timer |
+| air\_remaining | int | Air Remaining |
+| autosplit\_enabled | int | Autosplit Enabled: 0 = False, 1 = True |
+| lfp | tinyint | Looking For Party: 0 = False, 1 = True |
+| lfg | tinyint | Looking For Guild: 0 = False, 1 = True |
+| mailkey | char | Mail Key |
+| xtargets | tinyint | XTargets |
+| firstlogon | tinyint | First Logon |
+| e\_aa\_effects | int | Experience AA Effects |
+| e\_percent\_to\_aa | int | Experience Percentage to AA Points |
+| e\_expended\_aa\_spent | int | Expended AA Points Spent |
+| aa\_points\_spent\_old | int | AA Points Spent Old |
+| aa\_points\_old | int | AA Points Old |
+| e\_last\_invsnapshot | int | Last Inventory Snapshot |
 

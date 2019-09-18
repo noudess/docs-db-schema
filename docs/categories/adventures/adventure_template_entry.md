@@ -1,9 +1,7 @@
 # adventure\_template\_entry
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| template\_id | int |  |
+| id | int | [Adventure Identifier](adventure_details.md) |
+| template\_id | int | [Template Identifier](adventure_template.md) |
 

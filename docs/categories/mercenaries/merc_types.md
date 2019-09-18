@@ -1,12 +1,10 @@
 # merc\_types
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_type\_id | int |  |
-| race\_id | int |  |
-| proficiency\_id | tinyint |  |
-| dbstring | varchar |  |
-| clientversion | int |  |
+| merc\_type\_id | int | Unique Mercenary Type Identifier |
+| race\_id | int | [Race Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/race-list) |
+| proficiency\_id | tinyint | Proficiency Identifier |
+| dbstring | varchar | [DBString Identifier](../client-files/db_str.md) |
+| clientversion | int | [Client Version](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks) |
 

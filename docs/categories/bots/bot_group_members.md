@@ -1,10 +1,8 @@
 # bot\_group\_members
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| group\_members\_index | int |  |
-| groups\_index | int |  |
-| bot\_id | int |  |
+| group\_members\_index | int | Unique Group Member Identifier |
+| groups\_index | int | [Group Identifier](bot_groups.md) |
+| bot\_id | int | [Bot Identifier](bot_data.md) |
 

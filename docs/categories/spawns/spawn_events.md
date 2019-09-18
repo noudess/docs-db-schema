@@ -1,21 +1,19 @@
 # spawn\_events
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| zone | varchar |  |
-| cond\_id | mediumint |  |
-| name | varchar |  |
-| period | int |  |
-| next\_minute | tinyint |  |
-| next\_hour | tinyint |  |
-| next\_day | tinyint |  |
-| next\_month | tinyint |  |
-| next\_year | int |  |
-| enabled | tinyint |  |
-| action | tinyint |  |
-| argument | mediumint |  |
-| strict | tinyint |  |
+| id | int | Unique Spawn Event Entry Identifier |
+| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| cond\_id | mediumint | [Spawn Condition Identifier](spawn_conditions.md) |
+| name | varchar | Name |
+| period | int | Period |
+| next\_minute | tinyint | Next Minute |
+| next\_hour | tinyint | Next Hour |
+| next\_day | tinyint | Next Day |
+| next\_month | tinyint | Next Month |
+| next\_year | int | Next Year |
+| enabled | tinyint | Enabled: 0 = False, 1 = True |
+| action | tinyint | [Action Type](https://eqemu.gitbook.io/server/categories/types/action-types) |
+| argument | mediumint | Argument: \(Based on Action\) 0 = Argument Value |
+| strict | tinyint | Strict Date Criteria: 0 = False, 1 = True |
 
