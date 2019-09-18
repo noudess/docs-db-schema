@@ -14,5 +14,5 @@
 | target | varchar | Target when reported |
 | bug | varchar | Bug reported |
 | date | date | Date when reported |
-| status | tinyint | \[Account Status of Reporter\]\([https://eqemu.gitbook.io/server/categories/reference-lists/status-levels](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels) |
+| status | tinyint | [Account Status of Reporter](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels) |
 
