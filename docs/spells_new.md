@@ -86,18 +86,18 @@
 | goodEffect           | int       | Good Effect: 0 = Detrimental, 1 = Beneficial, 2 = Beneficial Group Only                                                                                      |
 | Activated            | int       | Activated                                                                                                                                                    |
 | resisttype           | int       | [Resist Type](https://eqemu.gitbook.io/server/categories/types/resist-types)                                                                                 |
-| effectid1            | int       | [Effect ID 1](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid2            | int       | [Effect ID 2](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid3            | int       | [Effect ID 3](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid4            | int       | [Effect ID 4](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid5            | int       | [Effect ID 5](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid6            | int       | [Effect ID 6](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid7            | int       | [Effect ID 7](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid8            | int       | [Effect ID 8](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid9            | int       | [Effect ID 9](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                            |
-| effectid10           | int       | [Effect ID 10](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                           |
-| effectid11           | int       | [Effect ID 11](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                           |
-| effectid12           | int       | [Effect ID 12](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                           |
+| effectid1            | int       | [Effect Identifier 1](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid2            | int       | [Effect Identifier 2](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid3            | int       | [Effect Identifier 3](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid4            | int       | [Effect Identifier 4](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid5            | int       | [Effect Identifier 5](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid6            | int       | [Effect Identifier 6](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid7            | int       | [Effect Identifier 7](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid8            | int       | [Effect Identifier 8](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid9            | int       | [Effect Identifier 9](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                    |
+| effectid10           | int       | [Effect Identifier 10](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                   |
+| effectid11           | int       | [Effect Identifier 11](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                   |
+| effectid12           | int       | [Effect Identifier 12](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)                                                                   |
 | targettype           | int       | [Target Type](https://eqemu.gitbook.io/server/categories/types/target-types)                                                                                 |
 | basediff             | int       | Base Difficult Fizzle Adjustment                                                                                                                             |
 | skill                | int       | [Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)                                                                        |

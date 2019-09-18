@@ -12,7 +12,7 @@
 | race             | smallint  | [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)                      |
 | class            | tinyint   | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)                    |
 | level            | tinyint   | Level                                                                                             |
-| deity            | int       | [Deity]((https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)                   |
+| deity            | int       | [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)                    |
 | creation_day     | int       | UNIX Timestamp of creation date                                                                   |
 | last_spawn       | int       | UNIX Timestamp of last spawn_conditions                                                           |
 | time_spawned     | int       | Time spawned                                                                                      |
