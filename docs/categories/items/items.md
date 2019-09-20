@@ -40,7 +40,7 @@
 | banedmgbody | int | [Bane Damage Body Type](https://eqemu.gitbook.io/server/categories/types/body-types) |
 | banedmgrace | int | [Bane Damage Race](https://eqemu.gitbook.io/server/categories/reference-list/race-list) |
 | bardtype | int | [Bard Type](https://eqemu.gitbook.io/server/categories/types/bard-types) |
-| bardvalue | int | Bard Value |
+| bardvalue | int | Bard Value--How much the instrument type is modified when equipped. |
 | book | int | [Book](../books/books.md) |
 | casttime | int | Cast Time in Seconds |
 | casttime\_ | int | Cast Time in Seconds |
@@ -61,7 +61,7 @@
 | dotshielding | int | Damage Over Time Shielding |
 | dr | int | Disease Resistance: -128 to 127 |
 | clicktype | int | [Click Type](https://eqemu.gitbook.io/server/categories/types/click-types) |
-| clicklevel2 | int | Click Level 2 |
+| clicklevel2 | int | Click Level 2--level required to use the click |
 | elemdmgtype | int | [Elemental Damage Type](https://eqemu.gitbook.io/server/categories/types/element-types) |
 | elemdmgamt | int | Elemental Damage Amount |
 | endur | int | Endurance |
@@ -73,12 +73,12 @@
 | factionmod2 | int | Faction Modifier 2 |
 | factionmod3 | int | Faction Modifier 3 |
 | factionmod4 | int | Faction Modifier 4 |
-| filename | varchar | File Name |
+| filename | varchar | File Name--corresponds to the name field in the books table |
 | focuseffect | int | [Focus Effect Identifier](../spells/spells_new.md) |
 | fr | int | Fire Resistance: -128 to 127 |
-| fvnodrop | int | Firiona Vie No Drop: 0 = False, 1 = True |
+| fvnodrop | int | Firiona Vie No Drop: 0 = False, 1 = True.  Requires the Rule World:FVNoDropFlag to be set to 1. |
 | haste | int | Haste: 0 = 0%, 255 = 255% |
-| clicklevel | int | Click Level |
+| clicklevel | int | Click Level--this is the level at which the item can cast its fully powered spell |
 | hp | int | Health |
 | regen | int | Health Regeneration |
 | icon | int | Icon |
@@ -89,7 +89,7 @@
 | ldontheme | int | [LDoN Theme](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
 | ldonsold | int | LDoN Sold: 0 = False, 1 = True |
 | light | int | Light |
-| lore | varchar | Lore Description |
+| lore | varchar | Lore Description--displayed when you identify an item. |
 | loregroup | int | [Lore Group](https://eqemu.gitbook.io/server/categories/reference-lists/item-lore-groups) |
 | magic | int | Magic: 0 = False, 1 = True |
 | mana | int | Mana |
@@ -97,7 +97,7 @@
 | enduranceregen | int | Endurance Regeneration |
 | material | int | [Material](https://eqemu.gitbook.io/server/categories/reference-lists/textures) |
 | herosforgemodel | int | Hero's Forge Model |
-| maxcharges | int | Maximum Charges |
+| maxcharges | int | Maximum Charges \(-1 for infinite\). |
 | mr | int | Magic Resistance: -128 to 127 |
 | nodrop | int | No Drop: 0 = False, 1 = True |
 | norent | int | No Rent: 0 = False, 1 = True |
@@ -120,7 +120,7 @@
 | strikethrough | int | Strikethrough |
 | stunresist | int | Stun Resist |
 | summonedflag | tinyint | Unknown |
-| tradeskills | int | Tradeskill Item: 0 = False, 1= True |
+| tradeskills | int | Tradeskill Item: 0 = False, 1= True. Whether or not the item displays a "Used in tradeskills" message. |
 | favor | int | Favor |
 | weight | int | Weight: 10 = 1.0, 25 = 2.5, 100 = 10.0 |
 | UNK012 | int | Unknown |
@@ -137,7 +137,7 @@
 | attuneable | int | Attuneable: 0 = False, 1 = True |
 | nopet | int | No Pet: 0 = False, 1 = True |
 | updated | datetime | Updated Datetime |
-| comment | varchar | Comment |
+| comment | varchar | Comment--viewable in the database. |
 | UNK127 | int | Unknown |
 | pointtype | int | Unknown |
 | potionbelt | int | Potion Belt: 0 = False, 1 = True |
@@ -149,27 +149,27 @@
 | UNK137 | int | Unknown |
 | proceffect | int | [Proc Effect Identifier](../spells/spells_new.md) |
 | proctype | int | Proc Type: 0 |
-| proclevel2 | int | Proc Level 2 |
+| proclevel2 | int | Proc Level 2--level at which the proc will reach maximum power. |
 | proclevel | int | Proc Level |
 | UNK142 | int | Unknown |
 | worneffect | int | [Worn Effect Identifier](../spells/spells_new.md) |
 | worntype | int | Worn Type: 2 = Worn |
-| wornlevel2 | int | Worn Level 2 |
-| wornlevel | int | Worn Level |
+| wornlevel2 | int | Worn Level 2--level at which the worn effect will reach maximum power. |
+| wornlevel | int | Worn Level--level required for the worn effect to work. |
 | UNK147 | int | Unknown |
 | focustype | int | Focus Type: 6 = Focus |
-| focuslevel2 | int | Focus Level 2 |
+| focuslevel2 | int | Focus Level 2--level at which the focus effect will reach maximum power. |
 | focuslevel | int | Focus Level |
 | UNK152 | int | Unknown |
 | scrolleffect | int | [Scroll Effect Identifier](../spells/spells_new.md) |
 | scrolltype | int | Scroll Type: 7 = Scroll |
-| scrolllevel2 | int | Scroll Level 2 |
-| scrolllevel | int | Scroll Level |
+| scrolllevel2 | int | Scroll Level 2--leave at 0. |
+| scrolllevel | int | Scroll Level--leave at 0. |
 | UNK157 | int | Unknown |
 | serialized | datetime | Serialized Datetime |
 | verified | datetime | Verified Datetime |
 | serialization | text | Serialization |
-| source | varchar | Source |
+| source | varchar | Source of the contribution to the database. |
 | UNK033 | int | Unknown |
 | lorefile | varchar | Lore File |
 | UNK014 | int | Unknown |
@@ -244,23 +244,23 @@
 | healamt | smallint | Heal Amount: 0 to 32767 |
 | spelldmg | smallint | Spell Damage: 0 to 32767 |
 | clairvoyance | smallint | Clairvoyance |
-| backstabdmg | smallint | Backstab Damage |
+| backstabdmg | smallint | Backstab Damage: 0 to 32767 |
 | created | varchar | Created |
 | elitematerial | smallint | Elite Material |
-| ldonsellbackrate | smallint | LDoN Sellback Rate |
-| scriptfileid | smallint | Script File Name |
+| ldonsellbackrate | smallint | LDoN Sellback Rate--leave this at 70. |
+| scriptfileid | smallint | Script File Name--see [EVENT\_ITEM\_CLICK](https://eqemu.gitbook.io/quest-api/events#event_item_click) |
 | expendablearrow | smallint | Expendable Arrow: 0 = False, 1 = True |
 | powersourcecapacity | smallint | Powersource Capacity |
 | bardeffect | smallint | [Bard Effect Identifier](../spells/spells_new.md) |
 | bardeffecttype | smallint | [Bard Effect Type](https://eqemu.gitbook.io/server/categories/types/bard-types) |
-| bardlevel2 | smallint | Bard Level 2 |
-| bardlevel | smallint | Bard Level |
+| bardlevel2 | smallint | Bard Level 2--Level that the bard effect will reach maximum power. |
+| bardlevel | smallint | Bard Level--The level required for the bard effect. |
 | bardunk1 | smallint | Unknown |
 | bardunk2 | smallint | Unknown |
 | bardunk3 | smallint | Unknown |
 | bardunk4 | smallint | Unknown |
 | bardunk5 | smallint | Unknown |
-| bardname | varchar | Bard Name |
+| bardname | varchar | Bard Name--the name of the Bard Effect. |
 | bardunk7 | smallint | Unknown |
 | UNK214 | smallint | Unknown |
 | UNK219 | int | Unknown |
