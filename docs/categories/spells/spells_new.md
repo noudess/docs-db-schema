@@ -1,5 +1,9 @@
 # spells\_new
 
+{% hint style="info" %}
+For a guide on the how spells work, please see [Spells](https://eqemu.gitbook.io/server/categories/spells)
+{% endhint %}
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spell Identifier |
@@ -59,7 +63,7 @@
 | max11 | int | Max 11 |
 | max12 | int | Max 12 |
 | icon | int | Icon |
-| memicon | int | Memmed Icon |
+| memicon | int | Memmed Icon--The old icon ID used for spell gems. Uses new\_icon now. |
 | components1 | int | [Item Identifier](../items/items.md) |
 | components2 | int | [Item Identifier](../items/items.md) |
 | components3 | int | [Item Identifier](../items/items.md) |
@@ -105,7 +109,7 @@
 | skill | int | [Skill Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
 | zonetype | int | [Zone Type](https://eqemu.gitbook.io/server/categories/types/zone-types) |
 | EnvironmentType | int | [Environment Type](https://eqemu.gitbook.io/server/categories/types/environment-types) |
-| TimeOfDay | int | \[Time of Day Type\]\([https://eqemu.gitbook.io/server/categories/types/time-of-day-types](https://eqemu.gitbook.io/server/categories/types/time-of-day-types) |
+| TimeOfDay | int | [Time of Day Type](https://eqemu.gitbook.io/server/categories/types/time-of-day-types)  |
 | classes1 | int | Required Level for Warrior |
 | classes2 | int | Required Level for Cleric |
 | classes3 | int | Required Level for Paladin |
@@ -146,7 +150,7 @@
 | deities16 | int | [Deity List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list) |
 | field142 | int | Unknown |
 | field143 | int | Unknown |
-| new\_icon | int | New Icon |
+| new\_icon | int | New Icon--the spell icon. |
 | spellanim | int | Spell Animation |
 | uninterruptable | int | Uninterruptable: 0 = False, 1 = True |
 | ResistDiff | int | Resist Difference |
@@ -190,7 +194,7 @@
 | can\_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |
 | nodispell | int | No Dispell: 0 = False, 1 = True |
 | npc\_category | int | [NPC Spell Category Identifier](https://eqemu.gitbook.io/server/categories/spells/npc-spell-categories) |
-| npc\_usefulness | int | NPC Usefulness |
+| npc\_usefulness | int | NPC Usefulness--the higher the number, the more useful, the lower the number, the less useful. |
 | MinResist | int | Minimum Resistance |
 | MaxResist | int | Maximum Resistance |
 | viral\_targets | int | Viral Targets |
