@@ -4,7 +4,6 @@
 * [Main Page](https://eqemu.gitbook.io/server/)
 * [Changelog](https://eqemu.gitbook.io/changelog)
 * [Quest API](https://eqemu.gitbook.io/quest-api/)
-* [Database Schema](https://eqemu.gitbook.io/database-schema/)
 * [Loginserver](https://eqemu.gitbook.io/eqemulator-loginserver/)
 
 ## Categories
