@@ -111,7 +111,7 @@
 | reqlevel | int | Required Level |
 | sellrate | float | Sell Rate |
 | shielding | int | Shielding: 5 = 5%, 20 = 20%, 50 = 50% |
-| size | int | Size |
+| size | int | 0 = TINY 1 = SMALL 2 = MEDIUM 3 = LARGE 4 = GIANT |
 | skillmodtype | int | [Skill Modifier Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
 | skillmodvalue | int | Skill Modifier Value |
 | slots | int | [Slots](https://eqemu.gitbook.io/server/categories/reference-lists/item-slots) |
