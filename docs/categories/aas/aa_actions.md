@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Action schema information.
 
 # aa\_actions
 
+## EQEmu Database Table Schema: AA Actions 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | aaid | mediumint | AA Identifier |

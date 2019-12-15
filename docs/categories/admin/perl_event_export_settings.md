@@ -4,6 +4,8 @@ description: EQEmu Admin Perl Event Export Settings schema information.
 
 # perl\_event\_export\_settings
 
+## EQEmu Database Table Schema: Perl Event Export Settings
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | event\_id | int | [Unique Perl Event Identifier](https://eqemu.gitbook.io/quest-api/events) |

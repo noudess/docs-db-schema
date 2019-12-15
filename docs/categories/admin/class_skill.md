@@ -4,6 +4,8 @@ description: EQEmu Admin Class Skill schema information.
 
 # class\_skill
 
+## EQEmu Database Table Schema: Class Skills
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | class | smallint | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |

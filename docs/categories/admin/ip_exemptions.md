@@ -4,6 +4,8 @@ description: EQEmu Admin IP Exemptions schema information.
 
 # ip\_exemptions
 
+## EQEmu Database Table Schema: IP Exemptions
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | exemption\_id | int | Exemption Identifier |

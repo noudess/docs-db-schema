@@ -4,6 +4,8 @@ description: EQEmu Admin Discovered Items schema information.
 
 # discovered\_items
 
+## EQEmu Database Table Schema: Discovered Items
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | item\_id | int | [Item Identifier](../items/items.md) |

@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Ability schema information.
 
 # aa\_ability
 
+## EQEmu Database Table Schema: AA Ability 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique AA Identifier |

@@ -4,6 +4,8 @@ description: EQEmu Admin Veteran Reward Template schema information.
 
 # veteran\_reward\_templates
 
+## EQEmu Database Table Schema: Veteran Rewards
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | claim\_id | int | Unique Claim Identifier |

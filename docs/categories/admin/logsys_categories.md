@@ -4,6 +4,8 @@ description: EQEmu Admin Logging System Categories schema information.
 
 # logsys\_categories
 
+## EQEmu Database Table Schema: Logging System Categories
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | log\_category\_id | int | Unique Log Category Identifier |

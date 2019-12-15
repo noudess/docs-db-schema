@@ -4,6 +4,8 @@ description: EQEmu Admin Command Settings schema information.
 
 # command\_settings
 
+## EQEmu Database Table Schema: Command Settings
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | command | varchar | Unique Command Identifier |

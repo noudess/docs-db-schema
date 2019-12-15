@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Variables schema information.
 
 # altadv\_vars
 
+## EQEmu Database Table Schema: AA Variables 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | skill\_id | int | [AA Identifier](aa_ability.md) |

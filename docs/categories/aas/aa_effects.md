@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Effect schema information.
 
 # aa\_effects
 
+## EQEmu Database Table Schema: AA Effects 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Entry Identifier |

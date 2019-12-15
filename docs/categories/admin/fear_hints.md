@@ -4,6 +4,8 @@ description: EQEmu Admin Fear Hints schema information.
 
 # fear\_hints
 
+## EQEmu Database Table Schema: Fear Hints
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Fear Hint Identifier |

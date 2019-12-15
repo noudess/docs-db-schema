@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Rank Effect schema information.
 
 # aa\_rank\_effects
 
+## EQEmu Database Table Schema: AA Rank Effects 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | rank\_id | int | [Rank Identifier](aa_ranks.md) |

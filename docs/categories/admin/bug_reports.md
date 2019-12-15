@@ -4,6 +4,8 @@ description: EQEmu Admin Bug Reports schema information.
 
 # bug\_reports
 
+## EQEmu Database Table Schema: Bug Reports
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Report Identifier |

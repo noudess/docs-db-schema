@@ -4,6 +4,8 @@ description: EQEmu Account Rewards schema information.
 
 # account\_rewards
 
+## EQEmu Database Table Schema: Account Rewards
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | account\_id | int | [Account Identifier](account.md) |

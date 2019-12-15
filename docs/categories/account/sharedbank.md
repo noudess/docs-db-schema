@@ -4,6 +4,8 @@ description: EQEmu Account Shared Bank schema information.
 
 # sharedbank
 
+## EQEmu Database Table Schema: Account Shared Bank
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |

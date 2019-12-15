@@ -4,6 +4,8 @@ description: EQEmu Admin Starting Items schema information.
 
 # starting\_items
 
+## EQEmu Database Table Schema: Starting Items
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Starting Items Entry Identifier |

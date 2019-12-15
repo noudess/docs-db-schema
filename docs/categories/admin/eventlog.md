@@ -4,6 +4,8 @@ description: EQEmu Admin Event Log schema information.
 
 # eventlog
 
+## EQEmu Database Table Schema: Event Log
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Event Identifier |

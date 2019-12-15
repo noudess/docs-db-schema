@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Timer schema information.
 
 # aa\_timers
 
+## EQEmu Database Table Schema: AA Timers 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | charid | int | [Character Identifier](../characters/character_data.md) |

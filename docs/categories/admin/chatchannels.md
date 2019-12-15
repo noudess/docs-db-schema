@@ -4,6 +4,8 @@ description: EQEmu Admin Chat Channels schema information.
 
 # chatchannels
 
+## EQEmu Database Table Schema: Chat Channels
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | name | varchar | Name |

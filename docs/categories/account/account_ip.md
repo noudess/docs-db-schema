@@ -4,6 +4,8 @@ description: EQEmu Account IP schema information.
 
 # account\_ip
 
+## EQEmu Database Table Schema: Account IP
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | accid | int | [Account Identifier](account.md) |

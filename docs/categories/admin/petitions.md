@@ -4,6 +4,8 @@ description: EQEmu Admin Petitions schema information.
 
 # petitions
 
+## EQEmu Database Table Schema: Petitions
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | dib | int | Unknown |

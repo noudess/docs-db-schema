@@ -4,6 +4,8 @@ description: EQEmu Account schema information.
 
 # account
 
+## EQEmu Database Table Schema: Account 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Account Identifier |

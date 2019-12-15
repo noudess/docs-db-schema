@@ -4,6 +4,8 @@ description: EQEmu Admin Hackers schema information.
 
 # hackers
 
+## EQEmu Database Table Schema: Hackers
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Hacker Identifier |

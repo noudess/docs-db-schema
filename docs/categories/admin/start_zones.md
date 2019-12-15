@@ -4,6 +4,8 @@ description: EQEmu Admin Start Zone schema information.
 
 # start\_zones
 
+## EQEmu Database Table Schema: Start Zones
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | x | float | X Coordinate |

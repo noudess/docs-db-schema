@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Rank schema information.
 
 # aa\_ranks
 
+## EQEmu Database Table Schema: AA Ranks 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [AA Identifier](aa_ability.md) |

@@ -4,6 +4,8 @@ description: EQEmu AAs / Alternative Advancement Required Level schema informati
 
 # aa\_required\_level\_cost
 
+## EQEmu Database Table Schema: AA Required Level / Cost 
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | skill\_id | int | [AA Identifier](aa_ability.md) |
