@@ -1,3 +1,7 @@
+---
+description: EQEmu Account Shared Bank schema information.
+---
+
 # sharedbank
 
 | Column | Data Type | Description |

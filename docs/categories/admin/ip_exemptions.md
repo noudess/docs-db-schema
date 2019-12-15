@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin IP Exemptions schema information.
+---
+
 # ip\_exemptions
 
 | Column | Data Type | Description |

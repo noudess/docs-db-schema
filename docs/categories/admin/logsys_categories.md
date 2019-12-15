@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Logging System Categories schema information.
+---
+
 # logsys\_categories
 
 | Column | Data Type | Description |

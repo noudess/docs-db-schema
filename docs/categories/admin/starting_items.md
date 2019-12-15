@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Starting Items schema information.
+---
+
 # starting\_items
 
 | Column | Data Type | Description |

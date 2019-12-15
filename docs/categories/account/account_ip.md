@@ -1,3 +1,7 @@
+---
+description: EQEmu Account IP schema information.
+---
+
 # account\_ip
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin EQ Time schema information.
+---
+
 # eqtime
 
 | Column | Data Type | Description |

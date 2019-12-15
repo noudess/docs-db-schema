@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Report schema information.
+---
+
 # reports
 
 | Column | Data Type | Description |

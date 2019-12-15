@@ -1,3 +1,7 @@
+---
+description: EQEmu Account Flags schema information.
+---
+
 # account\_flags
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Bot Command Settings schema information.
+---
+
 # bot\_command\_settings
 
 | Column | Data Type | Description |

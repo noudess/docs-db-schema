@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Command Settings schema information.
+---
+
 # command\_settings
 
 | Column | Data Type | Description |

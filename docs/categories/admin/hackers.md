@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Hackers schema information.
+---
+
 # hackers
 
 | Column | Data Type | Description |

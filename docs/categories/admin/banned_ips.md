@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Banned IPs schema information.
+---
+
 # banned\_ips
 
 | **Field** | **Type** | **Null** | **Key** | **Default** | **Notes** |

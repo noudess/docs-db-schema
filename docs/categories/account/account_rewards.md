@@ -1,3 +1,7 @@
+---
+description: EQEmu Account Rewards schema information.
+---
+
 # account\_rewards
 
 | Column | Data Type | Description |

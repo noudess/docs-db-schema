@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Chat Channels schema information.
+---
+
 # chatchannels
 
 | Column | Data Type | Description |

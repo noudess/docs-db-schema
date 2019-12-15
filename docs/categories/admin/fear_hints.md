@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Fear Hints schema information.
+---
+
 # fear\_hints
 
 | Column | Data Type | Description |

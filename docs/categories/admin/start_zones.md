@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Start Zone schema information.
+---
+
 # start\_zones
 
 | Column | Data Type | Description |

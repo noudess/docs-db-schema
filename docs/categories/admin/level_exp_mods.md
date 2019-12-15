@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Level XP / Experience Mods schema information.
+---
+
 # level\_exp\_mods
 
 | Column | Data Type | Description |

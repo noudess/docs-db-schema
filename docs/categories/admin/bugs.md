@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Bugs schema information.
+---
+
 # bugs
 
 | Column | Data Type | Description |

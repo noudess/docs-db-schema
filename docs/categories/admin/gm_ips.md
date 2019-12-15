@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin GM IP schema information.
+---
+
 # gm\_ips
 
 | Column | Data Type | Description |

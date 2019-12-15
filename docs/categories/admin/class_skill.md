@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Class Skill schema information.
+---
+
 # class\_skill
 
 | Column | Data Type | Description |

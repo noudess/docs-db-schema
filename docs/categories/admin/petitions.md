@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Petitions schema information.
+---
+
 # petitions
 
 | Column | Data Type | Description |

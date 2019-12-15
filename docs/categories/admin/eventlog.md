@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Event Log schema information.
+---
+
 # eventlog
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin DB / Database Version schema information.
+---
+
 # db\_version
 
 | Column | Data Type | Description |

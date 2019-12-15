@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Veteran Reward Template schema information.
+---
+
 # veteran\_reward\_templates
 
 | Column | Data Type | Description |

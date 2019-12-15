@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Race schema information.
+---
+
 # races
 
 | Column | Data Type | Description |

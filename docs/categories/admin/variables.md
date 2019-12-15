@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Variables schema information.
+---
+
 # variables
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Perl Event Export Settings schema information.
+---
+
 # perl\_event\_export\_settings
 
 | Column | Data Type | Description |

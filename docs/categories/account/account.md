@@ -1,3 +1,7 @@
+---
+description: EQEmu Account schema information.
+---
+
 # account
 
 | Column | Data Type | Description |

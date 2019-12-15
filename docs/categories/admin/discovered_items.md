@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Discovered Items schema information.
+---
+
 # discovered\_items
 
 | Column | Data Type | Description |

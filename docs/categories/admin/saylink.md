@@ -1,3 +1,7 @@
+---
+description: EQEmu Admin Saylink schema information.
+---
+
 # saylink
 
 | Column | Data Type | Description |
