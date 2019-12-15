@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Required Level schema information.
+---
+
 # aa\_required\_level\_cost
 
 | Column | Data Type | Description |

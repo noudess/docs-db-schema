@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Rank schema information.
+---
+
 # aa\_ranks
 
 | Column | Data Type | Description |

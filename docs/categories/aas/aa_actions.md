@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Action schema information.
+---
+
 # aa\_actions
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Variables schema information.
+---
+
 # altadv\_vars
 
 | Column | Data Type | Description |

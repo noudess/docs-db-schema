@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Rank Prerequisite schema information.
+---
+
 # aa\_rank\_prereqs
 
 | Column | Data Type | Description |

@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Timer schema information.
+---
+
 # aa\_timers
 
 | Column | Data Type | Description |

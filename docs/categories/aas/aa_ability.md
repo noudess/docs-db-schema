@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Ability schema information.
+---
+
 # aa\_ability
 
 | Column | Data Type | Description |

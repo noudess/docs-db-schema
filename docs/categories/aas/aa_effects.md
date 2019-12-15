@@ -1,3 +1,7 @@
+---
+description: EQEmu AAs / Alternative Advancement Effect schema information.
+---
+
 # aa\_effects
 
 | Column | Data Type | Description |
