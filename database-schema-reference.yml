@@ -690,7 +690,7 @@ altadv_vars:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-list/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
   berserker:
     dataType: int
     nullable: NO
@@ -1701,7 +1701,7 @@ bugs:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-list/zones)
+      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   name:
     dataType: varchar
     nullable: NO
@@ -4208,7 +4208,7 @@ grid_entries:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-list/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   number:
     dataType: int
     nullable: NO
@@ -4243,7 +4243,7 @@ ground_spawns:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-list/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   version:
     dataType: smallint
     nullable: NO
@@ -4945,7 +4945,7 @@ items:
     nullable: NO
     description: >-
       [Bane Damage
-      Race](https://eqemu.gitbook.io/server/categories/reference-list/race-list)
+      Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
   bardtype:
     dataType: int
     nullable: NO
@@ -4978,7 +4978,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-list/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
   color:
     dataType: int
     nullable: NO
@@ -4992,7 +4992,7 @@ items:
     nullable: NO
     description: >-
       [Extra Damage
-      Skill](https://eqemu.gitbook.io/server/categories/reference-list/skills)
+      Skill](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
   extradmgamt:
     dataType: int
     nullable: NO
@@ -5017,7 +5017,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-list/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
   delay:
     dataType: int
     nullable: NO
@@ -6694,7 +6694,7 @@ merc_stance_entries:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-list/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
   proficiency_id:
     dataType: tinyint
     nullable: NO
