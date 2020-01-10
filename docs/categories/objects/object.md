@@ -12,7 +12,7 @@
 | itemid | int | [Item Identifier](../items/items.md) |
 | charges | smallint | Charges |
 | objectname | varchar | Object Name |
-| type | int | Type |
+| type | int | [Type](https://eqemu.gitbook.io/server/categories/types/object-types) |
 | icon | int | Icon |
 | unknown08 | mediumint | Unknown |
 | unknown10 | mediumint | Unknown |
