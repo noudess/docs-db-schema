@@ -12,7 +12,7 @@ aa_ability:
     nullable: NO
     description: >-
       [AA
-      Category](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-categories)
+      Category](https://eqemu.gitbook.io/server/categories/reference-lists/aa-categories)
   classes:
     dataType: int
     nullable: NO
@@ -23,7 +23,7 @@ aa_ability:
     dataType: int
     nullable: NO
     description: >-
-      [Races](hhttps://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Races](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
   drakkin_heritage:
     dataType: int
     nullable: NO
@@ -32,7 +32,7 @@ aa_ability:
     dataType: int
     nullable: NO
     description: >-
-      [Deities](hhttps://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deities](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
   status:
     dataType: int
     nullable: NO
@@ -42,7 +42,7 @@ aa_ability:
   type:
     dataType: int
     nullable: NO
-    description: '[AA Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-types)'
+    description: '[AA Type](https://eqemu.gitbook.io/server/categories/types/aa-types)'
   charges:
     dataType: int
     nullable: NO
@@ -81,13 +81,13 @@ aa_actions:
     nullable: NO
     description: >-
       [AA Target
-      Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-target-types)
+      Type](https://eqemu.gitbook.io/server/categories/types/aa-target-types)
   nonspell_action:
     dataType: tinyint
     nullable: NO
     description: >-
       [AA Nonspell
-      Action](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions)
+      Action](https://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions)
   nonspell_mana:
     dataType: mediumint
     nullable: NO
@@ -130,7 +130,7 @@ aa_effects:
     nullable: NO
     description: >-
       [Spell Effect
-      Identifier](hhttps://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)
+      Identifier](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids)
   base1:
     dataType: mediumint
     nullable: NO
@@ -482,7 +482,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone Short
-      Name](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   zone_version:
     dataType: tinyint
     nullable: NO
@@ -560,7 +560,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone In Zone
-      Identifier](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   zone_in_x:
     dataType: float
     nullable: NO
@@ -594,7 +594,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone
-      Identifier](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
   graveyard_x:
     dataType: float
     nullable: NO
@@ -788,7 +788,7 @@ auras:
   aura_type:
     dataType: int
     nullable: NO
-    description: '[Aura Type](hhttps://eqemu.gitbook.io/server/categories/types/aura-types)'
+    description: '[Aura Type](https://eqemu.gitbook.io/server/categories/types/aura-types)'
   spawn_type:
     dataType: int
     nullable: NO
@@ -4659,7 +4659,7 @@ inventory:
   instnodrop:
     dataType: tinyint
     nullable: NO
-    description: 'No Drop: 0 = False, 1 = True'
+    description: 'No Drop: 0 = True, 1 = False'
   custom_data:
     dataType: text
     nullable: YES
@@ -5200,11 +5200,11 @@ items:
   nodrop:
     dataType: int
     nullable: NO
-    description: 'No Drop: 0 = False, 1 = True'
+    description: 'No Drop: 0 = True, 1 = False'
   norent:
     dataType: int
     nullable: NO
-    description: 'No Rent: 0 = False, 1 = True'
+    description: 'No Rent: 0 = True, 1 = False'
   pendingloreflag:
     dataType: tinyint
     nullable: NO
@@ -8035,7 +8035,7 @@ object:
   type:
     dataType: int
     nullable: NO
-    description: Type
+    description: [Type](https://eqemu.gitbook.io/server/categories/types/object-types)
   icon:
     dataType: int
     nullable: NO
