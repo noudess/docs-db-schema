@@ -410,29 +410,29 @@ program
           results.forEach(function (row) {
               /**
                RowDataPacket {
-					TABLE_CATALOG: 'def',
-					TABLE_SCHEMA: 'peq',
-					TABLE_NAME: 'aa_ability',
-					COLUMN_NAME: 'category',
-					ORDINAL_POSITION: 3,
-					COLUMN_DEFAULT: '-1',
-					IS_NULLABLE: 'NO',
-					DATA_TYPE: 'int',
-					CHARACTER_MAXIMUM_LENGTH: null,
-					CHARACTER_OCTET_LENGTH: null,
-					NUMERIC_PRECISION: 10,
-					NUMERIC_SCALE: 0,
-					DATETIME_PRECISION: null,
-					CHARACTER_SET_NAME: null,
-					COLLATION_NAME: null,
-					COLUMN_TYPE: 'int(10)',
-					COLUMN_KEY: '',
-					EXTRA: '',
-					PRIVILEGES: 'select,insert,update,references',
-					COLUMN_COMMENT: '',
-					IS_GENERATED: 'NEVER',
-					GENERATION_EXPRESSION: null
-				  }
+                  TABLE_CATALOG: 'def',
+                  TABLE_SCHEMA: 'peq',
+                  TABLE_NAME: 'aa_ability',
+                  COLUMN_NAME: 'category',
+                  ORDINAL_POSITION: 3,
+                  COLUMN_DEFAULT: '-1',
+                  IS_NULLABLE: 'NO',
+                  DATA_TYPE: 'int',
+                  CHARACTER_MAXIMUM_LENGTH: null,
+                  CHARACTER_OCTET_LENGTH: null,
+                  NUMERIC_PRECISION: 10,
+                  NUMERIC_SCALE: 0,
+                  DATETIME_PRECISION: null,
+                  CHARACTER_SET_NAME: null,
+                  COLLATION_NAME: null,
+                  COLUMN_TYPE: 'int(10)',
+                  COLUMN_KEY: '',
+                  EXTRA: '',
+                  PRIVILEGES: 'select,insert,update,references',
+                  COLUMN_COMMENT: '',
+                  IS_GENERATED: 'NEVER',
+                  GENERATION_EXPRESSION: null
+                }
                */
 
               if (excludedTables.includes(row.TABLE_NAME)) {
