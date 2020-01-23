@@ -518,7 +518,7 @@ program.command('write')
           const documentFolder = __dirname.split("\\").join("/");
           const categoryFolder = getCategoryFolder(tableName);
           let fileDirectory    = documentFolder + '/tables/';
-          if (categoryFolder != '') {
+          if (categoryFolder !== '') {
             console.log("CF: " + categoryFolder);
             fileDirectory = documentFolder + '/categories/' + categoryFolder + '/';
           }
