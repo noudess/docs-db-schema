@@ -1,10 +1,8 @@
 # character\_auras
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| slot | tinyint |  |
-| spell\_id | int |  |
+| id | int | [Unique Character Identifier](character_data.md) |
+| slot | tinyint | Slot |
+| spell\_id | int | [Spell Identifier](../spells/spells_new.md) |
 

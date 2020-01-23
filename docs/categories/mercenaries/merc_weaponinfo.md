@@ -1,15 +1,13 @@
 # merc\_weaponinfo
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| merc\_npc\_type\_id | int |  |
-| minlevel | tinyint |  |
-| maxlevel | tinyint |  |
-| d\_melee\_texture1 | int |  |
-| d\_melee\_texture2 | int |  |
-| prim\_melee\_type | tinyint |  |
-| sec\_melee\_type | tinyint |  |
+| id | int | Unique Mercenary Weapon Info Identifier |
+| merc\_npc\_type\_id | int | [Mercenary NPC Type Identifier](merc_npc_types.md) |
+| minlevel | tinyint | Minimum Level |
+| maxlevel | tinyint | Maximum Level |
+| d\_melee\_texture1 | int | Primary Weapon Texture |
+| d\_melee\_texture2 | int | Secondary Weapon Texture |
+| prim\_melee\_type | tinyint | [Primary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
+| sec\_melee\_type | tinyint | [Secondary Melee Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
 

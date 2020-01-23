@@ -1,12 +1,10 @@
 # qs\_player\_delete\_record
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| delete\_id | int |  |
-| time | timestamp |  |
-| char\_id | int |  |
-| stack\_size | mediumint |  |
-| char\_items | mediumint |  |
+| delete\_id | int | Unique Delete Identifier |
+| time | timestamp | Time Timestamp |
+| char\_id | int | [Character Identifier](../characters/character_data.md) |
+| stack\_size | mediumint | Stack Size |
+| char\_items | mediumint | [Character Items Identifier](../items/items.md) |
 

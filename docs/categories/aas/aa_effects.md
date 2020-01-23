@@ -1,13 +1,17 @@
+---
+description: EQEmu AAs / Alternative Advancement Effect schema information.
+---
+
 # aa\_effects
 
-This page was updated September 7 2019
+## EQEmu Database Table Schema: AA Effects 
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| aaid | mediumint |  |
-| slot | tinyint |  |
-| effectid | mediumint |  |
-| base1 | mediumint |  |
-| base2 | mediumint |  |
+| id | int | Unique Entry Identifier |
+| aaid | mediumint | [AA Identifier](aa_ability.md) |
+| slot | tinyint | Slot |
+| effectid | mediumint | [Spell Effect Identifier](hhttps://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
+| base1 | mediumint | First Base Value |
+| base2 | mediumint | Second Base Value |
 

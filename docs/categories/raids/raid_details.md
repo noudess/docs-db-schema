@@ -1,11 +1,9 @@
 # raid\_details
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| raidid | int |  |
-| loottype | int |  |
-| locked | tinyint |  |
-| motd | varchar |  |
+| raidid | int | Unique Raid Identifier |
+| loottype | int | Loot Type |
+| locked | tinyint | Locked: 0 = False, 1 = True |
+| motd | varchar | Message of the Day |
 

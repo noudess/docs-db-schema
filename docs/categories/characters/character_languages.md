@@ -1,10 +1,8 @@
 # character\_languages
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| lang\_id | smallint |  |
-| value | smallint |  |
+| id | int | [Character Identifier](character_data.md) |
+| lang\_id | smallint | [Language Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/languages) |
+| value | smallint | Skill Level |
 

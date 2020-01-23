@@ -1,40 +1,38 @@
 # adventure\_template
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| zone | varchar |  |
-| zone\_version | tinyint |  |
-| is\_hard | tinyint |  |
-| is\_raid | tinyint |  |
-| min\_level | tinyint |  |
-| max\_level | tinyint |  |
-| type | tinyint |  |
-| type\_data | int |  |
-| type\_count | smallint |  |
-| assa\_x | float |  |
-| assa\_y | float |  |
-| assa\_z | float |  |
-| assa\_h | float |  |
-| text | varchar |  |
-| duration | int |  |
-| zone\_in\_time | int |  |
-| win\_points | smallint |  |
-| lose\_points | smallint |  |
-| theme | tinyint |  |
-| zone\_in\_zone\_id | smallint |  |
-| zone\_in\_x | float |  |
-| zone\_in\_y | float |  |
-| zone\_in\_object\_id | smallint |  |
-| dest\_x | float |  |
-| dest\_y | float |  |
-| dest\_z | float |  |
-| dest\_h | float |  |
-| graveyard\_zone\_id | int |  |
-| graveyard\_x | float |  |
-| graveyard\_y | float |  |
-| graveyard\_z | float |  |
-| graveyard\_radius | float |  |
+| id | int | [Adventure Identifier](adventure_details.md) |
+| zone | varchar | [Zone Short Name](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| zone\_version | tinyint | Zone Version |
+| is\_hard | tinyint | Hard: 0 = False, 1 = True |
+| is\_raid | tinyint | Raid: 0 = False, 1 = True |
+| min\_level | tinyint | Minimum Level |
+| max\_level | tinyint | Maximum Level |
+| type | tinyint | Type |
+| type\_data | int | Type Data |
+| type\_count | smallint | Type Count |
+| assa\_x | float | Assassination X Coordinate |
+| assa\_y | float | Assassination Y Coordinate |
+| assa\_z | float | Assassination Z Coordinate |
+| assa\_h | float | Assassination Heading Coordinate |
+| text | varchar | Text |
+| duration | int | Duration |
+| zone\_in\_time | int | Zone In Duration |
+| win\_points | smallint | LDoN Points for Winning |
+| lose\_points | smallint | LDoN Points for Losing |
+| theme | tinyint | [LDoN Theme](https://eqemu.gitbook.io/server/categories/types/ldon-themes) |
+| zone\_in\_zone\_id | smallint | [Zone In Zone Identifier](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| zone\_in\_x | float | Zone In X Coordinate |
+| zone\_in\_y | float | Zone In Y Coordinate |
+| zone\_in\_object\_id | smallint | Zone In Object Identifier |
+| dest\_x | float | Destination X Coordinate |
+| dest\_y | float | Destination Y Coordinate |
+| dest\_z | float | Destination Z Coordinate |
+| dest\_h | float | Destination Heading Coordinate |
+| graveyard\_zone\_id | int | [Zone Identifier](hhttps://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| graveyard\_x | float | Graveyard X Coordinate |
+| graveyard\_y | float | Graveyard Y Coordinate |
+| graveyard\_z | float | Graveyard Z Coordinate |
+| graveyard\_radius | float | Graveyard Radius |
 

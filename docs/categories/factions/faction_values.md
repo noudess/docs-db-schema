@@ -1,11 +1,9 @@
 # faction\_values
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int |  |
-| faction\_id | int |  |
-| current\_value | smallint |  |
-| temp | tinyint |  |
+| char\_id | int | [Character Identifier](../characters/character_data.md) |
+| faction\_id | int | [Faction Identifier](faction_list.md) |
+| current\_value | smallint | Current Value |
+| temp | tinyint | Temporary: 0 = False, 1 = True |
 

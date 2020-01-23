@@ -1,12 +1,10 @@
 # character\_activities
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| charid | int |  |
-| taskid | int |  |
-| activityid | int |  |
-| donecount | int |  |
-| completed | tinyint |  |
+| charid | int | [Character Identifier](character_data.md) |
+| taskid | int | [Task Identifier](../tasks/tasks.md) |
+| activityid | int | [Activity Identifier](../tasks/task_activities.md) |
+| donecount | int | Done Count |
+| completed | tinyint | Completed: 0 = False, 1 = True |
 

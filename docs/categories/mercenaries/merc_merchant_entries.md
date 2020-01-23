@@ -1,10 +1,8 @@
 # merc\_merchant\_entries
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_merchant\_entry\_id | int |  |
-| merc\_merchant\_template\_id | int |  |
-| merchant\_id | int |  |
+| merc\_merchant\_entry\_id | int | Unique Mercenary Merchant Entry Identifier |
+| merc\_merchant\_template\_id | int | [Mercenary Merchant Template Identifier](merc_merchant_templates.md) |
+| merchant\_id | int | [Merchant Identifier](../merchants/merchantlist.md) |
 

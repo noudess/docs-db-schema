@@ -1,16 +1,14 @@
 # raid\_members
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| raidid | int |  |
-| charid | int |  |
-| groupid | int |  |
-| \_class | tinyint |  |
-| level | tinyint |  |
-| name | varchar |  |
-| isgroupleader | tinyint |  |
-| israidleader | tinyint |  |
-| islooter | tinyint |  |
+| raidid | int | [Raid Identifier](raid_details.md) |
+| charid | int | [Character Identifier](../characters/character_data.md) |
+| groupid | int | [Group Identifier](../groups/group_id.md) |
+| \_class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| level | tinyint | Level |
+| name | varchar | Name |
+| isgroupleader | tinyint | Is Group Leader: 0 = False, 1 = True |
+| israidleader | tinyint | Is Raid Leader: 0 = False, 1 = True |
+| islooter | tinyint | Is Looter: 0 = False, 1 = True |
 

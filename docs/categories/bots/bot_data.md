@@ -1,54 +1,52 @@
 # bot\_data
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| bot\_id | int |  |
-| owner\_id | int |  |
-| spells\_id | int |  |
-| name | varchar |  |
-| last\_name | varchar |  |
-| title | varchar |  |
-| suffix | varchar |  |
-| zone\_id | smallint |  |
-| gender | tinyint |  |
-| race | smallint |  |
-| class | tinyint |  |
-| level | tinyint |  |
-| deity | int |  |
-| creation\_day | int |  |
-| last\_spawn | int |  |
-| time\_spawned | int |  |
-| size | float |  |
-| face | int |  |
-| hair\_color | int |  |
-| hair\_style | int |  |
-| beard | int |  |
-| beard\_color | int |  |
-| eye\_color\_1 | int |  |
-| eye\_color\_2 | int |  |
-| drakkin\_heritage | int |  |
-| drakkin\_tattoo | int |  |
-| drakkin\_details | int |  |
-| ac | smallint |  |
-| atk | mediumint |  |
-| hp | int |  |
-| mana | int |  |
-| str | mediumint |  |
-| sta | mediumint |  |
-| cha | mediumint |  |
-| dex | mediumint |  |
-| int | mediumint |  |
-| agi | mediumint |  |
-| wis | mediumint |  |
-| fire | smallint |  |
-| cold | smallint |  |
-| magic | smallint |  |
-| poison | smallint |  |
-| disease | smallint |  |
-| corruption | smallint |  |
-| show\_helm | int |  |
-| follow\_distance | int |  |
-| stop\_melee\_level | tinyint |  |
+| bot\_id | int | Unique Bot Identifier |
+| owner\_id | int | [Owner Character Identifier](../characters/character_data.md) |
+| spells\_id | int | [Bot Spell List Identifier](https://eqemu.gitbook.io/server/categories/spells/bot-spell-list-ids) |
+| name | varchar | Name |
+| last\_name | varchar | Last Name |
+| title | varchar | Title |
+| suffix | varchar | Suffix |
+| zone\_id | smallint | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| gender | tinyint | [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders) |
+| race | smallint | [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list) |
+| class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| level | tinyint | Level |
+| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list) |
+| creation\_day | int | UNIX Timestamp of creation date |
+| last\_spawn | int | UNIX Timestamp of last spawn\_conditions |
+| time\_spawned | int | Time spawned |
+| size | float | Size |
+| face | int | Face |
+| hair\_color | int | Hair Color |
+| hair\_style | int | Hair Style |
+| beard | int | Beard |
+| beard\_color | int | Beard Color |
+| eye\_color\_1 | int | Eye Color 1 |
+| eye\_color\_2 | int | Eye Color 2 |
+| drakkin\_heritage | int | Drakkin Heritage |
+| drakkin\_tattoo | int | Drakkin Tattoo |
+| drakkin\_details | int | Drakkin Details |
+| ac | smallint | Armor Class |
+| atk | mediumint | Attack |
+| hp | int | Health |
+| mana | int | Mana |
+| str | mediumint | Strength |
+| sta | mediumint | Stamina |
+| cha | mediumint | Charisma |
+| dex | mediumint | Dexterity |
+| int | mediumint | Intelligence |
+| agi | mediumint | Agility |
+| wis | mediumint | Wisdom |
+| fire | smallint | Fire Resistance |
+| cold | smallint | Cold Resistance |
+| magic | smallint | Magic Resistance |
+| poison | smallint | Poison Resistance |
+| disease | smallint | Disease Resistance |
+| corruption | smallint | Corruption Resistance |
+| show\_helm | int | Show Helm: 0 = False, 1= True |
+| follow\_distance | int | Follow Distance |
+| stop\_melee\_level | tinyint | Stop Melee Level |
 

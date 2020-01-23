@@ -1,10 +1,8 @@
 # faction\_list
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| name | varchar |  |
-| base | smallint |  |
+| id | int | Unique Faction Identifier |
+| name | varchar | Name |
+| base | smallint | Base |
 

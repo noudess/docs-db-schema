@@ -1,15 +1,13 @@
 # character\_bind
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| slot | int |  |
-| zone\_id | smallint |  |
-| instance\_id | mediumint |  |
-| x | float |  |
-| y | float |  |
-| z | float |  |
-| heading | float |  |
+| id | int | [Character Identifier](character_data.md) |
+| slot | int | Slot |
+| zone\_id | smallint | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| instance\_id | mediumint | Instance Identifier |
+| x | float | X Coordinate |
+| y | float | Y Coordinate |
+| z | float | Z Coordinate |
+| heading | float | Heading Coordinate |
 

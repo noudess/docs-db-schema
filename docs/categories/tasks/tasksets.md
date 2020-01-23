@@ -1,9 +1,7 @@
 # tasksets
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| taskid | int |  |
+| id | int | Unique Task Set Entry Identifier |
+| taskid | int | [Task Identifier](tasks.md) |
 

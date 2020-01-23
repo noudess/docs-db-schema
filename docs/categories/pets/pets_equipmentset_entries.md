@@ -1,10 +1,8 @@
 # pets\_equipmentset\_entries
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| set\_id | int |  |
-| slot | int |  |
-| item\_id | int |  |
+| set\_id | int | [Pet Equipment Set Identifier](pets_equipmentset.md) |
+| slot | int | Slot |
+| item\_id | int | [Item Identifier](../items/items.md) |
 

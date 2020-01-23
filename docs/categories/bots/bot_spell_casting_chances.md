@@ -1,27 +1,25 @@
 # bot\_spell\_casting\_chances
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| spell\_type\_index | tinyint |  |
-| class\_id | tinyint |  |
-| stance\_index | tinyint |  |
-| nHSND\_value | tinyint |  |
-| pH\_value | tinyint |  |
-| pS\_value | tinyint |  |
-| pHS\_value | tinyint |  |
-| pN\_value | tinyint |  |
-| pHN\_value | tinyint |  |
-| pSN\_value | tinyint |  |
-| pHSN\_value | tinyint |  |
-| pD\_value | tinyint |  |
-| pHD\_value | tinyint |  |
-| pSD\_value | tinyint |  |
-| pHSD\_value | tinyint |  |
-| pND\_value | tinyint |  |
-| pHND\_value | tinyint |  |
-| pSND\_value | tinyint |  |
-| pHSND\_value | tinyint |  |
+| id | int | Unique Bot Spell Casting Chance Identifier |
+| spell\_type\_index | tinyint | [Spell Type Identifier](https://eqemu.gitbook.io/server/categories/types/spell-types) |
+| class\_id | tinyint | [Class Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| stance\_index | tinyint | [Stance Type Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types) |
+| nHSND\_value | tinyint | nHSND Value |
+| pH\_value | tinyint | pH Value |
+| pS\_value | tinyint | pS Value |
+| pHS\_value | tinyint | pHS Value |
+| pN\_value | tinyint | pN Value |
+| pHN\_value | tinyint | pHN Value |
+| pSN\_value | tinyint | pSN Value |
+| pHSN\_value | tinyint | pHSN Value |
+| pD\_value | tinyint | pD Value |
+| pHD\_value | tinyint | pHD Value |
+| pSD\_value | tinyint | pSD Value |
+| pHSD\_value | tinyint | pHSD Value |
+| pND\_value | tinyint | pND Value |
+| pHND\_value | tinyint | pHND Value |
+| pSND\_value | tinyint | pSND Value |
+| pHSND\_value | tinyint | pHSND Value |
 

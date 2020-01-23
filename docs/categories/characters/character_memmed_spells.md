@@ -1,10 +1,8 @@
 # character\_memmed\_spells
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| slot\_id | smallint |  |
-| spell\_id | smallint |  |
+| id | int | [Character Identifier](character_data.md) |
+| slot\_id | smallint | Slot Identifier |
+| spell\_id | smallint | [Spell Identifier](../spells/spells_new.md) |
 

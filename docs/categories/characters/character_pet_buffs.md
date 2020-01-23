@@ -1,18 +1,16 @@
 # character\_pet\_buffs
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int |  |
-| pet | int |  |
-| slot | int |  |
-| spell\_id | int |  |
-| caster\_level | tinyint |  |
-| castername | varchar |  |
-| ticsremaining | int |  |
-| counters | int |  |
-| numhits | int |  |
-| rune | int |  |
-| instrument\_mod | tinyint |  |
+| char\_id | int | [Character Identifier](character_data.md) |
+| pet | int | Pet |
+| slot | int | Slot |
+| spell\_id | int | [Spell Identifier](../spells/spells_new.md) |
+| caster\_level | tinyint | Caster Level |
+| castername | varchar | Caster Name |
+| ticsremaining | int | Tics Remaining |
+| counters | int | Counters |
+| numhits | int | Number of Hits |
+| rune | int | Rune |
+| instrument\_mod | tinyint | Instrument Modifier |
 

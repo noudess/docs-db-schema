@@ -1,9 +1,7 @@
 # character\_enabledtasks
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| charid | int |  |
-| taskid | int |  |
+| charid | int | [Character Identifier](character_data.md) |
+| taskid | int | [Task Identifier](../tasks/tasks.md) |
 

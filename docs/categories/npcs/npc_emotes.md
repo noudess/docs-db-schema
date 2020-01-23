@@ -1,12 +1,10 @@
 # npc\_emotes
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| emoteid | int |  |
-| event\_ | tinyint |  |
-| type | tinyint |  |
-| text | varchar |  |
+| id | int | Unique NPC Emote Identifier |
+| emoteid | int | Emote Identifier |
+| event\_ | tinyint | [Emote Event Type Identifier](https://eqemu.gitbook.io/server/categories/types/emote-event-types) |
+| type | tinyint | [Emote Type Identifier](https://eqemu.gitbook.io/server/categories/types/emote-types) |
+| text | varchar | Text |
 

@@ -1,24 +1,22 @@
 # bot\_inventories
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| inventories\_index | int |  |
-| bot\_id | int |  |
-| slot\_id | mediumint |  |
-| item\_id | int |  |
-| inst\_charges | smallint |  |
-| inst\_color | int |  |
-| inst\_no\_drop | tinyint |  |
-| inst\_custom\_data | text |  |
-| ornament\_icon | int |  |
-| ornament\_id\_file | int |  |
-| ornament\_hero\_model | int |  |
-| augment\_1 | mediumint |  |
-| augment\_2 | mediumint |  |
-| augment\_3 | mediumint |  |
-| augment\_4 | mediumint |  |
-| augment\_5 | mediumint |  |
-| augment\_6 | mediumint |  |
+| inventories\_index | int | Unique Bot Inventory Identifier |
+| bot\_id | int | [Bot Identifier](bot_data.md) |
+| slot\_id | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots) |
+| item\_id | int | [Item Identifier](../items/items.md) |
+| inst\_charges | smallint | Charges |
+| inst\_color | int | Color |
+| inst\_no\_drop | tinyint | No Drop: 0 = False, 1=  True |
+| inst\_custom\_data | text | Custom Data |
+| ornament\_icon | int | Ornamentation Icon |
+| ornament\_id\_file | int | Ornamentation Item Texture |
+| ornament\_hero\_model | int | Ornamentation Hero's Forge Model |
+| augment\_1 | mediumint | Augment Slot 1 |
+| augment\_2 | mediumint | Augment Slot 2 |
+| augment\_3 | mediumint | Augment Slot 3 |
+| augment\_4 | mediumint | Augment Slot 4 |
+| augment\_5 | mediumint | Augment Slot 5 |
+| augment\_6 | mediumint | Augment Slot 6 |
 

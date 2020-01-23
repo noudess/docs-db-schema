@@ -1,11 +1,9 @@
 # merc\_name\_types
 
-This page was updated September 7 2019
-
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| name\_type\_id | int |  |
-| class\_id | int |  |
-| prefix | varchar |  |
-| suffix | varchar |  |
+| name\_type\_id | int | Mercenary Name Type Identifier |
+| class\_id | int | [Class Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
+| prefix | varchar | Prefix |
+| suffix | varchar | Suffix |
 
