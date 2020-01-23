@@ -12,6 +12,16 @@ This page serves as a reference for rules that we adhere to as a project, things
 
 This does not mean that past table creations match this specification, but that we intend to keep it consistent going forward.
 
+## Contributing
+
+For anyone interested in contributing to the database documentation.
+
+If a database table's page has an inaccuracy in a column, modify the database-schema-reference.yml.
+
+This is where all the table and column information is stored.
+
+Please do not submit pull requests modifying the .md files directly, as they will be over-written by the doc-gen.js.
+
 ## Table Names
 
 * lowercase
