@@ -4,13 +4,12 @@
  * @author: Akkadius
  */
 
-const mysql = require('mysql');
-const yaml = require('js-yaml');
-const fs = require('fs');
+const mysql    = require('mysql');
+const yaml     = require('js-yaml');
+const fs       = require('fs');
 const database = 'peq';
-const program = require('commander');
-const table = require('markdown-table')
-
+const program  = require('commander');
+const table    = require('markdown-table')
 var connection = mysql.createConnection(
   {
     host: 'localhost',
@@ -22,7 +21,7 @@ var connection = mysql.createConnection(
 
 connection.connect();
 
-let schemaData = {};
+let schemaData                  = {};
 const SCHEMA_REFERENCE_YML_FILE = 'database-schema-reference.yml';
 
 /**
@@ -397,7 +396,7 @@ program
   .description('Pulls database schema and updates working yaml schema reference')
   .action(function (cmd) {
 
-    connection.query(`
+      connection.query(`
         SELECT
           *
         FROM
@@ -408,9 +407,9 @@ program
           TABLE_NAME,
           ORDINAL_POSITION;
       `, function (error, results, fields) {
-      results.forEach(function (row) {
-				/**
-				 RowDataPacket {
+          results.forEach(function (row) {
+              /**
+               RowDataPacket {
 					TABLE_CATALOG: 'def',
 					TABLE_SCHEMA: 'peq',
 					TABLE_NAME: 'aa_ability',
@@ -434,37 +433,37 @@ program
 					IS_GENERATED: 'NEVER',
 					GENERATION_EXPRESSION: null
 				  }
-				 */
+               */
 
-        if (excludedTables.includes(row.TABLE_NAME)) {
-          return;
-        }
+              if (excludedTables.includes(row.TABLE_NAME)) {
+                return;
+              }
 
-        if (typeof schemaData[row.TABLE_NAME] === 'undefined') {
-          schemaData[row.TABLE_NAME] = {};
-        }
-        if (typeof schemaData[row.TABLE_NAME][row.COLUMN_NAME] === 'undefined') {
-          schemaData[row.TABLE_NAME][row.COLUMN_NAME] = {};
-        }
+              if (typeof schemaData[row.TABLE_NAME] === 'undefined') {
+                schemaData[row.TABLE_NAME] = {};
+              }
+              if (typeof schemaData[row.TABLE_NAME][row.COLUMN_NAME] === 'undefined') {
+                schemaData[row.TABLE_NAME][row.COLUMN_NAME] = {};
+              }
 
-        schemaData[row.TABLE_NAME][row.COLUMN_NAME].dataType = row.DATA_TYPE;
-        schemaData[row.TABLE_NAME][row.COLUMN_NAME].nullable = row.IS_NULLABLE;
+              schemaData[row.TABLE_NAME][row.COLUMN_NAME].dataType = row.DATA_TYPE;
+              schemaData[row.TABLE_NAME][row.COLUMN_NAME].nullable = row.IS_NULLABLE;
 
-        if (typeof schemaData[row.TABLE_NAME][row.COLUMN_NAME].description === 'undefined') {
-          schemaData[row.TABLE_NAME][row.COLUMN_NAME].description = '';
+              if (typeof schemaData[row.TABLE_NAME][row.COLUMN_NAME].description === 'undefined') {
+                schemaData[row.TABLE_NAME][row.COLUMN_NAME].description = '';
+              }
+            }
+          );
+
+          /**
+           * Write .yml
+           */
+          fs.writeFileSync(SCHEMA_REFERENCE_YML_FILE, yaml.safeDump(schemaData, { noCompatMode: true }));
+
+          console.log('Updated schema written to [' + SCHEMA_REFERENCE_YML_FILE + ']');
         }
-      }
       );
-
-			/**
-			 * Write .yml
-			 */
-      fs.writeFileSync(SCHEMA_REFERENCE_YML_FILE, yaml.safeDump(schemaData, { noCompatMode: true }));
-
-      console.log('Updated schema written to [' + SCHEMA_REFERENCE_YML_FILE + ']');
     }
-    );
-  }
   );
 
 /**
@@ -474,78 +473,78 @@ program.command('write')
   .description('Writes the schema reference into markdown files')
   .action(function (cmd) {
 
-    let summaryTablesList = '## Tables' + '\n\n';
-    let categoryTablesList = '';
+      let summaryTablesList  = '## Tables' + '\n\n';
+      let categoryTablesList = '';
 
-    Object.keys(tableCategories).forEach(function (category) {
-      var tables = tableCategories[category];
+      Object.keys(tableCategories).forEach(function (category) {
+        var tables = tableCategories[category];
 
-      console.log(category);
-      categoryTablesList += '* [' + category + '](placeholder.md)\n';
-      // categoryTablesList += '\n## ' + category + '\n\n';
+        console.log(category);
+        categoryTablesList += '* [' + category + '](placeholder.md)\n';
+        // categoryTablesList += '\n## ' + category + '\n\n';
 
-      tables.forEach(function (table) {
-        tablesWrittenToIndex[table] = 1;
-        // categoryTablesList += '* [' + table + '](' + table + '.md)' + '\n';
-        categoryTablesList += '    * [' + table + '](' + table + '.md)' + '\n';
+        tables.forEach(function (table) {
+          tablesWrittenToIndex[table] = 1;
+          // categoryTablesList += '* [' + table + '](' + table + '.md)' + '\n';
+          categoryTablesList += '    * [' + table + '](' + table + '.md)' + '\n';
+        });
       });
-    });
 
-    Object.keys(schemaData).forEach(function (key) {
-      var val = schemaData[key];
-      const tableName = key;
+      Object.keys(schemaData).forEach(function (key) {
+          var val         = schemaData[key];
+          const tableName = key;
 
-      let markdownTable = [];
-      markdownTable.push(['Column', 'Data Type', 'Description']);
+          let markdownTable = [];
+          markdownTable.push(['Column', 'Data Type', 'Description']);
 
-      Object.keys(val).forEach(function (subKey) {
-        var subVal = schemaData[key][subKey];
-        const tableColumn = subKey;
-        const dataType = subVal.dataType;
-        const nullable = subVal.nullable;
-        const description = subVal.description;
+          Object.keys(val).forEach(function (subKey) {
+              var subVal        = schemaData[key][subKey];
+              const tableColumn = subKey;
+              const dataType    = subVal.dataType;
+              const nullable    = subVal.nullable;
+              const description = subVal.description;
 
-        markdownTable.push([tableColumn, dataType, description]);
-      }
+              markdownTable.push([tableColumn, dataType, description]);
+            }
+          );
+
+          let fileContents = table(markdownTable);
+
+          /**
+           * Write doc page
+           *
+           * @type {string}
+           */
+          const documentFolder = __dirname.split("\\").join("/");
+          const categoryFolder = getCategoryFolder(tableName);
+          let fileDirectory    = documentFolder + '/tables/';
+          if (categoryFolder != '') {
+            console.log("CF: " + categoryFolder);
+            fileDirectory = documentFolder + '/categories/' + categoryFolder + '/';
+          }
+          if (!fs.existsSync(fileDirectory)) {
+            fs.mkdirSync(fileDirectory, { recursive: true });
+          }
+          const fileName = fileDirectory + tableName + '.md';
+          fs.writeFile(fileName, fileContents, (err) => {
+              console.log('File [' + fileName + '] written');
+            }
+          );
+
+          if (tablesWrittenToIndex[tableName]) {
+            return;
+          }
+
+          summaryTablesList += '* [' + tableName + '](' + tableName + '.md)\n';
+        }
       );
 
-      let fileContents = table(markdownTable);
-
-			/**
-			 * Write doc page
-			 *
-			 * @type {string}
-			 */
-      const documentFolder = __dirname.split("\\").join("/");
-      const categoryFolder = getCategoryFolder(tableName);
-      let fileDirectory = documentFolder + '/tables/';
-      if (categoryFolder != '') {
-        console.log("CF: " + categoryFolder);
-        fileDirectory = documentFolder + '/categories/' + categoryFolder + '/';
-      }
-      if (!fs.existsSync(fileDirectory)) {
-        fs.mkdirSync(fileDirectory, { recursive: true });
-      }
-      const fileName = fileDirectory + tableName + '.md';
-      fs.writeFile(fileName, fileContents, (err) => {
-        console.log('File [' + fileName + '] written');
-      }
-      );
-
-      if (tablesWrittenToIndex[tableName]) {
-        return;
-      }
-
-      summaryTablesList += '* [' + tableName + '](' + tableName + '.md)\n';
-    }
-    );
-
-		/**
-		 * Base summary file contents
-		 *
-		 * @type {string}
-		 */
-    let summaryFileContents = `# Summary
+      /**
+       * Base summary file contents
+       *
+       * @type {string}
+       */
+      let summaryFileContents = `# Summary
 
 ## Categories
 
@@ -555,17 +554,17 @@ ${summaryTablesList}
 
 `;
 
-		/**
-		 * Write summary
-		 *
-		 * @type {string}
-		 */
-    const fileName = 'docs/SUMMARY.md';
-    fs.writeFile(fileName, summaryFileContents, (err) => {
-      console.log('File [' + fileName + '] written');
+      /**
+       * Write summary
+       *
+       * @type {string}
+       */
+      const fileName = 'docs/SUMMARY.md';
+      fs.writeFile(fileName, summaryFileContents, (err) => {
+          console.log('File [' + fileName + '] written');
+        }
+      );
     }
-    );
-  }
   );
 
 program.parse(process.argv);
@@ -592,9 +591,9 @@ function formatDate(date) {
     'December'
   ];
 
-  var day = date.getDate();
+  var day        = date.getDate();
   var monthIndex = date.getMonth();
-  var year = date.getFullYear();
+  var year       = date.getFullYear();
 
   return monthNames[monthIndex] + ' ' + day + ' ' + year;
 }
