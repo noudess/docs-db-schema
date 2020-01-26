@@ -99,8 +99,8 @@
 | herosforgemodel | int | Hero's Forge Model |
 | maxcharges | int | Maximum Charges \(-1 for infinite\). |
 | mr | int | Magic Resistance: -128 to 127 |
-| nodrop | int | No Drop: 0 = False, 1 = True |
-| norent | int | No Rent: 0 = False, 1 = True |
+| nodrop | int | No Drop: 0 = Not Droppable, 1 = Droppable |
+| norent | int | No Rent: 0 = Poofs when you camp, 1 = Sticks around |
 | pendingloreflag | tinyint | Pending Lore Flag: 0 = False, 1 = True |
 | pr | int | Poison Resistance: -128 to 127 |
 | procrate | int | Proc Rate: 0 = 100%, 50 = 150%, 100 = 200% |
