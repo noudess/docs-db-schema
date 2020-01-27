@@ -43,7 +43,7 @@
 | bardvalue | int | Bard Value--How much the instrument type is modified when equipped. |
 | book | int | [Book](../books/books.md) |
 | casttime | int | Cast Time in Seconds |
-| casttime\_ | int | Cast Time in Seconds |
+| casttime\_ | int | Cast Time in Seconds \(Note: For food/drink items, this value indicates consumption rate\) |
 | charmfile | varchar | Charm File |
 | charmfileid | varchar | Charm File Identifier |
 | classes | int | [Classes](https://eqemu.gitbook.io/server/categories/reference-list/class-list) |
