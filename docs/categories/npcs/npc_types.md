@@ -120,7 +120,7 @@
 | charm\_atk | mediumint | Charmed Attack |
 | skip\_global\_loot | tinyint | Skip Global Loot: 0 = False, 1 = True |
 | rare\_spawn | tinyint | Rare Spawn: 0 = False, 1 = True |
-| stuck\_behavior | tinyint | Stuck Behavior |
+| stuck\_behavior | tinyint | [Stuck Behavior](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes) |
 | model | smallint | Model |
 | flymode | tinyint | [Fly Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes) |
 
