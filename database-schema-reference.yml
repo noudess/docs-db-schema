@@ -7847,6 +7847,10 @@ npc_types:
     description: >-
       [Fly
       Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes)
+  always_aggros_foes:
+    dataType: tinyint
+    nullable: NO
+    description: 'Aggro regardless of _int or level : 0 = False, 1 = True'
 npc_types_metadata:
   npc_types_id:
     dataType: int
