@@ -38,7 +38,7 @@
 | banedmgamt | int | Bane Damage Amount |
 | banedmgraceamt | int | Bane Damage Race Amount |
 | banedmgbody | int | [Bane Damage Body Type](https://eqemu.gitbook.io/server/categories/types/body-types) |
-| banedmgrace | int | [Bane Damage Race](https://eqemu.gitbook.io/server/categories/reference-list/race-list) |
+| banedmgrace | int | [Bane Damage Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list) |
 | bardtype | int | [Bard Type](https://eqemu.gitbook.io/server/categories/types/bard-types) |
 | bardvalue | int | Bard Value--How much the instrument type is modified when equipped. |
 | book | int | [Book](../books/books.md) |
@@ -46,16 +46,16 @@
 | casttime\_ | int | Cast Time in Seconds \(Note: For food/drink items, this value indicates consumption rate\) |
 | charmfile | varchar | Charm File |
 | charmfileid | varchar | Charm File Identifier |
-| classes | int | [Classes](https://eqemu.gitbook.io/server/categories/reference-list/class-list) |
+| classes | int | [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list) |
 | color | int | Color |
 | combateffects | varchar | Combat Effects |
-| extradmgskill | int | [Extra Damage Skill](https://eqemu.gitbook.io/server/categories/reference-list/skills) |
+| extradmgskill | int | [Extra Damage Skill](https://eqemu.gitbook.io/server/categories/reference-lists/skills) |
 | extradmgamt | int | Extra Damage Amount |
 | price | int | Price in Copper |
 | cr | int | Cold Resistance: -128 to 127 |
 | damage | int | Damage |
 | damageshield | int | Damage Shield |
-| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/reference-list/deity-list) |
+| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list) |
 | delay | int | Delay |
 | augdistiller | int | Augment Distiller Item Identifier |
 | dotshielding | int | Damage Over Time Shielding |
