@@ -11518,7 +11518,7 @@ zone:
   type:
     dataType: int
     nullable: NO
-    description: Type
+    description: Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City)
   skylock:
     dataType: tinyint
     nullable: NO
