@@ -9,7 +9,7 @@ description: EQEmu Account Shared Bank schema information.
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |
-| slotid | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots) |
+| slotid | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots) |
 | itemid | int | [Item Identifier](../items/items.md) |
 | charges | smallint | Charges |
 | augslot1 | mediumint | Augment Slot 1 |

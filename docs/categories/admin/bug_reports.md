@@ -9,9 +9,9 @@ description: EQEmu Admin Bug Reports schema information.
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Report Identifier |
-| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
-| client\_version\_id | int | [Client Version Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks) |
-| client\_version\_name | varchar | [Client Version Name](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks) |
+| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| client\_version\_id | int | [Client Version Identifier](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks) |
+| client\_version\_name | varchar | [Client Version Name](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks) |
 | account\_id | int | [Account Identifier](../account/account.md) |
 | character\_id | int | [Character Identifier](../characters/character_data.md) |
 | character\_name | varchar | [Character Name](../characters/character_data.md) |

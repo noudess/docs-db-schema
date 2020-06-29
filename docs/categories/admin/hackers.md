@@ -12,6 +12,6 @@ description: EQEmu Admin Hackers schema information.
 | account | text | [Account Identifier](../account/account.md) |
 | name | text | [Character Name](../characters/character_data.md) |
 | hacked | text | Hacked |
-| zone | text | [Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| zone | text | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
 | date | timestamp | Date Timestamp |
 

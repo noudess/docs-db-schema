@@ -9,7 +9,7 @@ description: EQEmu Admin Fear Hints schema information.
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Fear Hint Identifier |
-| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones) |
+| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
 | x | float | X Coordinate |
 | y | float | Y Coordinate |
 | z | float | Z Coordinate |
