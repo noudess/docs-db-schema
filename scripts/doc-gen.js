@@ -483,10 +483,12 @@ program.command('write')
         categoryTablesList += '* [' + category + '](placeholder.md)\n';
         // categoryTablesList += '\n## ' + category + '\n\n';
 
+        const categoryPathName = category.toLowerCase()
+
         tables.forEach(function (table) {
           tablesWrittenToIndex[table] = 1;
           // categoryTablesList += '* [' + table + '](' + table + '.md)' + '\n';
-          categoryTablesList += '    * [' + table + '](' + table + '.md)' + '\n';
+          categoryTablesList += '    * [' + table + `](categories/${categoryPathName}/` + table + '.md)' + '\n';
         });
       });
 
