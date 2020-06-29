@@ -12,9 +12,9 @@ const program  = require('commander');
 const table    = require('markdown-table')
 var connection = mysql.createConnection(
   {
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
+    host: '192.168.98.200',
+    user: 'eqemu',
+    password: 'z05N8KCzS27Nfb8WhlcMoWd2eG0JVWM',
     database: database
   }
 );

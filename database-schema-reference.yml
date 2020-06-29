@@ -22,8 +22,7 @@ aa_ability:
   races:
     dataType: int
     nullable: NO
-    description: >-
-      [Races](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Races](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   drakkin_heritage:
     dataType: int
     nullable: NO
@@ -31,8 +30,7 @@ aa_ability:
   deities:
     dataType: int
     nullable: NO
-    description: >-
-      [Deities](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deities](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   status:
     dataType: int
     nullable: NO
@@ -59,6 +57,10 @@ aa_ability:
     dataType: tinyint
     nullable: NO
     description: 'Enabled: 0 = No, 1 = Yes'
+  reset_on_death:
+    dataType: tinyint
+    nullable: NO
+    description: ''
 aa_actions:
   aaid:
     dataType: mediumint
@@ -175,7 +177,9 @@ aa_ranks:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
+    description: >-
+      [Spell
+      Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   recast_time:
     dataType: int
     nullable: NO
@@ -288,8 +292,7 @@ account:
   status:
     dataType: int
     nullable: NO
-    description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
+    description: '[Status](https://eqemu.gitbook.io/server/categories/player/status-levels)'
   lsaccount_id:
     dataType: int
     nullable: YES
@@ -338,6 +341,10 @@ account:
     dataType: text
     nullable: YES
     description: Suspension Reason
+  ls_id:
+    dataType: varchar
+    nullable: YES
+    description: ''
 account_flags:
   p_accid:
     dataType: int
@@ -681,7 +688,9 @@ altadv_vars:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
+    description: >-
+      [Spell
+      Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   spell_refresh:
     dataType: int
     nullable: NO
@@ -689,8 +698,7 @@ altadv_vars:
   classes:
     dataType: int
     nullable: NO
-    description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Classes](https://eqemu.gitbook.io/server/categories/player/class-list)'
   berserker:
     dataType: int
     nullable: NO
@@ -932,8 +940,7 @@ books:
   language:
     dataType: int
     nullable: NO
-    description: >-
-      [Language](https://eqemu.gitbook.io/server/categories/player/languages)
+    description: '[Language](https://eqemu.gitbook.io/server/categories/player/languages)'
 bot_buffs:
   buffs_index:
     dataType: int
@@ -1068,18 +1075,15 @@ bot_data:
   gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   race:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   level:
     dataType: tinyint
     nullable: NO
@@ -1087,8 +1091,7 @@ bot_data:
   deity:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   creation_day:
     dataType: int
     nullable: NO
@@ -1547,7 +1550,9 @@ bot_spells_entries:
   type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
+    description: >-
+      [Spell
+      Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   minlevel:
     dataType: tinyint
     nullable: NO
@@ -2175,34 +2180,27 @@ character_corpses:
   race:
     dataType: int
     nullable: YES
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   gender:
     dataType: int
     nullable: YES
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   class:
     dataType: int
     nullable: YES
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   deity:
     dataType: int
     nullable: YES
-    description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   texture:
     dataType: int
     nullable: YES
-    description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   helm_texture:
     dataType: int
     nullable: YES
-    description: >-
-      [Helm
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Helm Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   copper:
     dataType: int
     nullable: YES
@@ -2295,6 +2293,10 @@ character_corpses:
     dataType: int
     nullable: YES
     description: Wear Change 9
+  guild_consent_id:
+    dataType: int
+    nullable: NO
+    description: ''
 character_corpse_items:
   corpse_id:
     dataType: int
@@ -2463,18 +2465,15 @@ character_data:
   gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   race:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   level:
     dataType: int
     nullable: NO
@@ -2482,8 +2481,7 @@ character_data:
   deity:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   birthday:
     dataType: int
     nullable: NO
@@ -2830,6 +2828,10 @@ character_data:
     dataType: int
     nullable: NO
     description: Last Inventory Snapshot
+  deleted_at:
+    dataType: datetime
+    nullable: YES
+    description: ''
 character_disciplines:
   id:
     dataType: int
@@ -3100,7 +3102,9 @@ character_tasks:
   type:
     dataType: tinyint
     nullable: NO
-    description: '[Task Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)'
+    description: >-
+      [Task
+      Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)
   acceptedtime:
     dataType: int
     nullable: YES
@@ -3126,18 +3130,15 @@ char_create_combinations:
   race:
     dataType: int
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   class:
     dataType: int
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   deity:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   start_zone:
     dataType: int
     nullable: NO
@@ -3247,13 +3248,11 @@ class_skill:
   class:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   name:
     dataType: varchar
     nullable: NO
-    description: >-
-      [Name](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Name](https://eqemu.gitbook.io/server/categories/player/class-list)'
   skill_0:
     dataType: smallint
     nullable: YES
@@ -3873,8 +3872,7 @@ eventlog:
   status:
     dataType: int
     nullable: NO
-    description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
+    description: '[Status](https://eqemu.gitbook.io/server/categories/player/status-levels)'
   charname:
     dataType: varchar
     nullable: NO
@@ -3955,8 +3953,8 @@ faction_list_mod:
     nullable: NO
     description: >-
       Modifier Name: r# = [Race
-      Identifier](https://eqemu.gitbook.io/server/categories/npc/race-list),
-      c# = [Class
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/race-list), c#
+      = [Class
       Identifier](https://eqemu.gitbook.io/server/categories/player/class-list),
       d# = [Deity
       Identifier](https://eqemu.gitbook.io/server/categories/player/deity-list)
@@ -4111,13 +4109,11 @@ global_loot:
   race:
     dataType: mediumtext
     nullable: YES
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   class:
     dataType: mediumtext
     nullable: YES
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   bodytype:
     dataType: mediumtext
     nullable: YES
@@ -4128,6 +4124,10 @@ global_loot:
     description: >-
       [Zone Short
       Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
+  hot_zone:
+    dataType: tinyint
+    nullable: YES
+    description: ''
 gm_ips:
   name:
     dataType: varchar
@@ -4197,7 +4197,9 @@ grid:
   type2:
     dataType: int
     nullable: NO
-    description: '[Pause Type](https://eqemu.gitbook.io/server/categories/npc/spawns/pause-types)'
+    description: >-
+      [Pause
+      Type](https://eqemu.gitbook.io/server/categories/npc/spawns/pause-types)
 grid_entries:
   gridid:
     dataType: int
@@ -4233,6 +4235,10 @@ grid_entries:
     dataType: int
     nullable: NO
     description: Pause in Seconds
+  centerpoint:
+    dataType: tinyint
+    nullable: NO
+    description: ''
 ground_spawns:
   id:
     dataType: int
@@ -4430,8 +4436,7 @@ guild_members:
   rank:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Rank](https://eqemu.gitbook.io/server/categories/player/guild-ranks)
+    description: '[Rank](https://eqemu.gitbook.io/server/categories/player/guild-ranks)'
   tribute_enable:
     dataType: tinyint
     nullable: NO
@@ -4549,18 +4554,15 @@ horses:
   race:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   texture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   mountspeed:
     dataType: float
     nullable: NO
@@ -4911,9 +4913,7 @@ items:
   bagsize:
     dataType: int
     nullable: NO
-    description: >-
-      [Bag
-      Size](https://eqemu.gitbook.io/server/categories/inventory/bag-sizes)
+    description: '[Bag Size](https://eqemu.gitbook.io/server/categories/inventory/bag-sizes)'
   bagslots:
     dataType: int
     nullable: NO
@@ -4977,8 +4977,7 @@ items:
   classes:
     dataType: int
     nullable: NO
-    description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Classes](https://eqemu.gitbook.io/server/categories/player/class-list)'
   color:
     dataType: int
     nullable: NO
@@ -5016,8 +5015,7 @@ items:
   deity:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   delay:
     dataType: int
     nullable: NO
@@ -5131,9 +5129,7 @@ items:
   itemclass:
     dataType: int
     nullable: NO
-    description: >-
-      [Item
-      Class](https://eqemu.gitbook.io/server/categories/items/item-class)
+    description: '[Item Class](https://eqemu.gitbook.io/server/categories/items/item-class)'
   itemtype:
     dataType: int
     nullable: NO
@@ -5183,8 +5179,7 @@ items:
   material:
     dataType: int
     nullable: NO
-    description: >-
-      [Material](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Material](https://eqemu.gitbook.io/server/categories/npc/textures)'
   herosforgemodel:
     dataType: int
     nullable: NO
@@ -5220,8 +5215,7 @@ items:
   races:
     dataType: int
     nullable: NO
-    description: >-
-      [Races](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Races](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   range:
     dataType: int
     nullable: NO
@@ -5263,8 +5257,7 @@ items:
   slots:
     dataType: int
     nullable: NO
-    description: >-
-      [Slots](https://eqemu.gitbook.io/server/categories/inventory/item-slots)
+    description: '[Slots](https://eqemu.gitbook.io/server/categories/inventory/item-slots)'
   clickeffect:
     dataType: int
     nullable: NO
@@ -5957,6 +5950,10 @@ items:
     dataType: int
     nullable: NO
     description: 'Epic Item: 0 = False, 1 = True'
+  subtype:
+    dataType: int
+    nullable: NO
+    description: ''
 item_tick:
   it_itemid:
     dataType: int
@@ -6084,8 +6081,7 @@ lfguild:
   classes:
     dataType: int
     nullable: NO
-    description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Classes](https://eqemu.gitbook.io/server/categories/player/class-list)'
   aacount:
     dataType: int
     nullable: NO
@@ -6247,8 +6243,7 @@ mail:
   status:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
+    description: '[Status](https://eqemu.gitbook.io/server/categories/player/status-levels)'
 merchantlist:
   merchantid:
     dataType: int
@@ -6337,8 +6332,7 @@ mercs:
   Gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   MercSize:
     dataType: float
     nullable: NO
@@ -6421,14 +6415,11 @@ merc_armorinfo:
   texture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   helmtexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Helmet
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Helmet Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   armortint_id:
     dataType: int
     nullable: NO
@@ -6661,7 +6652,9 @@ merc_spell_list_entries:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
+    description: >-
+      [Spell
+      Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   stance_id:
     dataType: tinyint
     nullable: NO
@@ -7174,7 +7167,7 @@ npc_spells:
     nullable: NO
     description: >-
       The ranged proc that an NPC with this spell set will add to their list of
-      procs. 
+      procs.
   rproc_chance:
     dataType: smallint
     nullable: NO
@@ -7184,7 +7177,7 @@ npc_spells:
     nullable: NO
     description: >-
       The defensive proc that an NPC with this spell set will add to their list
-      of procs. 
+      of procs.
   dproc_chance:
     dataType: smallint
     nullable: NO
@@ -7358,13 +7351,11 @@ npc_types:
   race:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   bodytype:
     dataType: int
     nullable: NO
@@ -7380,19 +7371,15 @@ npc_types:
   gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   texture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   helmtexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Helmet
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Helmet Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   herosforgemodel:
     dataType: int
     nullable: NO
@@ -7552,9 +7539,7 @@ npc_types:
   ranged_type:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Ranged
-      Type](https://eqemu.gitbook.io/server/categories/player/skills)
+    description: '[Ranged Type](https://eqemu.gitbook.io/server/categories/player/skills)'
   runspeed:
     dataType: float
     nullable: NO
@@ -7738,33 +7723,23 @@ npc_types:
   armtexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Arm
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Arm Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   bracertexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Bracer
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Bracer Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   handtexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Hand
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Hand Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   legtexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Leg
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Leg Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   feettexture:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Feet
-      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
+    description: '[Feet Texture](https://eqemu.gitbook.io/server/categories/npc/textures)'
   light:
     dataType: tinyint
     nullable: NO
@@ -7844,9 +7819,7 @@ npc_types:
   flymode:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Fly
-      Mode](https://eqemu.gitbook.io/server/categories/npc/fly-modes)
+    description: '[Fly Mode](https://eqemu.gitbook.io/server/categories/npc/fly-modes)'
   always_aggro:
     dataType: tinyint
     nullable: NO
@@ -8039,7 +8012,7 @@ object:
   type:
     dataType: int
     nullable: NO
-    description: [Type](https://eqemu.gitbook.io/server/categories/zones/object-types)
+    description: '[Type](https://eqemu.gitbook.io/server/categories/zones/object-types)'
   icon:
     dataType: int
     nullable: NO
@@ -8228,9 +8201,7 @@ petitions:
   charrace:
     dataType: int
     nullable: NO
-    description: >-
-      [Character
-      Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Character Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   charlevel:
     dataType: int
     nullable: NO
@@ -8955,9 +8926,7 @@ races:
   name:
     dataType: varchar
     nullable: NO
-    description: >-
-      [Race
-      Name](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Race Name](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   id:
     dataType: int
     nullable: NO
@@ -9038,8 +9007,7 @@ raid_members:
   _class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   level:
     dataType: tinyint
     nullable: NO
@@ -9186,8 +9154,7 @@ skill_caps:
   class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   level:
     dataType: tinyint
     nullable: NO
@@ -9262,8 +9229,7 @@ spawn2:
   animation:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Animation](https://eqemu.gitbook.io/server/categories/npc/animations)
+    description: '[Animation](https://eqemu.gitbook.io/server/categories/npc/animations)'
 spawnentry:
   spawngroupID:
     dataType: int
@@ -9277,6 +9243,10 @@ spawnentry:
     dataType: smallint
     nullable: NO
     description: 'Chance: 0 = Never, 100 = Always'
+  condition_value_filter:
+    dataType: mediumint
+    nullable: NO
+    description: ''
 spawngroup:
   id:
     dataType: int
@@ -9328,6 +9298,10 @@ spawngroup:
     dataType: int
     nullable: NO
     description: Despawn Timer in Seconds
+  wp_spawns:
+    dataType: tinyint
+    nullable: NO
+    description: ''
 spawn_conditions:
   zone:
     dataType: varchar
@@ -10011,105 +9985,71 @@ spells_new:
   deities0:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities1:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities2:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities3:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities4:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities5:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities6:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities7:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities8:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities9:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities10:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities11:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities12:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities13:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities14:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities15:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   deities16:
     dataType: int
     nullable: NO
-    description: >-
-      [Deity
-      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
+    description: '[Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list)'
   field142:
     dataType: int
     nullable: NO
@@ -10538,21 +10478,19 @@ starting_items:
   race:
     dataType: int
     nullable: NO
-    description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list):
-      0 = All
+    description: '[Race](https://eqemu.gitbook.io/server/categories/npc/race-list): 0 = All'
   class:
     dataType: int
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list):
-      0 = All
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list): 0 =
+      All
   deityid:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list):
-      0 = Alll
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list): 0 =
+      Alll
   zoneid:
     dataType: int
     nullable: NO
@@ -10622,9 +10560,7 @@ start_zones:
   player_race:
     dataType: int
     nullable: NO
-    description: >-
-      [Player
-      Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
+    description: '[Player Race](https://eqemu.gitbook.io/server/categories/npc/race-list)'
   start_zone:
     dataType: int
     nullable: NO
@@ -10655,7 +10591,9 @@ tasks:
   type:
     dataType: tinyint
     nullable: NO
-    description: '[Task Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)'
+    description: >-
+      [Task
+      Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)
   duration:
     dataType: int
     nullable: NO
@@ -10785,9 +10723,7 @@ task_activities:
   zones:
     dataType: varchar
     nullable: NO
-    description: >-
-      [Zones
-      List](https://eqemu.gitbook.io/server/categories/zones/zone-list)
+    description: '[Zones List](https://eqemu.gitbook.io/server/categories/zones/zone-list)'
   optional:
     dataType: tinyint
     nullable: NO
@@ -10843,13 +10779,11 @@ titles:
   class:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
+    description: '[Class](https://eqemu.gitbook.io/server/categories/player/class-list)'
   gender:
     dataType: tinyint
     nullable: NO
-    description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
+    description: '[Gender](https://eqemu.gitbook.io/server/categories/npc/genders)'
   char_id:
     dataType: int
     nullable: NO
@@ -10944,8 +10878,7 @@ tradeskill_recipe:
   tradeskill:
     dataType: smallint
     nullable: NO
-    description: >-
-      [Tradeskill](https://eqemu.gitbook.io/server/categories/player/skills)
+    description: '[Tradeskill](https://eqemu.gitbook.io/server/categories/player/skills)'
   skillneeded:
     dataType: smallint
     nullable: NO
@@ -11075,9 +11008,7 @@ traps:
   skill:
     dataType: int
     nullable: NO
-    description: >-
-      [Skill
-      Required](https://eqemu.gitbook.io/server/categories/player/skills)
+    description: '[Skill Required](https://eqemu.gitbook.io/server/categories/player/skills)'
   level:
     dataType: mediumint
     nullable: NO
@@ -11518,7 +11449,9 @@ zone:
   type:
     dataType: int
     nullable: NO
-    description: Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City)
+    description: >-
+      Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 =
+      City)
   skylock:
     dataType: tinyint
     nullable: NO
