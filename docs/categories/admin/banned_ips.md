@@ -1,13 +1,4 @@
----
-description: EQEmu Admin Banned IPs schema information.
----
-
-# banned\_ips
-
-## EQEmu Database Table Schema: Banned IP Addresses
-
-| **Field** | **Type** | **Null** | **Key** | **Default** | **Notes** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| ip\_address | varchar\(20\) | NO | PRI | 0 |  |
-| notes | text | YES |  |  |  |
-
+| Column     | Data Type | Description                 |
+| ---------- | --------- | --------------------------- |
+| ip_address | varchar   | [IP Address](account_ip.md) |
+| notes      | varchar   | Ban reason                  |

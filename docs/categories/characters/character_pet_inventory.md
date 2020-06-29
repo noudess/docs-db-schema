@@ -1,9 +1,6 @@
-# character\_pet\_inventory
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| char\_id | int | [Character Identifier](character_data.md) |
-| pet | int | Pet |
-| slot | int | Slot |
-| item\_id | int | [Item Identifier](../items/items.md) |
-
+| Column  | Data Type | Description                               |
+| ------- | --------- | ----------------------------------------- |
+| char_id | int       | [Character Identifier](character_data.md) |
+| pet     | int       | Pet                                       |
+| slot    | int       | Slot                                      |
+| item_id | int       | [Item Identifier](items.md)               |

@@ -1,14 +1,5 @@
----
-description: EQEmu Account Flags schema information.
----
-
-# account\_flags
-
-## EQEmu Database Table Schema: Account Flags
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| p\_accid | int | [Account Identifier](account.md) |
-| p\_flag | varchar | Name |
-| p\_value | varchar | Value |
-
+| Column  | Data Type | Description                      |
+| ------- | --------- | -------------------------------- |
+| p_accid | int       | [Account Identifier](account.md) |
+| p_flag  | varchar   | Name                             |
+| p_value | varchar   | Value                            |

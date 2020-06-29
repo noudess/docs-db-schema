@@ -1,14 +1,5 @@
----
-description: EQEmu Admin IP Exemptions schema information.
----
-
-# ip\_exemptions
-
-## EQEmu Database Table Schema: IP Exemptions
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| exemption\_id | int | Exemption Identifier |
-| exemption\_ip | varchar | [Exemption IP Address](../account/account_ip.md) |
-| exemption\_amount | int | Exemption Amount |
-
+| Column           | Data Type | Description                           |
+| ---------------- | --------- | ------------------------------------- |
+| exemption_id     | int       | Exemption Identifier                  |
+| exemption_ip     | varchar   | [Exemption IP Address](account_ip.md) |
+| exemption_amount | int       | Exemption Amount                      |

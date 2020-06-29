@@ -1,14 +1,5 @@
----
-description: EQEmu Account Rewards schema information.
----
-
-# account\_rewards
-
-## EQEmu Database Table Schema: Account Rewards
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| account\_id | int | [Account Identifier](account.md) |
-| reward\_id | int | [Veteran Reward Identifier](../admin/veteran_reward_templates.md) |
-| amount | int | Amount |
-
+| Column     | Data Type | Description                                              |
+| ---------- | --------- | -------------------------------------------------------- |
+| account_id | int       | [Account Identifier](account.md)                         |
+| reward_id  | int       | [Veteran Reward Identifier](veteran_reward_templates.md) |
+| amount     | int       | Amount                                                   |

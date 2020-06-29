@@ -1,15 +1,6 @@
----
-description: EQEmu Admin Discovered Items schema information.
----
-
-# discovered\_items
-
-## EQEmu Database Table Schema: Discovered Items
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| item\_id | int | [Item Identifier](../items/items.md) |
-| char\_name | varchar | [Character Name](../characters/character_data.md) |
-| discovered\_date | int | Discovered Date UNIX Timestamp |
-| account\_status | int | [Account Status](https://eqemu.gitbook.io/server/categories/player/status-levels) |
-
+| Column          | Data Type | Description                                                                       |
+| --------------- | --------- | --------------------------------------------------------------------------------- |
+| item_id         | int       | [Item Identifier](items.md)                                                       |
+| char_name       | varchar   | [Character Name](character_data.md)                                               |
+| discovered_date | int       | Discovered Date UNIX Timestamp                                                    |
+| account_status  | int       | [Account Status](https://eqemu.gitbook.io/server/categories/player/status-levels) |

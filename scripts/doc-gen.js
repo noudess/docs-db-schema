@@ -515,7 +515,9 @@ program.command('write')
            *
            * @type {string}
            */
-          const documentFolder = __dirname.split("\\").join("/");
+
+          const path           = require('path')
+          const documentFolder = path.join(process.cwd(), 'docs');
           const categoryFolder = getCategoryFolder(tableName);
           let fileDirectory    = documentFolder + '/tables/';
           if (categoryFolder !== '') {

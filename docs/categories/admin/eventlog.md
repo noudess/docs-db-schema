@@ -1,21 +1,12 @@
----
-description: EQEmu Admin Event Log schema information.
----
-
-# eventlog
-
-## EQEmu Database Table Schema: Event Log
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| id | int | Unique Event Identifier |
-| accountname | varchar | [Account Name](../account/account.md) |
-| accountid | int | [Account Identifier](../account/account.md) |
-| status | int | [Status](https://eqemu.gitbook.io/server/categories/player/status-levels) |
-| charname | varchar | [Character Name](../characters/character_data.md) |
-| target | varchar | Target |
-| time | timestamp | TIme Timestamp |
-| descriptiontype | varchar | Description Type |
-| description | text | Description |
-| event\_nid | int | Event Identifier |
-
+| Column          | Data Type | Description                                                               |
+| --------------- | --------- | ------------------------------------------------------------------------- |
+| id              | int       | Unique Event Identifier                                                   |
+| accountname     | varchar   | [Account Name](account.md)                                                |
+| accountid       | int       | [Account Identifier](account.md)                                          |
+| status          | int       | [Status](https://eqemu.gitbook.io/server/categories/player/status-levels) |
+| charname        | varchar   | [Character Name](character_data.md)                                       |
+| target          | varchar   | Target                                                                    |
+| time            | timestamp | TIme Timestamp                                                            |
+| descriptiontype | varchar   | Description Type                                                          |
+| description     | text      | Description                                                               |
+| event_nid       | int       | Event Identifier                                                          |

@@ -1,14 +1,5 @@
----
-description: EQEmu AAs / Alternative Advancement Rank Prerequisite schema information.
----
-
-# aa\_rank\_prereqs
-
-## EQEmu Database Table Schema: AA Rank Prerequisite 
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| rank\_id | int | [Rank Identifier](aa_ranks.md) |
-| aa\_id | int | [AA Identifier](aa_ability.md) |
-| points | int | Cost in AA Points |
-
+| Column  | Data Type | Description                    |
+| ------- | --------- | ------------------------------ |
+| rank_id | int       | [Rank Identifier](aa_ranks.md) |
+| aa_id   | int       | [AA Identifier](aa_ability.md) |
+| points  | int       | Cost in AA Points              |
