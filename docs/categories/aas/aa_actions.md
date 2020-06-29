@@ -12,8 +12,8 @@ description: EQEmu AAs / Alternative Advancement Action schema information.
 | rank | tinyint | Rank: Starts at 0 |
 | reuse\_time | mediumint | Reuse timer in seconds |
 | spell\_id | mediumint | [Spell Identifier](../spells/spells_new.md) |
-| target | tinyint | [AA Target Type](hhttps://eqemu.gitbook.io/server/categories/types/aa-target-types) |
-| nonspell\_action | tinyint | [AA Nonspell Action](hhttps://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions) |
+| target | tinyint | [AA Target Type](https://eqemu.gitbook.io/server/categories/aas/aa-target-types) |
+| nonspell\_action | tinyint | [AA Nonspell Action](https://eqemu.gitbook.io/server/categories/aas/aa-nonspell-actions) |
 | nonspell\_mana | mediumint | Mana that the nonspell action consumes. |
 | nonspell\_duration | mediumint | Duration which may be used by the nonspell action. |
 | redux\_aa | mediumint | The AA which reduces the reuse timer of the skill. |
