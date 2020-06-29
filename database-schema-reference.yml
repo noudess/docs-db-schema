@@ -12,18 +12,18 @@ aa_ability:
     nullable: NO
     description: >-
       [AA
-      Category](https://eqemu.gitbook.io/server/categories/reference-lists/aa-categories)
+      Category](https://eqemu.gitbook.io/server/categories/aas/aa-categories)
   classes:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
       Bitmasks
   races:
     dataType: int
     nullable: NO
     description: >-
-      [Races](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Races](https://eqemu.gitbook.io/server/categories/npc/race-list)
   drakkin_heritage:
     dataType: int
     nullable: NO
@@ -32,17 +32,17 @@ aa_ability:
     dataType: int
     nullable: NO
     description: >-
-      [Deities](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deities](https://eqemu.gitbook.io/server/categories/player/deity-list)
   status:
     dataType: int
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   type:
     dataType: int
     nullable: NO
-    description: '[AA Type](https://eqemu.gitbook.io/server/categories/types/aa-types)'
+    description: '[AA Type](https://eqemu.gitbook.io/server/categories/aas/aa-types)'
   charges:
     dataType: int
     nullable: NO
@@ -81,13 +81,13 @@ aa_actions:
     nullable: NO
     description: >-
       [AA Target
-      Type](https://eqemu.gitbook.io/server/categories/types/aa-target-types)
+      Type](https://eqemu.gitbook.io/server/categories/aas/aa-target-types)
   nonspell_action:
     dataType: tinyint
     nullable: NO
     description: >-
       [AA Nonspell
-      Action](https://eqemu.gitbook.io/server/categories/reference-lists/aa-nonspell-actions)
+      Action](https://eqemu.gitbook.io/server/categories/aas/aa-nonspell-actions)
   nonspell_mana:
     dataType: mediumint
     nullable: NO
@@ -175,7 +175,7 @@ aa_ranks:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/types/spell-types)'
+    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
   recast_time:
     dataType: int
     nullable: NO
@@ -185,7 +185,7 @@ aa_ranks:
     nullable: NO
     description: >-
       [Expansion
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/operation/expansion-list)
   prev_id:
     dataType: int
     nullable: NO
@@ -289,7 +289,7 @@ account:
     dataType: int
     nullable: NO
     description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   lsaccount_id:
     dataType: int
     nullable: YES
@@ -482,7 +482,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   zone_version:
     dataType: tinyint
     nullable: NO
@@ -554,13 +554,13 @@ adventure_template:
   theme:
     dataType: tinyint
     nullable: NO
-    description: '[LDoN Theme](https://eqemu.gitbook.io/server/categories/types/ldon-themes)'
+    description: '[LDoN Theme](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)'
   zone_in_zone_id:
     dataType: smallint
     nullable: NO
     description: >-
       [Zone In Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   zone_in_x:
     dataType: float
     nullable: NO
@@ -594,7 +594,7 @@ adventure_template:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   graveyard_x:
     dataType: float
     nullable: NO
@@ -681,7 +681,7 @@ altadv_vars:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/types/spell-types)'
+    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
   spell_refresh:
     dataType: int
     nullable: NO
@@ -690,7 +690,7 @@ altadv_vars:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
   berserker:
     dataType: int
     nullable: NO
@@ -708,7 +708,7 @@ altadv_vars:
     nullable: NO
     description: >-
       [AA Expansion
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/operation/expansion-list)
   special_category:
     dataType: int
     nullable: NO
@@ -718,7 +718,7 @@ altadv_vars:
     nullable: NO
     description: >-
       [Secrets of Faydwer
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/aa-categories)
+      Type](https://eqemu.gitbook.io/server/categories/aas/aa-categories)
   sof_cost_inc:
     dataType: tinyint
     nullable: NO
@@ -736,7 +736,7 @@ altadv_vars:
     nullable: NO
     description: >-
       [Client
-      Version](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-list)
+      Version](https://eqemu.gitbook.io/server/categories/operation/expansion-list)
   account_time_required:
     dataType: int
     nullable: NO
@@ -759,7 +759,7 @@ alternate_currency:
     nullable: NO
     description: >-
       [Alternate Currency
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/alternate-currencies)
+      Identifier](https://eqemu.gitbook.io/server/categories/items/alternate-currencies)
   item_id:
     dataType: int
     nullable: NO
@@ -788,19 +788,19 @@ auras:
   aura_type:
     dataType: int
     nullable: NO
-    description: '[Aura Type](https://eqemu.gitbook.io/server/categories/types/aura-types)'
+    description: '[Aura Type](https://eqemu.gitbook.io/server/categories/spells/aura-types)'
   spawn_type:
     dataType: int
     nullable: NO
     description: >-
       [Aura Spawn
-      Type](https://eqemu.gitbook.io/server/categories/types/aura-spawn-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/aura-spawn-types)
   movement:
     dataType: int
     nullable: NO
     description: >-
       [Aura Movement
-      Type](https://eqemu.gitbook.io/server/categories/types/aura-movement-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/aura-movement-types)
   duration:
     dataType: int
     nullable: NO
@@ -832,7 +832,7 @@ base_data:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   hp:
     dataType: double
     nullable: NO
@@ -879,13 +879,13 @@ blocked_spells:
     nullable: NO
     description: >-
       [Blocked Spell
-      Type](https://eqemu.gitbook.io/server/categories/types/blocked-spell-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/blocked-spell-types)
   zoneid:
     dataType: int
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   x:
     dataType: float
     nullable: NO
@@ -933,7 +933,7 @@ books:
     dataType: int
     nullable: NO
     description: >-
-      [Language](https://eqemu.gitbook.io/server/categories/reference-lists/languages)
+      [Language](https://eqemu.gitbook.io/server/categories/player/languages)
 bot_buffs:
   buffs_index:
     dataType: int
@@ -1064,22 +1064,22 @@ bot_data:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   gender:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   race:
     dataType: smallint
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   class:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   level:
     dataType: tinyint
     nullable: NO
@@ -1088,7 +1088,7 @@ bot_data:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   creation_day:
     dataType: int
     nullable: NO
@@ -1265,7 +1265,7 @@ bot_guild_members:
     nullable: NO
     description: >-
       [Guild
-      Rank](https://eqemu.gitbook.io/server/categories/reference-lists/guild-ranks)
+      Rank](https://eqemu.gitbook.io/server/categories/player/guild-ranks)
   tribute_enable:
     dataType: tinyint
     nullable: NO
@@ -1404,7 +1404,7 @@ bot_inventories:
     nullable: NO
     description: >-
       [Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -1547,7 +1547,7 @@ bot_spells_entries:
   type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/types/spell-types)'
+    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
   minlevel:
     dataType: tinyint
     nullable: NO
@@ -1590,19 +1590,19 @@ bot_spell_casting_chances:
     nullable: NO
     description: >-
       [Spell Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/spell-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   class_id:
     dataType: tinyint
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   stance_index:
     dataType: tinyint
     nullable: NO
     description: >-
       [Stance Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types)
   nHSND_value:
     dataType: tinyint
     nullable: NO
@@ -1677,7 +1677,7 @@ bot_stances:
     nullable: NO
     description: >-
       [Stance
-      Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types)
 bot_timers:
   bot_id:
     dataType: int
@@ -1701,7 +1701,7 @@ bugs:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   name:
     dataType: varchar
     nullable: NO
@@ -1747,7 +1747,7 @@ bugs:
     nullable: NO
     description: >-
       [Account Status of
-      Reporter](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels
+      Reporter](https://eqemu.gitbook.io/server/categories/player/status-levels
 bug_reports:
   id:
     dataType: int
@@ -1758,19 +1758,19 @@ bug_reports:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   client_version_id:
     dataType: int
     nullable: NO
     description: >-
       [Client Version
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
   client_version_name:
     dataType: varchar
     nullable: NO
     description: >-
       [Client Version
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Name](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
   account_id:
     dataType: int
     nullable: NO
@@ -2011,7 +2011,7 @@ character_bind:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   instance_id:
     dataType: mediumint
     nullable: NO
@@ -2119,7 +2119,7 @@ character_corpses:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   instance_id:
     dataType: smallint
     nullable: NO
@@ -2176,33 +2176,33 @@ character_corpses:
     dataType: int
     nullable: YES
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   gender:
     dataType: int
     nullable: YES
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   class:
     dataType: int
     nullable: YES
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   deity:
     dataType: int
     nullable: YES
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   texture:
     dataType: int
     nullable: YES
     description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   helm_texture:
     dataType: int
     nullable: YES
     description: >-
       [Helm
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   copper:
     dataType: int
     nullable: YES
@@ -2439,7 +2439,7 @@ character_data:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   zone_instance:
     dataType: int
     nullable: NO
@@ -2464,17 +2464,17 @@ character_data:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   race:
     dataType: smallint
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   class:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   level:
     dataType: int
     nullable: NO
@@ -2483,7 +2483,7 @@ character_data:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   birthday:
     dataType: int
     nullable: NO
@@ -2669,31 +2669,31 @@ character_data:
     nullable: NO
     description: >-
       LDoN Points - [Deepest
-      Guk](https://eqemu.gitbook.io/server/categories/types/ldon-themes)
+      Guk](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)
   ldon_points_mir:
     dataType: int
     nullable: NO
     description: >-
       LDoN Points - [Miragul's
-      Menagerie](https://eqemu.gitbook.io/server/categories/types/ldon-themes)
+      Menagerie](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)
   ldon_points_mmc:
     dataType: int
     nullable: NO
     description: >-
       LDoN Points - [Mistmoore
-      Catacombs](https://eqemu.gitbook.io/server/categories/types/ldon-themes)
+      Catacombs](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)
   ldon_points_ruj:
     dataType: int
     nullable: NO
     description: >-
       LDoN Points - [Rujarkian
-      Hills](https://eqemu.gitbook.io/server/categories/types/ldon-themes)
+      Hills](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)
   ldon_points_tak:
     dataType: int
     nullable: NO
     description: >-
       LDoN Points -
-      [Takish-Hiz](https://eqemu.gitbook.io/server/categories/types/ldon-themes)
+      [Takish-Hiz](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)
   ldon_points_available:
     dataType: int
     nullable: NO
@@ -2884,7 +2884,7 @@ character_languages:
     nullable: NO
     description: >-
       [Language
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/languages)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/languages)
   value:
     dataType: smallint
     nullable: NO
@@ -3066,7 +3066,7 @@ character_skills:
     nullable: NO
     description: >-
       [Skill
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/skills)
   value:
     dataType: smallint
     nullable: NO
@@ -3100,7 +3100,7 @@ character_tasks:
   type:
     dataType: tinyint
     nullable: NO
-    description: '[Task Type](https://eqemu.gitbook.io/server/categories/types/task-types)'
+    description: '[Task Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)'
   acceptedtime:
     dataType: int
     nullable: YES
@@ -3127,29 +3127,29 @@ char_create_combinations:
     dataType: int
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   class:
     dataType: int
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   deity:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   start_zone:
     dataType: int
     nullable: NO
     description: >-
       [Start Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   expansions_req:
     dataType: int
     nullable: NO
     description: >-
       [Expansions
-      Required](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-bitmasks)
+      Required](https://eqemu.gitbook.io/server/categories/operation/expansion-bitmasks)
 char_create_point_allocations:
   id:
     dataType: int
@@ -3242,18 +3242,18 @@ chatchannels:
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
 class_skill:
   class:
     dataType: smallint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   name:
     dataType: varchar
     nullable: NO
     description: >-
-      [Name](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Name](https://eqemu.gitbook.io/server/categories/player/class-list)
   skill_0:
     dataType: smallint
     nullable: YES
@@ -3591,7 +3591,7 @@ command_settings:
     nullable: NO
     description: >-
       [Required
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   aliases:
     dataType: varchar
     nullable: NO
@@ -3632,7 +3632,7 @@ damageshieldtypes:
     nullable: NO
     description: >-
       [Damage Shield
-      Type](https://eqemu.gitbook.io/server/categories/types/damage-shield-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/damage-shield-types)
 data_buckets:
   id:
     dataType: bigint
@@ -3690,7 +3690,7 @@ discovered_items:
     nullable: NO
     description: >-
       [Account
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
 doors:
   id:
     dataType: int
@@ -3705,7 +3705,7 @@ doors:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: smallint
     nullable: NO
@@ -3737,7 +3737,7 @@ doors:
     nullable: NO
     description: >-
       [Door Open
-      Type](https://eqemu.gitbook.io/server/categories/types/door-open-types)
+      Type](https://eqemu.gitbook.io/server/categories/zones/door-open-types)
   guild:
     dataType: smallint
     nullable: NO
@@ -3779,7 +3779,7 @@ doors:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   dest_instance:
     dataType: int
     nullable: NO
@@ -3807,7 +3807,7 @@ doors:
       This column will basically behave like such: if the door has a click type
       and it is to raise up like a door, it will be raised on spawn of the door.
       Meaning it is inverted. Another example: If a [Door Open
-      Type](https://eqemu.gitbook.io/server/categories/types/door-open-types) is
+      Type](https://eqemu.gitbook.io/server/categories/zones/door-open-types) is
       set to a spinning object on click, you could set this to 1 to have the
       door be spinning on spawn.
   incline:
@@ -3827,7 +3827,7 @@ doors:
     nullable: NO
     description: >-
       [Client Version
-      Mask](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Mask](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
   is_ldon_door:
     dataType: smallint
     nullable: NO
@@ -3874,7 +3874,7 @@ eventlog:
     dataType: int
     nullable: NO
     description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   charname:
     dataType: varchar
     nullable: NO
@@ -3955,11 +3955,11 @@ faction_list_mod:
     nullable: NO
     description: >-
       Modifier Name: r# = [Race
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/race-list),
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/race-list),
       c# = [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list),
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list),
       d# = [Deity
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/deity-list)
 faction_values:
   char_id:
     dataType: int
@@ -3987,7 +3987,7 @@ fear_hints:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   x:
     dataType: float
     nullable: NO
@@ -4018,7 +4018,7 @@ fishing:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   Itemid:
     dataType: int
     nullable: NO
@@ -4049,7 +4049,7 @@ forage:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   Itemid:
     dataType: int
     nullable: NO
@@ -4112,22 +4112,22 @@ global_loot:
     dataType: mediumtext
     nullable: YES
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   class:
     dataType: mediumtext
     nullable: YES
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   bodytype:
     dataType: mediumtext
     nullable: YES
-    description: '[Body Type](https://eqemu.gitbook.io/server/categories/types/body-types)'
+    description: '[Body Type](https://eqemu.gitbook.io/server/categories/npc/body-types)'
   zone:
     dataType: mediumtext
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
 gm_ips:
   name:
     dataType: varchar
@@ -4160,7 +4160,7 @@ graveyard:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   x:
     dataType: float
     nullable: NO
@@ -4187,17 +4187,17 @@ grid:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   type:
     dataType: int
     nullable: NO
     description: >-
       [Wander
-      Type](https://eqemu.gitbook.io/server/categories/types/wander-types)
+      Type](https://eqemu.gitbook.io/server/categories/npc/spawns/wander-types)
   type2:
     dataType: int
     nullable: NO
-    description: '[Pause Type](https://eqemu.gitbook.io/server/categories/types/pause-types)'
+    description: '[Pause Type](https://eqemu.gitbook.io/server/categories/npc/spawns/pause-types)'
 grid_entries:
   gridid:
     dataType: int
@@ -4208,7 +4208,7 @@ grid_entries:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   number:
     dataType: int
     nullable: NO
@@ -4243,7 +4243,7 @@ ground_spawns:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: smallint
     nullable: NO
@@ -4364,7 +4364,7 @@ guilds:
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   motd:
     dataType: text
     nullable: NO
@@ -4431,7 +4431,7 @@ guild_members:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Rank](https://eqemu.gitbook.io/server/categories/reference-lists/guild-ranks)
+      [Rank](https://eqemu.gitbook.io/server/categories/player/guild-ranks)
   tribute_enable:
     dataType: tinyint
     nullable: NO
@@ -4536,7 +4536,7 @@ hackers:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   date:
     dataType: timestamp
     nullable: NO
@@ -4550,17 +4550,17 @@ horses:
     dataType: smallint
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   gender:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   texture:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   mountspeed:
     dataType: float
     nullable: NO
@@ -4579,7 +4579,7 @@ instance_list:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: tinyint
     nullable: NO
@@ -4619,7 +4619,7 @@ inventory:
     nullable: NO
     description: >-
       [Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   itemid:
     dataType: int
     nullable: YES
@@ -4690,7 +4690,7 @@ inventory_snapshots:
     nullable: NO
     description: >-
       [Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   itemid:
     dataType: int
     nullable: YES
@@ -4783,7 +4783,7 @@ items:
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   Name:
     dataType: varchar
     nullable: NO
@@ -4833,13 +4833,13 @@ items:
     nullable: NO
     description: >-
       [Augment
-      Restriction](https://eqemu.gitbook.io/server/categories/reference-lists/augment-restrictions)
+      Restriction](https://eqemu.gitbook.io/server/categories/items/augment-restrictions)
   augslot1type:
     dataType: tinyint
     nullable: NO
     description: >-
       [Augment Slot 1
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot1visible:
     dataType: tinyint
     nullable: NO
@@ -4849,7 +4849,7 @@ items:
     nullable: NO
     description: >-
       [Augment Slot 2
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot2visible:
     dataType: tinyint
     nullable: NO
@@ -4859,7 +4859,7 @@ items:
     nullable: NO
     description: >-
       [Augment Slot 3
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot3visible:
     dataType: tinyint
     nullable: NO
@@ -4869,7 +4869,7 @@ items:
     nullable: NO
     description: >-
       [Augment Slot 4
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot4visible:
     dataType: tinyint
     nullable: NO
@@ -4879,7 +4879,7 @@ items:
     nullable: NO
     description: >-
       [Augment Slot 5
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot5visible:
     dataType: tinyint
     nullable: NO
@@ -4889,7 +4889,7 @@ items:
     nullable: NO
     description: >-
       [Augment Slot 6
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   augslot6visible:
     dataType: tinyint
     nullable: NO
@@ -4899,7 +4899,7 @@ items:
     nullable: NO
     description: >-
       [Augment
-      Type](https://eqemu.gitbook.io/server/categories/types/augment-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/augment-types)
   avoidance:
     dataType: int
     nullable: NO
@@ -4913,7 +4913,7 @@ items:
     nullable: NO
     description: >-
       [Bag
-      Size](https://eqemu.gitbook.io/server/categories/reference-lists/bag-sizes)
+      Size](https://eqemu.gitbook.io/server/categories/inventory/bag-sizes)
   bagslots:
     dataType: int
     nullable: NO
@@ -4921,7 +4921,7 @@ items:
   bagtype:
     dataType: int
     nullable: NO
-    description: '[Bag Type](https://eqemu.gitbook.io/server/categories/types/bag-types)'
+    description: '[Bag Type](https://eqemu.gitbook.io/server/categories/inventory/bag-types)'
   bagwr:
     dataType: int
     nullable: NO
@@ -4939,17 +4939,17 @@ items:
     nullable: NO
     description: >-
       [Bane Damage Body
-      Type](https://eqemu.gitbook.io/server/categories/types/body-types)
+      Type](https://eqemu.gitbook.io/server/categories/npc/body-types)
   banedmgrace:
     dataType: int
     nullable: NO
     description: >-
       [Bane Damage
-      Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   bardtype:
     dataType: int
     nullable: NO
-    description: '[Bard Type](https://eqemu.gitbook.io/server/categories/types/bard-types)'
+    description: '[Bard Type](https://eqemu.gitbook.io/server/categories/items/bard-types)'
   bardvalue:
     dataType: int
     nullable: NO
@@ -4978,7 +4978,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
   color:
     dataType: int
     nullable: NO
@@ -4992,7 +4992,7 @@ items:
     nullable: NO
     description: >-
       [Extra Damage
-      Skill](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Skill](https://eqemu.gitbook.io/server/categories/player/skills)
   extradmgamt:
     dataType: int
     nullable: NO
@@ -5017,7 +5017,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   delay:
     dataType: int
     nullable: NO
@@ -5037,7 +5037,7 @@ items:
   clicktype:
     dataType: int
     nullable: NO
-    description: '[Click Type](https://eqemu.gitbook.io/server/categories/types/click-types)'
+    description: '[Click Type](https://eqemu.gitbook.io/server/categories/items/click-types)'
   clicklevel2:
     dataType: int
     nullable: NO
@@ -5047,7 +5047,7 @@ items:
     nullable: NO
     description: >-
       [Elemental Damage
-      Type](https://eqemu.gitbook.io/server/categories/types/element-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/item-element-types)
   elemdmgamt:
     dataType: int
     nullable: NO
@@ -5133,11 +5133,11 @@ items:
     nullable: NO
     description: >-
       [Item
-      Class](https://eqemu.gitbook.io/server/categories/reference-lists/item-class)
+      Class](https://eqemu.gitbook.io/server/categories/items/item-class)
   itemtype:
     dataType: int
     nullable: NO
-    description: '[Item Type](https://eqemu.gitbook.io/server/categories/types/item-types)'
+    description: '[Item Type](https://eqemu.gitbook.io/server/categories/items/item-types)'
   ldonprice:
     dataType: int
     nullable: NO
@@ -5145,7 +5145,7 @@ items:
   ldontheme:
     dataType: int
     nullable: NO
-    description: '[LDoN Theme](https://eqemu.gitbook.io/server/categories/types/ldon-themes)'
+    description: '[LDoN Theme](https://eqemu.gitbook.io/server/categories/zones/ldon-themes)'
   ldonsold:
     dataType: int
     nullable: NO
@@ -5163,7 +5163,7 @@ items:
     nullable: NO
     description: >-
       [Lore
-      Group](https://eqemu.gitbook.io/server/categories/reference-lists/item-lore-groups)
+      Group](https://eqemu.gitbook.io/server/categories/items/item-lore-groups)
   magic:
     dataType: int
     nullable: NO
@@ -5184,7 +5184,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Material](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      [Material](https://eqemu.gitbook.io/server/categories/npc/textures)
   herosforgemodel:
     dataType: int
     nullable: NO
@@ -5221,7 +5221,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Races](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Races](https://eqemu.gitbook.io/server/categories/npc/race-list)
   range:
     dataType: int
     nullable: NO
@@ -5255,7 +5255,7 @@ items:
     nullable: NO
     description: >-
       [Skill Modifier
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
   skillmodvalue:
     dataType: int
     nullable: NO
@@ -5264,7 +5264,7 @@ items:
     dataType: int
     nullable: NO
     description: >-
-      [Slots](https://eqemu.gitbook.io/server/categories/reference-lists/item-slots)
+      [Slots](https://eqemu.gitbook.io/server/categories/inventory/item-slots)
   clickeffect:
     dataType: int
     nullable: NO
@@ -5322,7 +5322,7 @@ items:
     nullable: NO
     description: >-
       [Book
-      Language](https://eqemu.gitbook.io/server/categories/reference-lists/languages)
+      Language](https://eqemu.gitbook.io/server/categories/player/languages)
   recastdelay:
     dataType: int
     nullable: NO
@@ -5820,7 +5820,7 @@ items:
     nullable: NO
     description: >-
       [Bard Effect
-      Type](https://eqemu.gitbook.io/server/categories/types/bard-types)
+      Type](https://eqemu.gitbook.io/server/categories/items/bard-types)
   bardlevel2:
     dataType: smallint
     nullable: NO
@@ -5983,7 +5983,7 @@ item_tick:
     nullable: NO
     description: >-
       [Bag
-      Slot](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Slot](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
 keyring:
   char_id:
     dataType: int
@@ -6012,7 +6012,7 @@ launcher_zones:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   port:
     dataType: mediumint
     nullable: NO
@@ -6034,7 +6034,7 @@ ldon_trap_templates:
   type:
     dataType: tinyint
     nullable: NO
-    description: '[Trap Type](https://eqemu.gitbook.io/server/categories/types/trap-types)'
+    description: '[Trap Type](https://eqemu.gitbook.io/server/categories/zones/trap-types)'
   spell_id:
     dataType: smallint
     nullable: NO
@@ -6042,7 +6042,7 @@ ldon_trap_templates:
   skill:
     dataType: smallint
     nullable: NO
-    description: '[Skill](https://eqemu.gitbook.io/server/categories/reference-lists/skills)'
+    description: '[Skill](https://eqemu.gitbook.io/server/categories/player/skills)'
   locked:
     dataType: tinyint
     nullable: NO
@@ -6085,7 +6085,7 @@ lfguild:
     dataType: int
     nullable: NO
     description: >-
-      [Classes](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Classes](https://eqemu.gitbook.io/server/categories/player/class-list)
   aacount:
     dataType: int
     nullable: NO
@@ -6248,7 +6248,7 @@ mail:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      [Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
 merchantlist:
   merchantid:
     dataType: int
@@ -6279,7 +6279,7 @@ merchantlist:
     nullable: NO
     description: >-
       [Classes
-      Required](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Required](https://eqemu.gitbook.io/server/categories/player/class-list)
   probability:
     dataType: int
     nullable: NO
@@ -6338,7 +6338,7 @@ mercs:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   MercSize:
     dataType: float
     nullable: NO
@@ -6348,7 +6348,7 @@ mercs:
     nullable: NO
     description: >-
       [Stance Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types)
   HP:
     dataType: int
     nullable: NO
@@ -6422,13 +6422,13 @@ merc_armorinfo:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   helmtexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Helmet
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   armortint_id:
     dataType: int
     nullable: NO
@@ -6594,7 +6594,7 @@ merc_name_types:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   prefix:
     dataType: varchar
     nullable: NO
@@ -6621,7 +6621,7 @@ merc_npc_types:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   name:
     dataType: varchar
     nullable: YES
@@ -6636,7 +6636,7 @@ merc_spell_lists:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   proficiency_id:
     dataType: tinyint
     nullable: NO
@@ -6661,13 +6661,13 @@ merc_spell_list_entries:
   spell_type:
     dataType: int
     nullable: NO
-    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/types/spell-types)'
+    description: '[Spell Type](https://eqemu.gitbook.io/server/categories/spells/spell-types)'
   stance_id:
     dataType: tinyint
     nullable: NO
     description: >-
       [Stance Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types)
   minlevel:
     dataType: tinyint
     nullable: NO
@@ -6694,7 +6694,7 @@ merc_stance_entries:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   proficiency_id:
     dataType: tinyint
     nullable: NO
@@ -6704,7 +6704,7 @@ merc_stance_entries:
     nullable: NO
     description: >-
       [Stance Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/stance-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types)
   isdefault:
     dataType: tinyint
     nullable: NO
@@ -6852,7 +6852,7 @@ merc_subtypes:
     nullable: NO
     description: >-
       [Class
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/class-list)
   tier_id:
     dataType: tinyint
     nullable: NO
@@ -6891,7 +6891,7 @@ merc_templates:
     nullable: NO
     description: >-
       [Client
-      Version](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Version](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
 merc_types:
   merc_type_id:
     dataType: int
@@ -6902,7 +6902,7 @@ merc_types:
     nullable: NO
     description: >-
       [Race
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/race-list)
   proficiency_id:
     dataType: tinyint
     nullable: NO
@@ -6916,7 +6916,7 @@ merc_types:
     nullable: NO
     description: >-
       [Client
-      Version](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Version](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
 merc_weaponinfo:
   id:
     dataType: int
@@ -6947,13 +6947,13 @@ merc_weaponinfo:
     nullable: NO
     description: >-
       [Primary Melee
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
   sec_melee_type:
     dataType: tinyint
     nullable: NO
     description: >-
       [Secondary Melee
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
 name_filter:
   id:
     dataType: int
@@ -6977,13 +6977,13 @@ npc_emotes:
     nullable: NO
     description: >-
       [Emote Event Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/emote-event-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/emote-event-types)
   type:
     dataType: tinyint
     nullable: NO
     description: >-
       [Emote Type
-      Identifier](https://eqemu.gitbook.io/server/categories/types/emote-types)
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/emote-types)
   text:
     dataType: varchar
     nullable: NO
@@ -7303,7 +7303,7 @@ npc_spells_entries:
     nullable: NO
     description: >-
       [Spell Type
-      Bitmask](https://eqemu.gitbook.io/server/categories/types/spell-types)
+      Bitmask](https://eqemu.gitbook.io/server/categories/spells/spell-types)
   minlevel:
     dataType: tinyint
     nullable: NO
@@ -7359,16 +7359,16 @@ npc_types:
     dataType: smallint
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   class:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   bodytype:
     dataType: int
     nullable: NO
-    description: '[Body Type](https://eqemu.gitbook.io/server/categories/types/body-types)'
+    description: '[Body Type](https://eqemu.gitbook.io/server/categories/npc/body-types)'
   hp:
     dataType: int
     nullable: NO
@@ -7381,18 +7381,18 @@ npc_types:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   texture:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      [Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   helmtexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Helmet
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   herosforgemodel:
     dataType: int
     nullable: NO
@@ -7542,19 +7542,19 @@ npc_types:
     nullable: NO
     description: >-
       [Primary Melee
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
   sec_melee_type:
     dataType: tinyint
     nullable: NO
     description: >-
       [Secondary Melee
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
   ranged_type:
     dataType: tinyint
     nullable: NO
     description: >-
       [Ranged
-      Type](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Type](https://eqemu.gitbook.io/server/categories/player/skills)
   runspeed:
     dataType: float
     nullable: NO
@@ -7740,31 +7740,31 @@ npc_types:
     nullable: NO
     description: >-
       [Arm
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   bracertexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Bracer
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   handtexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Hand
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   legtexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Leg
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   feettexture:
     dataType: tinyint
     nullable: NO
     description: >-
       [Feet
-      Texture](https://eqemu.gitbook.io/server/categories/reference-lists/textures)
+      Texture](https://eqemu.gitbook.io/server/categories/npc/textures)
   light:
     dataType: tinyint
     nullable: NO
@@ -7846,7 +7846,7 @@ npc_types:
     nullable: NO
     description: >-
       [Fly
-      Mode](https://eqemu.gitbook.io/server/categories/reference-lists/fly-modes)
+      Mode](https://eqemu.gitbook.io/server/categories/npc/fly-modes)
   always_aggro:
     dataType: tinyint
     nullable: NO
@@ -8003,7 +8003,7 @@ object:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: smallint
     nullable: NO
@@ -8039,7 +8039,7 @@ object:
   type:
     dataType: int
     nullable: NO
-    description: [Type](https://eqemu.gitbook.io/server/categories/types/object-types)
+    description: [Type](https://eqemu.gitbook.io/server/categories/zones/object-types)
   icon:
     dataType: int
     nullable: NO
@@ -8106,7 +8106,7 @@ object_contents:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   parentid:
     dataType: int
     nullable: NO
@@ -8214,7 +8214,7 @@ petitions:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   urgency:
     dataType: int
     nullable: NO
@@ -8224,13 +8224,13 @@ petitions:
     nullable: NO
     description: >-
       [Character
-      Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   charrace:
     dataType: int
     nullable: NO
     description: >-
       [Character
-      Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   charlevel:
     dataType: int
     nullable: NO
@@ -8336,7 +8336,7 @@ proximities:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   exploreid:
     dataType: int
     nullable: NO
@@ -8379,7 +8379,7 @@ qs_merchant_transaction_record:
     nullable: YES
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   merchant_id:
     dataType: int
     nullable: YES
@@ -8438,7 +8438,7 @@ qs_merchant_transaction_record_entries:
     nullable: YES
     description: >-
       [Character Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -8511,7 +8511,7 @@ qs_player_delete_record_entries:
     nullable: YES
     description: >-
       [Character Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -8636,7 +8636,7 @@ qs_player_handin_record_entries:
     nullable: YES
     description: >-
       [Character Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -8683,13 +8683,13 @@ qs_player_move_record:
     nullable: YES
     description: >-
       [From Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   to_slot:
     dataType: mediumint
     nullable: YES
     description: >-
       [To Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   stack_size:
     dataType: mediumint
     nullable: YES
@@ -8712,13 +8712,13 @@ qs_player_move_record_entries:
     nullable: YES
     description: >-
       [From Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   to_slot:
     dataType: mediumint
     nullable: YES
     description: >-
       [To Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -8765,7 +8765,7 @@ qs_player_npc_kill_record:
     nullable: YES
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   time:
     dataType: timestamp
     nullable: YES
@@ -8801,7 +8801,7 @@ qs_player_speech:
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   guilddbid:
     dataType: int
     nullable: NO
@@ -8885,7 +8885,7 @@ qs_player_trade_record_entries:
     nullable: YES
     description: >-
       [From Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   to_id:
     dataType: int
     nullable: YES
@@ -8895,7 +8895,7 @@ qs_player_trade_record_entries:
     nullable: YES
     description: >-
       [To Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   item_id:
     dataType: int
     nullable: YES
@@ -8938,7 +8938,7 @@ quest_globals:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   name:
     dataType: varchar
     nullable: NO
@@ -8957,13 +8957,13 @@ races:
     nullable: NO
     description: >-
       [Race
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Name](https://eqemu.gitbook.io/server/categories/npc/race-list)
   id:
     dataType: int
     nullable: NO
     description: >-
       [Race
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Identifier](https://eqemu.gitbook.io/server/categories/npc/race-list)
   no_coin:
     dataType: tinyint
     nullable: NO
@@ -9039,7 +9039,7 @@ raid_members:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   level:
     dataType: tinyint
     nullable: NO
@@ -9139,7 +9139,7 @@ sharedbank:
     nullable: YES
     description: >-
       [Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
   itemid:
     dataType: int
     nullable: YES
@@ -9182,12 +9182,12 @@ skill_caps:
     nullable: NO
     description: >-
       [Skill
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/skills)
   class:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   level:
     dataType: tinyint
     nullable: NO
@@ -9214,7 +9214,7 @@ spawn2:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: smallint
     nullable: NO
@@ -9263,7 +9263,7 @@ spawn2:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Animation](https://eqemu.gitbook.io/server/categories/types/npc-animation-types)
+      [Animation](https://eqemu.gitbook.io/server/categories/npc/animations)
 spawnentry:
   spawngroupID:
     dataType: int
@@ -9323,7 +9323,7 @@ spawngroup:
     nullable: NO
     description: >-
       [Despawn
-      Type](https://eqemu.gitbook.io/server/categories/types/npc-despawn-types)
+      Type](https://eqemu.gitbook.io/server/categories/npc/spawns/npc-despawn-types)
   despawn_timer:
     dataType: int
     nullable: NO
@@ -9334,7 +9334,7 @@ spawn_conditions:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   id:
     dataType: mediumint
     nullable: NO
@@ -9348,7 +9348,7 @@ spawn_conditions:
     nullable: NO
     description: >-
       [On Change
-      Type](https://eqemu.gitbook.io/server/categories/types/on-change-types
+      Type](https://eqemu.gitbook.io/server/categories/npc/spawns/on-change-types)
   name:
     dataType: varchar
     nullable: NO
@@ -9367,7 +9367,7 @@ spawn_condition_values:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   instance_id:
     dataType: int
     nullable: NO
@@ -9382,7 +9382,7 @@ spawn_events:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   cond_id:
     dataType: mediumint
     nullable: NO
@@ -9424,7 +9424,7 @@ spawn_events:
     nullable: NO
     description: >-
       [Action
-      Type](https://eqemu.gitbook.io/server/categories/types/action-types)
+      Type](https://eqemu.gitbook.io/server/categories/npc/spawns/action-types)
   argument:
     dataType: mediumint
     nullable: NO
@@ -9819,7 +9819,7 @@ spells_new:
     nullable: NO
     description: >-
       [Resist
-      Type](https://eqemu.gitbook.io/server/categories/types/resist-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/resist-types)
   effectid1:
     dataType: int
     nullable: NO
@@ -9897,7 +9897,7 @@ spells_new:
     nullable: NO
     description: >-
       [Target
-      Type](https://eqemu.gitbook.io/server/categories/types/target-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/target-types)
   basediff:
     dataType: int
     nullable: NO
@@ -9907,23 +9907,23 @@ spells_new:
     nullable: NO
     description: >-
       [Skill
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/skills)
   zonetype:
     dataType: int
     nullable: NO
-    description: '[Zone Type](https://eqemu.gitbook.io/server/categories/types/zone-types)'
+    description: '[Zone Type](https://eqemu.gitbook.io/server/categories/zones/zone-types)'
   EnvironmentType:
     dataType: int
     nullable: NO
     description: >-
       [Environment
-      Type](https://eqemu.gitbook.io/server/categories/types/environment-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/environment-types)
   TimeOfDay:
     dataType: int
     nullable: NO
     description: >-
       [Time of Day
-      Type](https://eqemu.gitbook.io/server/categories/types/time-of-day-types
+      Type](https://eqemu.gitbook.io/server/categories/spells/time-of-day-types)
   classes1:
     dataType: int
     nullable: NO
@@ -10013,103 +10013,103 @@ spells_new:
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities1:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities2:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities3:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities4:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities5:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities6:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities7:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities8:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities9:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities10:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities11:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities12:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities13:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities14:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities15:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   deities16:
     dataType: int
     nullable: NO
     description: >-
       [Deity
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      List](https://eqemu.gitbook.io/server/categories/player/deity-list)
   field142:
     dataType: int
     nullable: NO
@@ -10247,7 +10247,7 @@ spells_new:
     nullable: NO
     description: >-
       [Number of Hits
-      Type](https://eqemu.gitbook.io/server/categories/types/numhit-types)
+      Type](https://eqemu.gitbook.io/server/categories/spells/numhit-types)
   numhits:
     dataType: int
     nullable: NO
@@ -10539,26 +10539,26 @@ starting_items:
     dataType: int
     nullable: NO
     description: >-
-      [Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list):
+      [Race](https://eqemu.gitbook.io/server/categories/npc/race-list):
       0 = All
   class:
     dataType: int
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list):
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list):
       0 = All
   deityid:
     dataType: int
     nullable: NO
     description: >-
-      [Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list):
+      [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list):
       0 = Alll
   zoneid:
     dataType: int
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   itemid:
     dataType: int
     nullable: NO
@@ -10575,7 +10575,7 @@ starting_items:
     dataType: mediumint
     nullable: NO
     description: >-
-      [Slot](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      [Slot](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
 start_zones:
   x:
     dataType: float
@@ -10598,7 +10598,7 @@ start_zones:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   bind_id:
     dataType: int
     nullable: NO
@@ -10612,25 +10612,25 @@ start_zones:
     nullable: NO
     description: >-
       [Player
-      Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   player_deity:
     dataType: int
     nullable: NO
     description: >-
       [Player
-      Deity](https://eqemu.gitbook.io/server/categories/reference-lists/deity-list)
+      Deity](https://eqemu.gitbook.io/server/categories/player/deity-list)
   player_race:
     dataType: int
     nullable: NO
     description: >-
       [Player
-      Race](https://eqemu.gitbook.io/server/categories/reference-lists/race-list)
+      Race](https://eqemu.gitbook.io/server/categories/npc/race-list)
   start_zone:
     dataType: int
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   bind_x:
     dataType: float
     nullable: NO
@@ -10655,7 +10655,7 @@ tasks:
   type:
     dataType: tinyint
     nullable: NO
-    description: '[Task Type](https://eqemu.gitbook.io/server/categories/types/task-types)'
+    description: '[Task Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-types)'
   duration:
     dataType: int
     nullable: NO
@@ -10665,7 +10665,7 @@ tasks:
     nullable: NO
     description: >-
       [Duration
-      Code](https://eqemu.gitbook.io/server/categories/reference-lists/task-duration-codes)
+      Code](https://eqemu.gitbook.io/server/categories/task-system-guide/task-duration-codes)
   title:
     dataType: varchar
     nullable: NO
@@ -10741,7 +10741,7 @@ task_activities:
     nullable: NO
     description: >-
       [Activity
-      Type](https://eqemu.gitbook.io/server/categories/types/task-activity-types)
+      Type](https://eqemu.gitbook.io/server/categories/task-system-guide/task-activity-types)
   target_name:
     dataType: varchar
     nullable: NO
@@ -10755,7 +10755,7 @@ task_activities:
     nullable: NO
     description: >-
       [Skill Identifier
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      List](https://eqemu.gitbook.io/server/categories/player/skills)
   spell_list:
     dataType: varchar
     nullable: NO
@@ -10787,7 +10787,7 @@ task_activities:
     nullable: NO
     description: >-
       [Zones
-      List](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      List](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   optional:
     dataType: tinyint
     nullable: NO
@@ -10823,7 +10823,7 @@ titles:
     nullable: NO
     description: >-
       [Skill
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Identifier](https://eqemu.gitbook.io/server/categories/player/skills)
   min_skill_value:
     dataType: mediumint
     nullable: NO
@@ -10844,12 +10844,12 @@ titles:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Class](https://eqemu.gitbook.io/server/categories/reference-lists/class-list)
+      [Class](https://eqemu.gitbook.io/server/categories/player/class-list)
   gender:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Gender](https://eqemu.gitbook.io/server/categories/reference-lists/genders)
+      [Gender](https://eqemu.gitbook.io/server/categories/npc/genders)
   char_id:
     dataType: int
     nullable: NO
@@ -10859,7 +10859,7 @@ titles:
     nullable: NO
     description: >-
       [Required
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   item_id:
     dataType: int
     nullable: NO
@@ -10902,7 +10902,7 @@ trader:
     nullable: NO
     description: >-
       [Slot
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/inventory-slots)
+      Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots)
 trader_audit:
   time:
     dataType: datetime
@@ -10945,7 +10945,7 @@ tradeskill_recipe:
     dataType: smallint
     nullable: NO
     description: >-
-      [Tradeskill](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      [Tradeskill](https://eqemu.gitbook.io/server/categories/player/skills)
   skillneeded:
     dataType: smallint
     nullable: NO
@@ -11021,7 +11021,7 @@ traps:
     nullable: NO
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: smallint
     nullable: NO
@@ -11053,7 +11053,7 @@ traps:
   effect:
     dataType: int
     nullable: NO
-    description: '[Trap Type](https://eqemu.gitbook.io/server/categories/types/trap-types)'
+    description: '[Trap Type](https://eqemu.gitbook.io/server/categories/zones/trap-types)'
   effectvalue:
     dataType: int
     nullable: NO
@@ -11077,7 +11077,7 @@ traps:
     nullable: NO
     description: >-
       [Skill
-      Required](https://eqemu.gitbook.io/server/categories/reference-lists/skills)
+      Required](https://eqemu.gitbook.io/server/categories/player/skills)
   level:
     dataType: mediumint
     nullable: NO
@@ -11228,13 +11228,13 @@ zone:
     nullable: NO
     description: >-
       [Minimum
-      Status](https://eqemu.gitbook.io/server/categories/reference-lists/status-levels)
+      Status](https://eqemu.gitbook.io/server/categories/player/status-levels)
   zoneidnumber:
     dataType: int
     nullable: NO
     description: >-
       [Unique Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: tinyint
     nullable: NO
@@ -11442,7 +11442,7 @@ zone:
     dataType: tinyint
     nullable: NO
     description: >-
-      [Expansion](https://eqemu.gitbook.io/server/categories/reference-lists/expansion-list)
+      [Expansion](https://eqemu.gitbook.io/server/categories/operation/expansion-list)
   suspendbuffs:
     dataType: tinyint
     nullable: NO
@@ -11562,7 +11562,7 @@ zone_flags:
     nullable: NO
     description: >-
       [Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
 zone_points:
   id:
     dataType: int
@@ -11573,7 +11573,7 @@ zone_points:
     nullable: YES
     description: >-
       [Zone Short
-      Name](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Name](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   version:
     dataType: int
     nullable: NO
@@ -11629,7 +11629,7 @@ zone_points:
     nullable: NO
     description: >-
       [Target Zone
-      Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones)
+      Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list)
   target_instance:
     dataType: int
     nullable: NO
@@ -11643,7 +11643,7 @@ zone_points:
     nullable: NO
     description: >-
       [Client Version
-      Mask](https://eqemu.gitbook.io/server/categories/reference-lists/client-version-bitmasks)
+      Mask](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks)
 zone_server:
   name:
     dataType: varchar
