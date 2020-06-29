@@ -483,7 +483,7 @@ program.command('write')
         categoryTablesList += '* [' + category + '](placeholder.md)\n';
         // categoryTablesList += '\n## ' + category + '\n\n';
 
-        const categoryPathName = category.toLowerCase()
+        const categoryPathName = category.toLowerCase().replace(/\s/g, '_')
 
         tables.forEach(function (table) {
           tablesWrittenToIndex[table] = 1;
