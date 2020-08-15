@@ -1,8 +1,11 @@
-| Column   | Data Type | Description                               |
-| -------- | --------- | ----------------------------------------- |
-| charid   | int       | [Character Identifier](character_data.md) |
-| buyslot  | int       | Slot                                      |
-| itemid   | int       | [Item Identifier](items.md)               |
-| itemname | varchar   | [Item Name](items.md)                     |
-| quantity | int       | Quantity                                  |
-| price    | int       | Price                                     |
+# buyer
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| charid | int | [Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/buyers/character_data.md) |
+| buyslot | int | Slot |
+| itemid | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/buyers/items.md) |
+| itemname | varchar | [Item Name](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/buyers/items.md) |
+| quantity | int | Quantity |
+| price | int | Price |
+

@@ -1,6 +1,9 @@
-| Column     | Data Type | Description                         |
-| ---------- | --------- | ----------------------------------- |
-| ruleset_id | tinyint   | [Rule Set Identifier](rule_sets.md) |
-| rule_name  | varchar   | Rule Name                           |
-| rule_value | varchar   | Rule Value                          |
-| notes      | text      | Notes                               |
+# rule\_values
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| ruleset\_id | tinyint | [Rule Set Identifier](rule_sets.md) |
+| rule\_name | varchar | Rule Name |
+| rule\_value | varchar | Rule Value |
+| notes | text | Notes |
+

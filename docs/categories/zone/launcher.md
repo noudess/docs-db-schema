@@ -1,4 +1,7 @@
-| Column   | Data Type | Description |
-| -------- | --------- | ----------- |
-| name     | varchar   | Name        |
-| dynamics | tinyint   | Dynamics    |
+# launcher
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| name | varchar | Name |
+| dynamics | tinyint | Dynamics |
+

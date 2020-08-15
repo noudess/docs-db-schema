@@ -1,8 +1,11 @@
-| Column       | Data Type | Description                                                                             |
-| ------------ | --------- | --------------------------------------------------------------------------------------- |
-| char_id      | int       | [Unique Character Identifier](character_data.md)                                        |
-| item_id      | int       | [Item Identifier](items.md)                                                             |
-| serialnumber | int       | Serial Number                                                                           |
-| charges      | int       | Charges                                                                                 |
-| item_cost    | int       | Item Cost                                                                               |
-| slot_id      | tinyint   | [Slot Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots) |
+# trader
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| char\_id | int | [Unique Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/trader/character_data.md) |
+| item\_id | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/trader/items.md) |
+| serialnumber | int | Serial Number |
+| charges | int | Charges |
+| item\_cost | int | Item Cost |
+| slot\_id | tinyint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots) |
+

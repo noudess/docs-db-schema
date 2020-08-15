@@ -1,7 +1,10 @@
-| Column   | Data Type | Description                                      |
-| -------- | --------- | ------------------------------------------------ |
-| char_id  | int       | [Unique Character Identifier](character_data.md) |
-| type     | mediumint | Type                                             |
-| start    | int       | Start UNIX Timestamp                             |
-| duration | int       | Duration                                         |
-| enable   | tinyint   | Enabled: 0 = False, 1 = True                     |
+# timers
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| char\_id | int | [Unique Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/categories/timers/character_data.md) |
+| type | mediumint | Type |
+| start | int | Start UNIX Timestamp |
+| duration | int | Duration |
+| enable | tinyint | Enabled: 0 = False, 1 = True |
+
