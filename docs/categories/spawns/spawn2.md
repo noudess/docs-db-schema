@@ -16,5 +16,5 @@
 | \_condition | mediumint | Condition |
 | cond\_value | mediumint | Condition Value |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
-| animation | tinyint | [Animation](https://eqemu.gitbook.io/server/categories/npc/animations) |
+| animation | tinyint | [Animation](https://eqemu.gitbook.io/server/categories/npc/npc-animation-types) |
 
